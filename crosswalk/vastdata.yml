@@ -1,0 +1,23 @@
+provider: vastdata
+apis_io: https://apis.io/providers/vastdata/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    properties:
+      id:
+      - guid
+      - id
+      name:
+      - name
+      - title
+      status: state
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/vastdata-vms-openapi.json#DELETE /clusters/{id}/
+    - openapi/_original/vastdata-vms-openapi.json#GET /clusters/
+    - openapi/_original/vastdata-vms-openapi.json#GET /clusters/{id}/
+    - openapi/_original/vastdata-vms-openapi.json#PATCH /clusters/{id}/
+    - openapi/_original/vastdata-vms-openapi.json#POST /clusters/

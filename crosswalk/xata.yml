@@ -1,0 +1,15 @@
+provider: xata
+apis_io: https://apis.io/providers/xata/
+context: databases
+generated: '2026-11-11'
+concepts:
+  backup:
+    path_segment:
+    - backups
+    properties:
+      id: id
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/xata-management-api-openapi.yml#GET /organizations/{organizationID}/projects/{projectID}/backups
+    - openapi/_original/xata-management-api-openapi.yml#GET /organizations/{organizationID}/projects/{projectID}/backups/{backupID}

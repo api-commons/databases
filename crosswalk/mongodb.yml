@@ -1,0 +1,50 @@
+provider: mongodb
+apis_io: https://apis.io/providers/mongodb/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/mongodb-atlas-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/clusters
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/dbAccessHistory/clusters/{clusterName}
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/processes/{processId}/databases
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/processes/{processId}/databases/{databaseName}
+    - openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}/databases
+    - openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}/databases/{databaseName}
+    - openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/processes/{processId}/databases
+  backup:
+    path_segment:
+    - snapshots
+    properties:
+      id:
+      - id
+      - clusterId
+      status: status
+      created_at:
+      - createdAt
+      - created
+      type: type
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/mongodb-atlas-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}
+    - openapi/_original/mongodb-atlas-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/snapshots/{snapshotId}
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}
+    - openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/snapshots

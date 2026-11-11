@@ -1,0 +1,410 @@
+openapi: 3.1.0
+info:
+  title: Databases (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Databases interface, distilled from the harvested OpenAPI of 184 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /database-clusters:
+    get:
+      operationId: listDatabaseClusters
+      summary: List database clusters
+      tags:
+      - Database Clusters
+      x-commons-tier: core
+      x-commons-share: 0.909
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/DatabaseCluster'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDatabaseCluster
+      summary: Create a database cluster
+      tags:
+      - Database Clusters
+      x-commons-tier: core
+      x-commons-share: 0.576
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /database-clusters/{database_cluster_id}:
+    parameters:
+    - $ref: '#/components/parameters/database_cluster_id'
+    get:
+      operationId: getDatabaseCluster
+      summary: Get a database cluster
+      tags:
+      - Database Clusters
+      x-commons-tier: core
+      x-commons-share: 0.606
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteDatabaseCluster
+      summary: Delete a database cluster
+      tags:
+      - Database Clusters
+      x-commons-tier: core
+      x-commons-share: 0.576
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateDatabaseCluster
+      summary: Update a database cluster
+      tags:
+      - Database Clusters
+      x-commons-tier: extended
+      x-commons-share: 0.394
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /databases:
+    get:
+      operationId: listDatabases
+      summary: List databases
+      tags:
+      - Databases
+      x-commons-tier: core
+      x-commons-share: 0.875
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Database'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDatabase
+      summary: Create a database
+      tags:
+      - Databases
+      x-commons-tier: core
+      x-commons-share: 0.833
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /databases/{database_id}:
+    parameters:
+    - $ref: '#/components/parameters/database_id'
+    get:
+      operationId: getDatabase
+      summary: Get a database
+      tags:
+      - Databases
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteDatabase
+      summary: Delete a database
+      tags:
+      - Databases
+      x-commons-tier: core
+      x-commons-share: 0.688
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateDatabase
+      summary: Update a database
+      tags:
+      - Databases
+      x-commons-tier: extended
+      x-commons-share: 0.438
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /database-users:
+    get:
+      operationId: listDatabaseUsers
+      summary: List database users
+      tags:
+      - Database Users
+      x-commons-tier: core
+      x-commons-share: 0.909
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/DatabaseUser'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDatabaseUser
+      summary: Create a database user
+      tags:
+      - Database Users
+      x-commons-tier: core
+      x-commons-share: 0.727
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /database-users/{database_user_id}:
+    parameters:
+    - $ref: '#/components/parameters/database_user_id'
+    delete:
+      operationId: deleteDatabaseUser
+      summary: Delete a database user
+      tags:
+      - Database Users
+      x-commons-tier: extended
+      x-commons-share: 0.455
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    get:
+      operationId: getDatabaseUser
+      summary: Get a database user
+      tags:
+      - Database Users
+      x-commons-tier: extended
+      x-commons-share: 0.455
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateDatabaseUser
+      summary: Update a database user
+      tags:
+      - Database Users
+      x-commons-tier: extended
+      x-commons-share: 0.364
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /backups:
+    get:
+      operationId: listBackups
+      summary: List backups
+      tags:
+      - Backups
+      x-commons-tier: core
+      x-commons-share: 0.938
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Backup'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createBackup
+      summary: Create a backup
+      tags:
+      - Backups
+      x-commons-tier: core
+      x-commons-share: 0.719
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /backups/{backup_id}:
+    parameters:
+    - $ref: '#/components/parameters/backup_id'
+    get:
+      operationId: getBackup
+      summary: Get a backup
+      tags:
+      - Backups
+      x-commons-tier: core
+      x-commons-share: 0.656
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    delete:
+      operationId: deleteBackup
+      summary: Delete a backup
+      tags:
+      - Backups
+      x-commons-tier: extended
+      x-commons-share: 0.406
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateBackup
+      summary: Update a backup
+      tags:
+      - Backups
+      x-commons-tier: extended
+      x-commons-share: 0.219
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+components:
+  schemas:
+    DatabaseCluster:
+      $ref: ./schema/database_cluster.json
+    Database:
+      $ref: ./schema/database.json
+    DatabaseUser:
+      $ref: ./schema/database_user.json
+    Backup:
+      $ref: ./schema/backup.json
+  parameters:
+    database_cluster_id:
+      name: database_cluster_id
+      in: path
+      required: true
+      schema:
+        type: string
+    database_id:
+      name: database_id
+      in: path
+      required: true
+      schema:
+        type: string
+    database_user_id:
+      name: database_user_id
+      in: path
+      required: true
+      schema:
+        type: string
+    backup_id:
+      name: backup_id
+      in: path
+      required: true
+      schema:
+        type: string

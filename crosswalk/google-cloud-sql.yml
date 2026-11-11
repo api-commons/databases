@@ -1,0 +1,27 @@
+provider: google-cloud-sql
+apis_io: https://apis.io/providers/google-cloud-sql/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cloud-sql-openapi.yml#DELETE /projects/{project}/instances/{instance}/databases/{database}
+    - openapi/_original/cloud-sql-openapi.yml#GET /projects/{project}/instances/{instance}/databases
+    - openapi/_original/cloud-sql-openapi.yml#GET /projects/{project}/instances/{instance}/databases/{database}
+    - openapi/_original/cloud-sql-openapi.yml#POST /projects/{project}/instances/{instance}/databases
+  database_user:
+    path_segment:
+    - users
+    properties:
+      username: name
+      password: password
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/cloud-sql-openapi.yml#GET /projects/{project}/instances/{instance}/users
+    - openapi/_original/cloud-sql-openapi.yml#POST /projects/{project}/instances/{instance}/users

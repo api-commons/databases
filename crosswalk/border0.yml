@@ -1,0 +1,12 @@
+provider: border0
+apis_io: https://apis.io/providers/border0/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - database
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/border0-openapi.json#POST /client/ai_assistants/database

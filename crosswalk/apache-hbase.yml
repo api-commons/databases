@@ -1,0 +1,12 @@
+provider: apache-hbase
+apis_io: https://apis.io/providers/apache-hbase/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - cluster
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/apache-hbase-rest-openapi.yml#GET /version/cluster

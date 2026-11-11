@@ -1,0 +1,34 @@
+provider: neon
+apis_io: https://apis.io/providers/neon/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+      id: id
+      status: status
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/neon-management-api-openapi.yml#DELETE /projects/{project_id}/branches/{branch_id}/databases/{database_name}
+    - openapi/_original/neon-management-api-openapi.yml#GET /projects/{project_id}/branches/{branch_id}/databases
+    - openapi/_original/neon-management-api-openapi.yml#GET /projects/{project_id}/branches/{branch_id}/databases/{database_name}
+    - openapi/_original/neon-management-api-openapi.yml#PATCH /projects/{project_id}/branches/{branch_id}/databases/{database_name}
+    - openapi/_original/neon-management-api-openapi.yml#POST /projects/{project_id}/branches/{branch_id}/databases
+  database_user:
+    path_segment:
+    - roles
+    properties:
+      username: name
+      password: password
+      created_at: created_at
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/neon-management-api-openapi.yml#DELETE /projects/{project_id}/branches/{branch_id}/roles/{role_name}
+    - openapi/_original/neon-management-api-openapi.yml#GET /projects/{project_id}/branches/{branch_id}/roles
+    - openapi/_original/neon-management-api-openapi.yml#GET /projects/{project_id}/branches/{branch_id}/roles/{role_name}
+    - openapi/_original/neon-management-api-openapi.yml#POST /projects/{project_id}/branches/{branch_id}/roles

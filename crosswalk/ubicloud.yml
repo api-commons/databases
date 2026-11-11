@@ -1,0 +1,13 @@
+provider: ubicloud
+apis_io: https://apis.io/providers/ubicloud/
+context: databases
+generated: '2026-11-11'
+concepts:
+  backup:
+    path_segment:
+    - backup
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/ubicloud-openapi.yml#GET /project/{project_id}/location/{location}/postgres/{postgres_database_reference}/backup
+    - openapi/_original/ubicloud-openapi_2.yml#GET /project/{project_id}/location/{location}/postgres/{postgres_database_reference}/backup

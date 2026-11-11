@@ -1,0 +1,51 @@
+provider: oracle
+apis_io: https://apis.io/providers/oracle/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    properties:
+      id: id
+      name:
+      - name
+      - displayName
+      engine: type
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/oci-containerengine-openapi.yaml#DELETE /clusters/{clusterId}
+    - openapi/_original/oci-containerengine-openapi.yaml#GET /clusters
+    - openapi/_original/oci-containerengine-openapi.yaml#GET /clusters/{clusterId}
+    - openapi/_original/oci-containerengine-openapi.yaml#POST /clusters
+    - openapi/_original/oci-containerengine-openapi.yaml#PUT /clusters/{clusterId}
+  database:
+    path_segment:
+    - databases
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oci-database-openapi.yaml#DELETE /databases/{databaseId}
+    - openapi/_original/oci-database-openapi.yaml#GET /databases
+    - openapi/_original/oci-database-openapi.yaml#GET /databases/{databaseId}
+    - openapi/_original/oci-database-openapi.yaml#POST /databases
+    - openapi/_original/oci-database-openapi.yaml#PUT /databases/{databaseId}
+  backup:
+    path_segment:
+    - backups
+    - backup
+    properties:
+      id:
+      - databaseId
+      - id
+      type: type
+      name: displayName
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oci-database-openapi.yaml#DELETE /backups/{backupId}
+    - openapi/_original/oci-database-openapi.yaml#GET /backups
+    - openapi/_original/oci-database-openapi.yaml#GET /backups/{backupId}
+    - openapi/_original/oci-database-openapi.yaml#POST /backups
+    - openapi/_original/oci-database-openapi.yaml#PUT /backups/{backupId}

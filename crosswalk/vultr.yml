@@ -1,0 +1,62 @@
+provider: vultr
+apis_io: https://apis.io/providers/vultr/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    properties:
+      id: id
+      name: name
+      status: status
+      region: region
+      version: version
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/vultr-iam-management-api-openapi.yml#GET /v2/logs/audit-logs/clusters
+    - openapi/_original/vultr-iam-management-api.yml#GET /v2/logs/audit-logs/clusters
+    - openapi/_original/vultr-iam-openapi.yml#GET /v2/logs/audit-logs/clusters
+    - openapi/_original/vultr-openapi.yml#DELETE /kubernetes/clusters/{vke-id}
+    - openapi/_original/vultr-openapi.yml#GET /kubernetes/clusters
+  database:
+    path_segment:
+    - databases
+    properties:
+      id: id
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/vultr-openapi.yml#DELETE /databases/{database-id}
+    - openapi/_original/vultr-openapi.yml#GET /databases
+    - openapi/_original/vultr-openapi.yml#GET /databases/{database-id}
+    - openapi/_original/vultr-openapi.yml#POST /databases
+    - openapi/_original/vultr-openapi.yml#PUT /databases/{database-id}
+  database_user:
+    path_segment:
+    - users
+    properties:
+      username: username
+      password: password
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/vultr-openapi.yml#DELETE /databases/{database-id}/users/{username}
+    - openapi/_original/vultr-openapi.yml#GET /databases/{database-id}/users
+    - openapi/_original/vultr-openapi.yml#GET /databases/{database-id}/users/{username}
+    - openapi/_original/vultr-openapi.yml#POST /databases/{database-id}/users
+    - openapi/_original/vultr-openapi.yml#PUT /databases/{database-id}/users/{username}
+  backup:
+    path_segment:
+    - backups
+    properties:
+      id: id
+      status: status
+      size: size
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/vultr-openapi.yml#GET /backups
+    - openapi/_original/vultr-openapi.yml#GET /backups/{backup-id}
+    - openapi/_original/vultr-openapi.yml#GET /databases/{database-id}/backups
+    - openapi/_original/vultr-schema-openapi.json#GET /backups
+    - openapi/_original/vultr-schema-openapi.json#GET /backups/{backup-id}

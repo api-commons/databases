@@ -1,0 +1,31 @@
+provider: couchbase
+apis_io: https://apis.io/providers/couchbase/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - cluster
+    properties:
+      status: state
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/couchbase-analytics-service-rest-api-openapi.yml#GET /analytics/cluster
+  database_user:
+    path_segment:
+    - users
+    properties:
+      username: name
+      password: password
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/couchbase-capella-management-api-openapi.yml#GET /v4/organizations/{organizationId}/projects/{projectId}/clusters/{clusterId}/users
+    - openapi/_original/couchbase-capella-management-api-openapi.yml#POST /v4/organizations/{organizationId}/projects/{projectId}/clusters/{clusterId}/users
+  backup:
+    path_segment:
+    - backup
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/couchbase-backup-service-rest-api-openapi.yml#POST /api/v1/cluster/self/repository/active/{repositoryId}/backup

@@ -1,0 +1,15 @@
+provider: koyeb
+apis_io: https://apis.io/providers/koyeb/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - branches
+    properties:
+      id: id
+      name: name
+      engine: provider
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/koyeb-openapi.json#GET /v1/git/branches

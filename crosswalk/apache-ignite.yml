@@ -1,0 +1,14 @@
+provider: apache-ignite
+apis_io: https://apis.io/providers/apache-ignite/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - cluster
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/apache-ignite-rest-api.yaml#GET /management/v1/configuration/cluster
+    - openapi/_original/apache-ignite-rest-api.yaml#GET /management/v1/configuration/cluster/{path}
+    - openapi/_original/apache-ignite-rest-api.yaml#PATCH /management/v1/configuration/cluster

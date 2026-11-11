@@ -1,0 +1,16 @@
+provider: mongodb-atlas
+apis_io: https://apis.io/providers/mongodb-atlas/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mongodb-atlas-openapi.yml#DELETE /groups/{groupId}/clusters/{clusterName}
+    - openapi/_original/mongodb-atlas-openapi.yml#GET /groups/{groupId}/clusters
+    - openapi/_original/mongodb-atlas-openapi.yml#GET /groups/{groupId}/clusters/{clusterName}
+    - openapi/_original/mongodb-atlas-openapi.yml#PATCH /groups/{groupId}/clusters/{clusterName}
+    - openapi/_original/mongodb-atlas-openapi.yml#POST /groups/{groupId}/clusters

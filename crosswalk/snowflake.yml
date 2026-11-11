@@ -1,0 +1,39 @@
+provider: snowflake
+apis_io: https://apis.io/providers/snowflake/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - instances
+    properties:
+      id: instance_id
+      status: status
+      created_at: creation_time
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/service.yaml#GET /api/v2/databases/{database}/schemas/{schema}/services/{name}/instances
+    - openapi/_original/service_2.yaml#GET /api/v2/databases/{database}/schemas/{schema}/services/{name}/instances
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+      created_at: created_on
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/database.yaml#DELETE /api/v2/databases/{name}
+    - openapi/_original/database.yaml#GET /api/v2/databases
+    - openapi/_original/database.yaml#GET /api/v2/databases/{name}
+    - openapi/_original/database.yaml#POST /api/v2/databases
+    - openapi/_original/database.yaml#PUT /api/v2/databases/{name}
+  database_user:
+    path_segment:
+    - roles
+    properties:
+      username: name
+      created_at: created_on
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/service.yaml#GET /api/v2/databases/{database}/schemas/{schema}/services/{name}/roles
+    - openapi/_original/service_2.yaml#GET /api/v2/databases/{database}/schemas/{schema}/services/{name}/roles

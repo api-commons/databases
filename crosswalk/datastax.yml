@@ -1,0 +1,28 @@
+provider: datastax
+apis_io: https://apis.io/providers/datastax/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    - database
+    properties:
+      name: name
+      id: id
+      status: status
+      created_at: creationTime
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/datastax-devops-openapi.json#DELETE /v2/peering/provider/{provider}/database/{databaseID}
+    - openapi/_original/datastax-devops-openapi.json#GET /v2/databases
+    - openapi/_original/datastax-devops-openapi.json#GET /v2/databases/{databaseID}
+    - openapi/_original/datastax-devops-openapi.json#GET /v2/peering/provider/{provider}/database/{databaseID}
+    - openapi/_original/datastax-devops-openapi.json#POST /v2/databases
+  backup:
+    path_segment:
+    - snapshots
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/datastax-devops-openapi.json#GET /v2/databases/{databaseID}/snapshots

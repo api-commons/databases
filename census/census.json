@@ -1,0 +1,6403 @@
+{
+ "cohort_size": 184,
+ "unreadable": [],
+ "concepts": {
+  "database_cluster": {
+   "abloatai": {
+    "segments": [
+     "branches"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "object": "string",
+     "id": "string",
+     "project_id": "string",
+     "parent_branch_id": null,
+     "slug": "string",
+     "name": null,
+     "kind": "string",
+     "state": "string",
+     "origin": "string",
+     "root": "boolean",
+     "expires_at": null,
+     "created_at": "string",
+     "deleted_at": null
+    },
+    "evidence": [
+     "openapi/_original/abloatai-openapi-2026-08-19.json#DELETE /v1/branches/{id}",
+     "openapi/_original/abloatai-openapi-2026-08-19.json#GET /v1/branches",
+     "openapi/_original/abloatai-openapi-2026-08-19.json#GET /v1/branches/{id}",
+     "openapi/_original/abloatai-openapi-2026-08-19.json#POST /v1/branches"
+    ]
+   },
+   "aerospike": {
+    "segments": [
+     "cluster"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/aerospike-openapi.yml#GET /v1/cluster"
+    ]
+   },
+   "amazon-aurora-dsql": {
+    "segments": [
+     "cluster",
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "identifier": "string",
+     "arn": "string",
+     "status": "string",
+     "creationTime": "string",
+     "deletionProtectionEnabled": "boolean",
+     "tags": "object",
+     "clientToken": "string",
+     "witnessRegion": "string",
+     "linkedClusterArns": "array"
+    },
+    "evidence": [
+     "openapi/_original/amazon-aurora-dsql-openapi.yml#DELETE /cluster/{identifier}",
+     "openapi/_original/amazon-aurora-dsql-openapi.yml#GET /cluster/{identifier}",
+     "openapi/_original/amazon-aurora-dsql-openapi.yml#GET /clusters",
+     "openapi/_original/amazon-aurora-dsql-openapi.yml#POST /cluster",
+     "openapi/_original/amazon-aurora-dsql-openapi.yml#PUT /cluster/{identifier}"
+    ]
+   },
+   "apache-hbase": {
+    "segments": [
+     "cluster"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "Server": "string",
+     "JVM": "string",
+     "OS": "string",
+     "REST": "string",
+     "Jersey": "string"
+    },
+    "evidence": [
+     "openapi/_original/apache-hbase-rest-openapi.yml#GET /version/cluster"
+    ]
+   },
+   "apache-ignite": {
+    "segments": [
+     "cluster"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/apache-ignite-rest-api.yaml#GET /management/v1/configuration/cluster",
+     "openapi/_original/apache-ignite-rest-api.yaml#GET /management/v1/configuration/cluster/{path}",
+     "openapi/_original/apache-ignite-rest-api.yaml#PATCH /management/v1/configuration/cluster"
+    ]
+   },
+   "appwrite": {
+    "segments": [
+     "branches"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "branchId": "string",
+     "branchName": "string",
+     "namespace": "string",
+     "expiresAt": "integer",
+     "host": "string",
+     "port": "integer",
+     "database": "string",
+     "username": "string",
+     "password": "string",
+     "ssl": "boolean",
+     "engine": "string",
+     "connectionString": "string",
+     "ttl": "integer",
+     "total": "integer",
+     "branches": "array"
+    },
+    "evidence": [
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /mongo/{databaseId}/branches/{branchId}",
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /mysql/{databaseId}/branches/{branchId}",
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /postgresql/{databaseId}/branches/{branchId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /mongo/{databaseId}/branches",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /mysql/{databaseId}/branches",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /postgresql/{databaseId}/branches",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /vcs/github/installations/{installationId}/providerRepositories/{providerRepositoryId}/branches",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /mongo/{databaseId}/branches",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /mysql/{databaseId}/branches",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /postgresql/{databaseId}/branches"
+    ]
+   },
+   "ardent": {
+    "segments": [
+     "branches"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "connector_id": "string",
+     "service_type": "string",
+     "status": "string",
+     "created_at": "string",
+     "last_branch_activity": null,
+     "read_ready_at": null,
+     "write_ready_at": null,
+     "masked_ready_at": null,
+     "branch_url": null,
+     "pooled_branch_url": null,
+     "pooled_branch_prisma_url": null
+    },
+    "evidence": [
+     "openapi/_original/ardent-openapi.json#DELETE /v1/cli/branches/{branch_id}",
+     "openapi/_original/ardent-openapi.json#GET /v1/branches/{connector_id}",
+     "openapi/_original/ardent-openapi.json#GET /v1/cli/branches"
+    ]
+   },
+   "cockroach-labs": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "cloud_provider": "string",
+     "cockroach_version": "string",
+     "plan": "string",
+     "state": "string",
+     "operation_status": "string",
+     "regions": "array",
+     "config": "object",
+     "creator_id": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "deleted_at": "string",
+     "sql_dns": "string",
+     "upgrade_status": "string",
+     "account_id": "string",
+     "parent_id": "string",
+     "labels": "object",
+     "delete_protection": "string",
+     "egress_traffic_policy": "string",
+     "network_visibility": "string",
+     "provider": "string",
+     "spec": "object",
+     "dedicated": "object",
+     "serverless": "object",
+     "azure_cluster_identity_client_id": "string",
+     "cidr_range": "string",
+     "customer_cloud_account": "object",
+     "edition": "string",
+     "host": "object",
+     "primary_region": "string",
+     "virtual_cpu_burst_limit": "integer"
+    },
+    "evidence": [
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#DELETE /api/v1/clusters/{cluster_id}",
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#GET /api/v1/clusters",
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#GET /api/v1/clusters/{cluster_id}",
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#PATCH /api/v1/clusters/{cluster_id}",
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#POST /api/v1/clusters",
+     "openapi/_original/cockroach-labs-openapi.json#DELETE /api/v1/clusters/{cluster_id}",
+     "openapi/_original/cockroach-labs-openapi.json#GET /api/v1/clusters",
+     "openapi/_original/cockroach-labs-openapi.json#GET /api/v1/clusters/{cluster_id}",
+     "openapi/_original/cockroach-labs-openapi.json#PATCH /api/v1/clusters/{cluster_id}",
+     "openapi/_original/cockroach-labs-openapi.json#PATCH /api/v1/virtual-cluster-workspaces/{workspace_id}/clusters/{cluster_id}",
+     "openapi/_original/cockroach-labs-openapi.json#POST /api/v1/clusters",
+     "openapi/_original/cockroach-labs-openapi.json#POST /api/v1/virtual-cluster-workspaces/{workspace_id}/clusters"
+    ]
+   },
+   "couchbase": {
+    "segments": [
+     "cluster"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "nodeId": "string",
+     "state": "string",
+     "partitions": "array"
+    },
+    "evidence": [
+     "openapi/_original/couchbase-analytics-service-rest-api-openapi.yml#GET /analytics/cluster"
+    ]
+   },
+   "dolthub": {
+    "segments": [
+     "branches"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "revisionType": "string",
+     "revisionName": "string",
+     "newBranchName": "string"
+    },
+    "evidence": [
+     "openapi/_original/dolthub-openapi.yml#GET /{owner}/{database}/branches",
+     "openapi/_original/dolthub-openapi.yml#POST /{owner}/{database}/branches"
+    ]
+   },
+   "instaclustr": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "publicIp": "string",
+     "privateIp": "string",
+     "rack": "object",
+     "nodeSize": "string"
+    },
+    "evidence": [
+     "openapi/_original/instaclustr-current-openapi.json#GET /monitoring/v1/clusters/{clusterId}",
+     "openapi/_original/instaclustr-openapi.yml#GET /monitoring/v1/clusters/{clusterId}"
+    ]
+   },
+   "koyeb": {
+    "segments": [
+     "branches"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "organization_id": "string",
+     "repository_id": "string",
+     "name": "string",
+     "is_default": "boolean",
+     "is_protected": "boolean",
+     "provider": "string"
+    },
+    "evidence": [
+     "openapi/_original/koyeb-openapi.json#GET /v1/git/branches"
+    ]
+   },
+   "mongodb": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "clusters": "array",
+     "groupId": "string",
+     "groupName": "string",
+     "orgId": "string",
+     "orgName": "string",
+     "planType": "string",
+     "tags": "array",
+     "acceptDataRisksAndForceReplicaSetReconfig": "string",
+     "advancedConfiguration": "object",
+     "backupEnabled": "boolean",
+     "biConnector": "object",
+     "clusterType": "string",
+     "configServerManagementMode": "string",
+     "configServerType": "string",
+     "connectionStrings": "object",
+     "createDate": "string",
+     "diskWarmingMode": "string",
+     "effectiveReplicationSpecs": "array",
+     "encryptionAtRestProvider": "string",
+     "featureCompatibilityVersion": "string",
+     "featureCompatibilityVersionExpirationDate": "string",
+     "globalClusterSelfManagedSharding": "boolean",
+     "id": "string",
+     "internalClusterRole": "string",
+     "labels": "array",
+     "links": "array",
+     "mongoDBEmployeeAccessGrant": "object",
+     "mongoDBMajorVersion": "string",
+     "mongoDBVersion": "string",
+     "name": "string",
+     "paused": "boolean",
+     "pitEnabled": "boolean",
+     "redactClientLogData": "boolean",
+     "replicaSetScalingStrategy": "string",
+     "replicationSpecs": "array",
+     "retainBackups": "boolean",
+     "rootCertType": "string",
+     "stateName": "string",
+     "terminationProtectionEnabled": "boolean",
+     "useAwsTimeBasedSnapshotCopyForFastInitialSync": "boolean",
+     "versionReleaseSystem": "string",
+     "authResult": "boolean",
+     "authSource": "string",
+     "failureReason": "string",
+     "hostname": "string",
+     "ipAddress": "string",
+     "logLine": "string",
+     "timestamp": "string",
+     "username": "string",
+     "adaptiveCapacity": "string",
+     "databaseEdition": "string",
+     "effectiveDatabaseEdition": "string"
+    },
+    "evidence": [
+     "openapi/_original/mongodb-atlas-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/clusters",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/dbAccessHistory/clusters/{clusterName}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#PATCH /api/atlas/v2/groups/{groupId}/clusters/{clusterName}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#POST /api/atlas/v2/groups/{groupId}/clusters",
+     "openapi/_original/mongodb-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/clusters",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/dbAccessHistory/clusters/{clusterName}"
+    ]
+   },
+   "mongodb-atlas": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/mongodb-atlas-openapi.yml#DELETE /groups/{groupId}/clusters/{clusterName}",
+     "openapi/_original/mongodb-atlas-openapi.yml#GET /groups/{groupId}/clusters",
+     "openapi/_original/mongodb-atlas-openapi.yml#GET /groups/{groupId}/clusters/{clusterName}",
+     "openapi/_original/mongodb-atlas-openapi.yml#PATCH /groups/{groupId}/clusters/{clusterName}",
+     "openapi/_original/mongodb-atlas-openapi.yml#POST /groups/{groupId}/clusters"
+    ]
+   },
+   "nutanix": {
+    "segments": [
+     "clusters",
+     "cluster"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "status": "object",
+     "spec": "object",
+     "metadata": "object",
+     "id": "string",
+     "uuid": "string",
+     "name": "string",
+     "cluster_external_ipaddress": "string",
+     "num_nodes": "integer",
+     "version": "string",
+     "hypervisor_types": "array"
+    },
+    "evidence": [
+     "openapi/_original/nutanix-prism-central-v3-openapi.yml#GET /clusters/{uuid}",
+     "openapi/_original/nutanix-prism-element-v2-openapi.yml#GET /cluster"
+    ]
+   },
+   "oracle": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "availableKubernetesUpgrades": "array",
+     "clusterPodNetworkOptions": "array",
+     "compartmentId": "string",
+     "definedTags": "object",
+     "endpointConfig": "object",
+     "endpoints": "object",
+     "freeformTags": "object",
+     "id": "string",
+     "imagePolicyConfig": "object",
+     "kubernetesVersion": "string",
+     "lifecycleDetails": "string",
+     "lifecycleState": "string",
+     "metadata": "object",
+     "name": "string",
+     "options": "object",
+     "systemTags": "object",
+     "type": "string",
+     "vcnId": "string",
+     "kmsKeyId": "string",
+     "openIdConnectDiscoveryEndpoint": "string",
+     "openIdConnectDiscoveryKey": "string",
+     "clusterByolAllocationDetails": "object",
+     "computeAvailabilityDomain": "string",
+     "displayName": "string",
+     "esxiHostsCount": "integer",
+     "initialHostOcpuCount": "number",
+     "initialHostShapeName": "string",
+     "isShieldedInstanceEnabled": "boolean",
+     "sddcId": "string",
+     "timeCreated": "string",
+     "timeUpdated": "string",
+     "vmwareSoftwareVersion": "string",
+     "vsphereType": "string",
+     "capacityReservationId": "string",
+     "datastoreClusterIds": "array",
+     "datastores": "array",
+     "esxiSoftwareVersion": "string",
+     "initialCommitment": "string",
+     "initialVcfByolAllocationId": "string",
+     "instanceDisplayNamePrefix": "string",
+     "networkConfiguration": "object",
+     "workloadNetworkCidr": "string",
+     "upgradeLicenses": "array",
+     "vsphereUpgradeObjects": "array"
+    },
+    "evidence": [
+     "openapi/_original/oci-containerengine-openapi.yaml#DELETE /clusters/{clusterId}",
+     "openapi/_original/oci-containerengine-openapi.yaml#GET /clusters",
+     "openapi/_original/oci-containerengine-openapi.yaml#GET /clusters/{clusterId}",
+     "openapi/_original/oci-containerengine-openapi.yaml#POST /clusters",
+     "openapi/_original/oci-containerengine-openapi.yaml#PUT /clusters/{clusterId}",
+     "openapi/_original/oci-vmware-openapi.yaml#DELETE /clusters/{clusterId}",
+     "openapi/_original/oci-vmware-openapi.yaml#GET /clusters",
+     "openapi/_original/oci-vmware-openapi.yaml#GET /clusters/{clusterId}",
+     "openapi/_original/oci-vmware-openapi.yaml#POST /clusters",
+     "openapi/_original/oci-vmware-openapi.yaml#PUT /clusters/{clusterId}"
+    ]
+   },
+   "oracle-cloud": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "availableKubernetesUpgrades": "array",
+     "clusterPodNetworkOptions": "array",
+     "compartmentId": "string",
+     "definedTags": "object",
+     "endpointConfig": "object",
+     "endpoints": "object",
+     "freeformTags": "object",
+     "id": "string",
+     "imagePolicyConfig": "object",
+     "kubernetesVersion": "string",
+     "lifecycleDetails": "string",
+     "lifecycleState": "string",
+     "metadata": "object",
+     "name": "string",
+     "options": "object",
+     "systemTags": "object",
+     "type": "string",
+     "vcnId": "string",
+     "kmsKeyId": "string",
+     "openIdConnectDiscoveryEndpoint": "string",
+     "openIdConnectDiscoveryKey": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-cloud-kubernetes-engine-openapi.yaml#DELETE /clusters/{clusterId}",
+     "openapi/_original/oracle-cloud-kubernetes-engine-openapi.yaml#GET /clusters",
+     "openapi/_original/oracle-cloud-kubernetes-engine-openapi.yaml#GET /clusters/{clusterId}",
+     "openapi/_original/oracle-cloud-kubernetes-engine-openapi.yaml#POST /clusters",
+     "openapi/_original/oracle-cloud-kubernetes-engine-openapi.yaml#PUT /clusters/{clusterId}"
+    ]
+   },
+   "oracle-partitioning": {
+    "segments": [
+     "instances"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection"
+    ],
+    "properties": {
+     "inst_id": "integer",
+     "instance_number": "integer",
+     "instance_name": "string",
+     "host_name": "string",
+     "version": "string",
+     "version_legacy": "string",
+     "version_full": "string",
+     "startup_time": "string",
+     "status": "string",
+     "parallel": "string",
+     "thread#": "integer",
+     "archiver": "string",
+     "log_switch_wait": "string",
+     "logins": "string",
+     "shutdown_pending": "string",
+     "database_status": "string",
+     "instance_role": "string",
+     "active_state": "string",
+     "blocked": "string",
+     "con_id": "integer",
+     "instance_mode": "string",
+     "edition": "string",
+     "family": "string",
+     "database_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#DELETE /database/dataguard/databases/{database}/instances/{instance}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#DELETE /database/txeventq/consumers/{group_name}/instances/{instance}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/dataguard/databases/{database}/instances/"
+    ]
+   },
+   "pingcap": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "clusterId": "string",
+     "displayName": "string",
+     "regionId": "string",
+     "labels": "object",
+     "tidbNodeSetting": null,
+     "tikvNodeSetting": null,
+     "tiflashNodeSetting": null,
+     "port": "integer",
+     "rootPassword": "string",
+     "state": null,
+     "version": "string",
+     "createdBy": "string",
+     "createTime": "string",
+     "updateTime": "string",
+     "pausePlan": null,
+     "regionDisplayName": "string",
+     "cloudProvider": null,
+     "annotations": "object",
+     "region": null,
+     "spendingLimit": null,
+     "automatedBackupPolicy": null,
+     "endpoints": null,
+     "encryptionConfig": null,
+     "highAvailabilityType": "string",
+     "userPrefix": "string",
+     "autoScaling": null,
+     "servicePlan": null,
+     "cluster": "object",
+     "updateMask": "string"
+    },
+    "evidence": [
+     "openapi/_original/pingcap-tidb-cloud-dedicated-v1beta1-openapi-original.json#DELETE /clusters/{clusterId}",
+     "openapi/_original/pingcap-tidb-cloud-dedicated-v1beta1-openapi-original.json#GET /clusters",
+     "openapi/_original/pingcap-tidb-cloud-dedicated-v1beta1-openapi-original.json#GET /clusters/{clusterId}",
+     "openapi/_original/pingcap-tidb-cloud-dedicated-v1beta1-openapi-original.json#PATCH /clusters/{clusterId}",
+     "openapi/_original/pingcap-tidb-cloud-dedicated-v1beta1-openapi-original.json#POST /clusters",
+     "openapi/_original/pingcap-tidb-cloud-starter-essential-v1beta1-openapi-original.json#DELETE /clusters/{clusterId}",
+     "openapi/_original/pingcap-tidb-cloud-starter-essential-v1beta1-openapi-original.json#GET /clusters",
+     "openapi/_original/pingcap-tidb-cloud-starter-essential-v1beta1-openapi-original.json#GET /clusters/{clusterId}",
+     "openapi/_original/pingcap-tidb-cloud-starter-essential-v1beta1-openapi-original.json#PATCH /clusters/{cluster.clusterId}",
+     "openapi/_original/pingcap-tidb-cloud-starter-essential-v1beta1-openapi-original.json#POST /clusters"
+    ]
+   },
+   "planetscale": {
+    "segments": [
+     "branches"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "production": "boolean",
+     "ready": "boolean",
+     "shard_count": "integer",
+     "sharded": "boolean",
+     "cluster_rate_name": "string",
+     "region": "object",
+     "parent_branch": "string",
+     "schema_last_updated_at": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "html_url": "string",
+     "backup_id": "string",
+     "seed_data": "string",
+     "cluster_size": "string"
+    },
+    "evidence": [
+     "openapi/_original/planetscale-platform-api-openapi.yml#DELETE /organizations/{organization}/databases/{database}/branches/{branch}",
+     "openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}/branches",
+     "openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}/branches/{branch}",
+     "openapi/_original/planetscale-platform-api-openapi.yml#PATCH /organizations/{organization}/databases/{database}/branches/{branch}",
+     "openapi/_original/planetscale-platform-api-openapi.yml#POST /organizations/{organization}/databases/{database}/branches"
+    ]
+   },
+   "prisma": {
+    "segments": [
+     "branches"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "url": "string",
+     "gitName": "string",
+     "isDefault": "boolean",
+     "role": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "project": "object"
+    },
+    "evidence": [
+     "openapi/_original/prisma-postgres-management-api-openapi.json#DELETE /v1/branches/{branchId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/branches/{branchId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#PATCH /v1/branches/{branchId}"
+    ]
+   },
+   "qdrant": {
+    "segments": [
+     "cluster"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "peer_id": "integer",
+     "shard_count": "integer",
+     "local_shards": "array",
+     "remote_shards": "array",
+     "shard_transfers": "array",
+     "resharding_operations": "array",
+     "usage": null,
+     "time": "number",
+     "result": "boolean",
+     "shard_id": "integer",
+     "to_peer_id": "integer",
+     "from_peer_id": "integer",
+     "method": null
+    },
+    "evidence": [
+     "openapi/_original/qdrant-openapi-original.json#GET /cluster",
+     "openapi/_original/qdrant-openapi-original.json#GET /collections/{collection_name}/cluster",
+     "openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/cluster"
+    ]
+   },
+   "quasar": {
+    "segments": [
+     "cluster"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "memoryTotal": "integer",
+     "memoryUsed": "integer",
+     "diskTotal": "integer",
+     "diskUsed": "integer",
+     "nodes": "array",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/quasar-rest-openapi-original.json#GET /cluster"
+    ]
+   },
+   "scaleway": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "name": "string",
+     "status": "string",
+     "version": "string",
+     "region": "string",
+     "organization_id": "string",
+     "project_id": "string",
+     "tags": "array",
+     "cni": "string",
+     "description": "string",
+     "cluster_url": "string",
+     "dns_wildcard": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "autoscaler_config": "object",
+     "auto_upgrade": "object",
+     "upgrade_available": "boolean",
+     "feature_gates": "array",
+     "admission_plugins": "array",
+     "open_id_connect_config": "object",
+     "apiserver_cert_sans": "array",
+     "private_network_id": "string",
+     "commitment_ends_at": "string",
+     "acl_available": "boolean",
+     "iam_nodes_group_id": "string",
+     "pod_cidr": "string",
+     "service_cidr": "string",
+     "service_dns_ip": "string",
+     "pools": "array"
+    },
+    "evidence": [
+     "openapi/_original/scaleway-kubernetes-openapi.yml#DELETE /k8s/v1/regions/{region}/clusters/{cluster_id}",
+     "openapi/_original/scaleway-kubernetes-openapi.yml#GET /k8s/v1/regions/{region}/clusters",
+     "openapi/_original/scaleway-kubernetes-openapi.yml#GET /k8s/v1/regions/{region}/clusters/{cluster_id}",
+     "openapi/_original/scaleway-kubernetes-openapi.yml#PATCH /k8s/v1/regions/{region}/clusters/{cluster_id}",
+     "openapi/_original/scaleway-kubernetes-openapi.yml#POST /k8s/v1/regions/{region}/clusters"
+    ]
+   },
+   "scylladb": {
+    "segments": [
+     "cluster",
+     "clusters"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "accountId": "integer",
+     "clusterName": "string",
+     "scalingMode": "object",
+     "status": "string",
+     "cloudProviderId": "integer",
+     "encryptionAtRest": "object",
+     "encryptionMode": "string",
+     "encryptionCertificateMode": "string",
+     "userApiInterface": "string",
+     "deals": "array",
+     "isLocked": "boolean",
+     "pricingModel": "integer",
+     "maxAllowedCIDRRange": "integer",
+     "dns": "boolean",
+     "dcCount": "integer",
+     "dc": "object",
+     "provisioning": "string",
+     "alternatorWriteIsolation": "string",
+     "expiresAt": "string",
+     "progress": "object",
+     "accountCloudProviderCredentialsId": "integer",
+     "requestError": "string",
+     "scyllaVersion": "object",
+     "cloudProvider": "object",
+     "regionId": "integer",
+     "region": "object",
+     "instanceId": "integer",
+     "instance": "object",
+     "metrics": "object",
+     "requestId": "string",
+     "fields": null,
+     "accountCredentialId": "integer",
+     "broadcastType": "string",
+     "cidrBlock": "string",
+     "availabilityZoneIdsOverride": "array",
+     "placement": "string",
+     "enableDnsAssociation": "boolean",
+     "allowedIPs": "array",
+     "freeTier": "boolean",
+     "numberOfNodes": "integer",
+     "promProxy": "boolean",
+     "replicationFactor": "integer",
+     "maintenanceWindows": "array",
+     "pu": "integer",
+     "expiration": "string",
+     "scaling": null,
+     "vectorSearch": "object",
+     "grafanaUrl": "string",
+     "createdAt": "string",
+     "promProxyEnabled": "boolean",
+     "rebootEnabled": "boolean",
+     "clientIp": "string",
+     "allowedIps": "array",
+     "dataCenters": "array",
+     "nodes": "array",
+     "vpcList": "array",
+     "vpcPeeringList": "array",
+     "connections": "array"
+    },
+    "evidence": [
+     "openapi/_original/scylladb-cloud-management-api-openapi.yml#GET /account/{accountId}/cluster/{clusterId}",
+     "openapi/_original/scylladb-cloud-management-api-openapi.yml#GET /account/{accountId}/clusters",
+     "openapi/_original/scylladb-cloud-management-api-openapi.yml#POST /account/{accountId}/cluster"
+    ]
+   },
+   "snowflake": {
+    "segments": [
+     "instances"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "database_name": null,
+     "schema_name": null,
+     "service_name": null,
+     "service_status": "string",
+     "instance_id": "string",
+     "status": "string",
+     "spec_digest": "string",
+     "creation_time": "string",
+     "start_time": "string"
+    },
+    "evidence": [
+     "openapi/_original/service.yaml#GET /api/v2/databases/{database}/schemas/{schema}/services/{name}/instances",
+     "openapi/_original/service_2.yaml#GET /api/v2/databases/{database}/schemas/{schema}/services/{name}/instances"
+    ]
+   },
+   "tidb": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "clusterId": "string",
+     "displayName": "string",
+     "clusterType": "string",
+     "cloudProvider": "string",
+     "regionId": "string",
+     "tidbVersion": "string",
+     "state": "string",
+     "createTime": "string",
+     "updateTime": "string",
+     "components": "object",
+     "connectionStrings": "object",
+     "projectId": "string",
+     "rootPassword": "string",
+     "port": "integer",
+     "name": "string",
+     "labels": "object",
+     "tidbNodeSetting": null,
+     "tikvNodeSetting": null,
+     "tiflashNodeSetting": null,
+     "version": "string",
+     "createdBy": "string",
+     "pausePlan": null,
+     "regionDisplayName": "string",
+     "annotations": "object",
+     "region": null,
+     "spendingLimit": null,
+     "automatedBackupPolicy": null,
+     "endpoints": null,
+     "encryptionConfig": null,
+     "highAvailabilityType": "string",
+     "userPrefix": "string",
+     "autoScaling": null,
+     "servicePlan": null,
+     "cluster": "object",
+     "updateMask": "string"
+    },
+    "evidence": [
+     "openapi/_original/tidb-cloud-api-openapi.yml#DELETE /clusters/{clusterId}",
+     "openapi/_original/tidb-cloud-api-openapi.yml#GET /clusters",
+     "openapi/_original/tidb-cloud-api-openapi.yml#GET /clusters/{clusterId}",
+     "openapi/_original/tidb-cloud-api-openapi.yml#PATCH /clusters/{clusterId}",
+     "openapi/_original/tidb-cloud-api-openapi.yml#POST /clusters",
+     "openapi/_original/tidb-cloud-dedicated-v1beta1-openapi-original.json#DELETE /clusters/{clusterId}",
+     "openapi/_original/tidb-cloud-dedicated-v1beta1-openapi-original.json#GET /clusters",
+     "openapi/_original/tidb-cloud-dedicated-v1beta1-openapi-original.json#GET /clusters/{clusterId}",
+     "openapi/_original/tidb-cloud-dedicated-v1beta1-openapi-original.json#PATCH /clusters/{clusterId}",
+     "openapi/_original/tidb-cloud-dedicated-v1beta1-openapi-original.json#POST /clusters",
+     "openapi/_original/tidb-cloud-starter-essential-v1beta1-openapi-original.json#DELETE /clusters/{clusterId}",
+     "openapi/_original/tidb-cloud-starter-essential-v1beta1-openapi-original.json#GET /clusters"
+    ]
+   },
+   "turso": {
+    "segments": [
+     "instances"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "uuid": "string",
+     "name": "string",
+     "type": "string",
+     "region": "string",
+     "hostname": "string"
+    },
+    "evidence": [
+     "openapi/_original/turso-platform-api-openapi.yml#GET /v1/organizations/{organizationSlug}/databases/{databaseName}/instances",
+     "openapi/_original/turso-platform-api-openapi.yml#GET /v1/organizations/{organizationSlug}/databases/{databaseName}/instances/{instanceName}"
+    ]
+   },
+   "upstash": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "cluster_id": "string",
+     "name": "string",
+     "region": "string",
+     "creation_time": "integer",
+     "state": "string"
+    },
+    "evidence": [
+     "openapi/_original/upstash-openapi.yml#GET /kafka/clusters"
+    ]
+   },
+   "vastdata": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "access_ip_ranges": "array",
+     "allow_encryption": "boolean",
+     "allow_nfs3_over_udp": "boolean",
+     "audit_dir_name": "string",
+     "auto_logout_timeout": "integer",
+     "auxiliary_space_in_use": "number",
+     "auxiliary_space_in_use_tb": "number",
+     "available_upgrade_version": "object",
+     "block_ipmi": "boolean",
+     "build": "string",
+     "bw": "integer",
+     "bw_mb": "integer",
+     "cert_pass": "string",
+     "cloud_provider": "string",
+     "cluster_certificate": "string",
+     "cluster_private_key": "string",
+     "cnode_cores": "integer",
+     "cnode_metrics": "boolean",
+     "dbox_ha_support": "boolean",
+     "deep_stripe": "boolean",
+     "default_others_share_level_perm": "string",
+     "defrag_threshold": "integer",
+     "delete_snap_blocks_threshold": "integer",
+     "deployment_time": "string",
+     "disable_dirsnap": "boolean",
+     "disable_metrics": "boolean",
+     "dmsetup": "boolean",
+     "dr_hash_size": "integer",
+     "dr_shards": "integer",
+     "dr_wb_shards": "integer",
+     "drive_pci_port_type": "string",
+     "drive_size": "integer",
+     "drr": "number",
+     "drr_text": "string",
+     "ekm_address": "string",
+     "ekm_auth_domain": "string",
+     "ekm_domain": "string",
+     "ekm_port": "integer",
+     "ekm_proxy_address": "string",
+     "ekm_servers": "string",
+     "enable_bucket_db_replication": "boolean",
+     "enable_bucket_replication": "boolean",
+     "enable_dr": "boolean",
+     "enable_encryption": "boolean",
+     "enable_json_audit": "boolean",
+     "enable_s3": "boolean",
+     "enable_similarity": "boolean",
+     "enable_smb": "boolean",
+     "enable_trash": "boolean",
+     "enable_turbo_boost": "boolean",
+     "enable_vast_db_audit": "boolean",
+     "enabled": "boolean",
+     "encryption_type": "string",
+     "estore_capacity_in_use_bytes": "number",
+     "estore_capacity_in_use_tb": "number",
+     "expansion_phase": "integer",
+     "expansion_phase_description": "string",
+     "expansion_state": "string",
+     "failure_domains_support": "boolean",
+     "format_drives": "boolean",
+     "free_logical_space": "number",
+     "free_logical_space_tb": "number",
+     "free_physical_space": "number",
+     "free_physical_space_tb": "number",
+     "free_physical_space_wo_overhead": "number",
+     "free_physical_space_wo_overhead_tb": "number",
+     "free_usable_capacity": "integer",
+     "free_usable_capacity_tb": "number",
+     "gn_max_inode_count": "string",
+     "gn_max_size": "string",
+     "gn_used_inode_count": "integer",
+     "gn_used_size": "string",
+     "guid": "string",
+     "half_system": "boolean",
+     "id": "integer",
+     "iops": "integer",
+     "ip": "string",
+     "is_large_subnet": "boolean",
+     "is_wb_raid_enabled": "boolean",
+     "latency": "integer",
+     "latency_ms": "integer",
+     "leader_cnode": "string",
+     "leader_state": "string",
+     "leader_upgrade_state": "string",
+     "logical_auxiliary_space_in_use": "number",
+     "logical_auxiliary_space_in_use_tb": "number",
+     "logical_drr_percent": "number",
+     "logical_inodes_in_use_num": "integer",
+     "logical_space": "integer",
+     "logical_space_in_use": "integer",
+     "logical_space_in_use_percent": "number",
+     "logical_space_in_use_tb": "number",
+     "logical_space_tb": "number",
+     "loopback": "boolean",
+     "max_audit_dir_size": "string",
+     "max_cluster_read_bw_mb": "integer",
+     "max_cluster_write_bw_mb": "integer",
+     "max_file_size": "integer",
+     "max_handles_count": "integer",
+     "max_number_mtls_certs_per_ca": "integer",
+     "max_nvram_capacity_percent": "integer",
+     "max_nvram_replication_factor": "integer",
+     "max_performance": "object",
+     "max_performance_metrics": "object",
+     "max_retention_period": "integer",
+     "max_retention_timeunit": "string",
+     "max_ssd_capacity_percent": "integer",
+     "md_iops": "integer",
+     "md_usage_health": "string",
+     "mega_dr_shards": "integer",
+     "mega_dr_wb_shards": "integer",
+     "mega_shards": "integer",
+     "mega_stripe_groups": "integer",
+     "memory_raid_rebuild_progress": "integer",
+     "memory_raid_state": "string",
+     "mgmt_cnode": "string",
+     "mgmt_inner_vip": "string",
+     "mgmt_inner_vip_cnode": "string",
+     "mgmt_vip": "string",
+     "micro_dr_shards": "integer",
+     "micro_dr_wb_shards": "integer",
+     "micro_estore_shards": "integer",
+     "micro_shards": "integer",
+     "micro_stripe_groups": "integer",
+     "mio_raid_state": "string",
+     "mock_fanout_auth": "boolean",
+     "motd": "string",
+     "motd_append_to_default": "boolean",
+     "name": "string",
+     "ndb_bandwidth": "number",
+     "ndb_bandwidth_read": "number",
+     "ndb_bandwidth_write": "number",
+     "ndb_number_of_running_queries": "integer",
+     "ndb_rows_scanned_per_second": "integer",
+     "nfs4_certificate": "string",
+     "nfs4_private_key": "string",
+     "nvram_raid_rebuild_progress": "integer",
+     "nvram_raid_rebuild_progress_fraction": "string",
+     "nvram_raid_state": "string",
+     "nvram_size": "integer",
+     "online_start_time": "string",
+     "perf_check": "boolean",
+     "physical_drr_percent": "number",
+     "physical_space": "integer",
+     "physical_space_in_use": "integer",
+     "physical_space_in_use_percent": "number",
+     "physical_space_in_use_tb": "number",
+     "physical_space_in_use_wo_overhead": "integer",
+     "physical_space_tb": "number",
+     "physical_space_wo_overhead": "integer",
+     "protocols": "array",
+     "protocols_audit": "object",
+     "provides_blocked": "boolean",
+     "psnt": "string",
+     "qos": "object",
+     "quotas_allocated_capacity": "integer",
+     "quotas_used_capacity": "integer",
+     "quotas_used_percent": "number",
+     "raid_drives_can_fail": "integer",
+     "raid_rebuild_progress": "string",
+     "rd_bw": "integer",
+     "rd_bw_mb": "number",
+     "rd_iops": "integer",
+     "rd_latency": "integer",
+     "rd_latency_ms": "integer",
+     "rd_md_iops": "integer",
+     "read_access_users": "array",
+     "read_access_users_groups": "array",
+     "remaining_stripes_health": "string",
+     "replication_bw_mb": "number",
+     "replication_iops": "number",
+     "replication_latency_ms": "number",
+     "replication_rd_bw_mb": "number",
+     "replication_rd_iops": "integer",
+     "replication_rd_latency_ms": "number",
+     "replication_wr_bw_mb": "number",
+     "replication_wr_iops": "integer",
+     "replication_wr_latency_ms": "number",
+     "rewrite_phase": "string",
+     "rewrite_progress": "integer",
+     "rewrite_status": "object",
+     "rewrite_type": "array",
+     "rio_nvram_state": "string",
+     "rio_raid_rebuild_progress": "integer",
+     "rio_raid_rebuild_progress_fraction": "string",
+     "root_certificate": "string",
+     "s3_allow_cors": "boolean",
+     "s3_block_v2_authentication": "boolean",
+     "s3_certificate": "string",
+     "s3_enable_v2_authentication": "boolean",
+     "s3_new_version": "object",
+     "s3_private_key": "string",
+     "secondary_ekm_address": "string",
+     "secondary_ekm_port": "integer",
+     "shards": "integer",
+     "showmount_hide_slash": "boolean",
+     "showmount_suppressed": "boolean",
+     "smb_administrators_group_name": "string",
+     "smb_privileged_group_full_access": "boolean",
+     "smb_privileged_group_sid": "string",
+     "smb_privileged_user_name": "string",
+     "ssd_raid_rebuild_progress": "integer",
+     "ssd_raid_state": "string",
+     "ssh_user": "string",
+     "state": "string",
+     "stripe_groups": "integer",
+     "supported_drives": "object",
+     "sw_defined": "boolean",
+     "sw_version": "string",
+     "system_name": "string",
+     "system_settings": "object",
+     "title": "string",
+     "trash_gid": "integer",
+     "triplication_enabled": "boolean",
+     "turbo_boost_flag": "boolean",
+     "upgrade_phase": "string",
+     "upgrade_progress": "object",
+     "upgrade_state": "string",
+     "uptime": "string",
+     "url": "string",
+     "usable_auxiliary_space_in_use": "number",
+     "usable_capacity_bytes": "integer",
+     "usable_capacity_tb": "number",
+     "use_flash_write_buffers": "boolean",
+     "use_smb_privileged_group": "boolean",
+     "use_smb_privileged_user": "boolean",
+     "use_spdk": "boolean",
+     "use_tenant_all_snapshots": "boolean",
+     "used_handles_count": "integer",
+     "used_handles_percent": "number",
+     "vast_audit_log_state": "string",
+     "voc": "boolean",
+     "wb_raid_layout": "string",
+     "wr_bw": "integer",
+     "wr_bw_mb": "integer",
+     "wr_iops": "integer",
+     "wr_latency": "integer",
+     "wr_latency_ms": "integer",
+     "wr_md_iops": "integer",
+     "async_task": "object",
+     "auto_drive_fw_upgrade": "boolean",
+     "bmc_upgrade": "boolean",
+     "cloud_lb": "boolean",
+     "cluster_guid": "string",
+     "cnode_ips": "array",
+     "cnode_ipv6_pool": "array",
+     "composite_table_enable": "boolean",
+     "deny_cnode_system_access": "boolean",
+     "disable_dboxes_slots": "array",
+     "disable_default_micro_shards": "boolean",
+     "disable_mgmt_ha": "boolean",
+     "disable_restrict_user": "boolean",
+     "dnode_cores": "integer",
+     "dnode_ips": "array",
+     "dnode_ipv6_pool": "array",
+     "double_value_micro_shards": "boolean",
+     "ekm_bypass_validation": "boolean",
+     "ekm_ca_certificate": "string",
+     "ekm_certificate": "string",
+     "ekm_private_key": "string",
+     "enable_rack_level_resiliency": "boolean",
+     "external_managed_dpu": "boolean",
+     "failing_components_cnodes_failure_to_fail_percentage": "integer",
+     "failing_components_enabled": "boolean",
+     "ib_mode": "string",
+     "ipv6_gateway": "string",
+     "ipv6_mgmt_vip": "string",
+     "ipv6_prefix": "integer",
+     "lab_deploy": "boolean",
+     "large_object_scale": "boolean",
+     "loopback_conf": "string",
+     "mixed_media": "boolean",
+     "mock_raider_gui_availability": "boolean",
+     "nb_eth_mtu": "integer",
+     "nb_ib_mtu": "integer",
+     "no_perf_check": "boolean",
+     "nvram_section_layout": "string",
+     "prefill_devices": "boolean",
+     "rack_config": "object",
+     "rack_pools": "object",
+     "restrict_user": "boolean",
+     "system_expansion_hack": "boolean",
+     "virtual": "boolean",
+     "vsettings": "object",
+     "auth_provider_refresh_interval": "integer",
+     "clear_system_status_delay": "boolean",
+     "disable_module_metrics": "boolean",
+     "efficient_rewrite": "boolean",
+     "enable_composite_table_rewrite": "boolean",
+     "enable_rewrite": "boolean",
+     "enable_write_buffer_raid": "boolean",
+     "force_wbr_rewrite": "boolean",
+     "format": "boolean",
+     "quota_flip_cap": "boolean",
+     "remove_mtls_certificates": "boolean",
+     "remove_nfs4_certificate": "boolean",
+     "remove_s3_key_pair": "boolean",
+     "revert_disabled_dboxes_slots": "array",
+     "s3_enable_http": "boolean",
+     "s3_enable_https": "boolean",
+     "set_system_status_delay": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/vastdata-vms-openapi.json#DELETE /clusters/{id}/",
+     "openapi/_original/vastdata-vms-openapi.json#GET /clusters/",
+     "openapi/_original/vastdata-vms-openapi.json#GET /clusters/{id}/",
+     "openapi/_original/vastdata-vms-openapi.json#PATCH /clusters/{id}/",
+     "openapi/_original/vastdata-vms-openapi.json#POST /clusters/"
+    ]
+   },
+   "vultr": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "int",
+     "region": "string",
+     "hostname": "string",
+     "name": "string",
+     "deploy": "string",
+     "firewall_group_id": "string",
+     "label": "string",
+     "date_created": "string",
+     "cluster_subnet": "string",
+     "service_subnet": "string",
+     "ip": "string",
+     "endpoint": "string",
+     "version": "string",
+     "status": "string",
+     "ha_controlplanes": "boolean",
+     "node_pools": "array",
+     "node_quantity": "integer",
+     "plan": "string",
+     "tag": "string",
+     "auto_scaler": "boolean",
+     "min_nodes": "integer",
+     "max_nodes": "integer"
+    },
+    "evidence": [
+     "openapi/_original/vultr-iam-management-api-openapi.yml#GET /v2/logs/audit-logs/clusters",
+     "openapi/_original/vultr-iam-management-api.yml#GET /v2/logs/audit-logs/clusters",
+     "openapi/_original/vultr-iam-openapi.yml#GET /v2/logs/audit-logs/clusters",
+     "openapi/_original/vultr-openapi.yml#DELETE /kubernetes/clusters/{vke-id}",
+     "openapi/_original/vultr-openapi.yml#GET /kubernetes/clusters",
+     "openapi/_original/vultr-openapi.yml#GET /kubernetes/clusters/{vke-id}",
+     "openapi/_original/vultr-openapi.yml#GET /object-storage/clusters",
+     "openapi/_original/vultr-openapi.yml#POST /kubernetes/clusters",
+     "openapi/_original/vultr-openapi.yml#PUT /kubernetes/clusters/{vke-id}",
+     "openapi/_original/vultr-schema-openapi.json#DELETE /kubernetes/clusters/{vke-id}",
+     "openapi/_original/vultr-schema-openapi.json#GET /kubernetes/clusters",
+     "openapi/_original/vultr-schema-openapi.json#GET /kubernetes/clusters/{vke-id}"
+    ]
+   },
+   "yugabyte": {
+    "segments": [
+     "cluster",
+     "clusters"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "spec": "object",
+     "info": "object",
+     "name": "string",
+     "cloud_info": "object",
+     "cluster_info": "object",
+     "cluster_region_info": "array",
+     "encryption_info": "object",
+     "cluster_type": "string",
+     "num_nodes": "integer",
+     "node_spec": "object",
+     "provider_spec": "object",
+     "placement_spec": "object",
+     "partitions_spec": "array",
+     "instance_tags": "object",
+     "gflags": "object",
+     "resourceUUID": "string",
+     "taskUUID": "string",
+     "additionalServicesStateData": "object",
+     "allowGeoPartitioning": "boolean",
+     "allowInsecure": "boolean",
+     "arch": "string",
+     "autoRollbackPerformed": "boolean",
+     "capability": "string",
+     "clientRootCA": "string",
+     "clusterOperation": "string",
+     "clusters": "array",
+     "cmkArn": "string",
+     "communicationPorts": "object",
+     "creatingUser": "object",
+     "currentClusterType": "string",
+     "deviceInfo": "object",
+     "enableYbc": "boolean",
+     "encryptionAtRestConfig": "object",
+     "errorString": "string",
+     "expectedUniverseVersion": "integer",
+     "extraDependencies": "object",
+     "fipsEnabled": "boolean",
+     "importedState": "string",
+     "installNodeAgent": "boolean",
+     "installYbc": "boolean",
+     "isKubernetesOperatorControlled": "boolean",
+     "isSoftwareRollbackAllowed": "boolean",
+     "itestS3PackagePath": "string",
+     "mastersInDefaultRegion": "boolean",
+     "nextClusterIndex": "integer",
+     "nodeAgentMissing": "boolean",
+     "nodeDetailsSet": "array",
+     "nodeExporterUser": "string",
+     "nodePrefix": "string",
+     "nodesResizeAvailable": "boolean",
+     "otelCollectorEnabled": "boolean",
+     "paCollectorUuid": "string",
+     "placementModificationTaskUuid": "string",
+     "platformUrl": "string",
+     "platformVersion": "string",
+     "prevYBSoftwareConfig": "object",
+     "previousTaskUUID": "string",
+     "regionsChanged": "boolean",
+     "remotePackagePath": "string",
+     "resetAZConfig": "boolean",
+     "rootAndClientRootCASame": "boolean",
+     "rootCA": "string",
+     "runOnlyPrechecks": "boolean",
+     "setTxnTableWaitCountFlag": "boolean",
+     "sleepAfterMasterRestartMillis": "integer",
+     "sleepAfterTServerRestartMillis": "integer",
+     "softwareUpgradeState": "string",
+     "sourceXClusterConfigs": "array",
+     "sshUserOverride": "string",
+     "targetXClusterConfigs": "array",
+     "universeDetached": "boolean",
+     "universePaused": "boolean",
+     "universeUUID": "string",
+     "updateInProgress": "boolean",
+     "updateOptions": "array",
+     "updateSucceeded": "boolean",
+     "updatingTask": "string",
+     "updatingTaskUUID": "string",
+     "useNewHelmNamingStyle": "boolean",
+     "userAZSelected": "boolean",
+     "xclusterInfo": "object",
+     "ybPrevSoftwareVersion": "string",
+     "ybcInstalled": "boolean",
+     "ybcSoftwareVersion": "string"
+    },
+    "evidence": [
+     "openapi/_original/yugabyte-yugabyted-openapi-original.yaml#DELETE /cluster",
+     "openapi/_original/yugabyte-yugabyted-openapi-original.yaml#GET /cluster",
+     "openapi/_original/yugabyte-yugabyted-openapi-original.yaml#PUT /cluster",
+     "openapi/_original/yugabytedb-universe-api-openapi.yml#DELETE /customers/{cUUID}/universes/{uniUUID}/clusters/{clsUUID}",
+     "openapi/_original/yugabytedb-universe-api-openapi.yml#POST /customers/{cUUID}/universes/{uniUUID}/clusters",
+     "openapi/_original/yugabytedb-universeclustermutations-api-openapi.yml#POST /api/v1/customers/{cUUID}/universes/clusters"
+    ]
+   },
+   "yugabytedb": {
+    "segments": [
+     "clusters"
+    ],
+    "operations": [
+     "DELETE item",
+     "POST collection"
+    ],
+    "properties": {
+     "cluster_type": "string",
+     "num_nodes": "integer",
+     "node_spec": "object",
+     "provider_spec": "object",
+     "placement_spec": "object",
+     "partitions_spec": "array",
+     "instance_tags": "object",
+     "gflags": "object",
+     "resourceUUID": "string",
+     "taskUUID": "string",
+     "additionalServicesStateData": "object",
+     "allowGeoPartitioning": "boolean",
+     "allowInsecure": "boolean",
+     "arch": "string",
+     "autoRollbackPerformed": "boolean",
+     "capability": "string",
+     "clientRootCA": "string",
+     "clusterOperation": "string",
+     "clusters": "array",
+     "cmkArn": "string",
+     "communicationPorts": "object",
+     "creatingUser": "object",
+     "currentClusterType": "string",
+     "deviceInfo": "object",
+     "enableYbc": "boolean",
+     "encryptionAtRestConfig": "object",
+     "errorString": "string",
+     "expectedUniverseVersion": "integer",
+     "extraDependencies": "object",
+     "fipsEnabled": "boolean",
+     "importedState": "string",
+     "installNodeAgent": "boolean",
+     "installYbc": "boolean",
+     "isKubernetesOperatorControlled": "boolean",
+     "isSoftwareRollbackAllowed": "boolean",
+     "itestS3PackagePath": "string",
+     "mastersInDefaultRegion": "boolean",
+     "nextClusterIndex": "integer",
+     "nodeAgentMissing": "boolean",
+     "nodeDetailsSet": "array",
+     "nodeExporterUser": "string",
+     "nodePrefix": "string",
+     "nodesResizeAvailable": "boolean",
+     "otelCollectorEnabled": "boolean",
+     "paCollectorUuid": "string",
+     "placementModificationTaskUuid": "string",
+     "platformUrl": "string",
+     "platformVersion": "string",
+     "prevYBSoftwareConfig": "object",
+     "previousTaskUUID": "string",
+     "regionsChanged": "boolean",
+     "remotePackagePath": "string",
+     "resetAZConfig": "boolean",
+     "rootAndClientRootCASame": "boolean",
+     "rootCA": "string",
+     "runOnlyPrechecks": "boolean",
+     "setTxnTableWaitCountFlag": "boolean",
+     "sleepAfterMasterRestartMillis": "integer",
+     "sleepAfterTServerRestartMillis": "integer",
+     "softwareUpgradeState": "string",
+     "sourceXClusterConfigs": "array",
+     "sshUserOverride": "string",
+     "targetXClusterConfigs": "array",
+     "universeDetached": "boolean",
+     "universePaused": "boolean",
+     "universeUUID": "string",
+     "updateInProgress": "boolean",
+     "updateOptions": "array",
+     "updateSucceeded": "boolean",
+     "updatingTask": "string",
+     "updatingTaskUUID": "string",
+     "useNewHelmNamingStyle": "boolean",
+     "userAZSelected": "boolean",
+     "xclusterInfo": "object",
+     "ybPrevSoftwareVersion": "string",
+     "ybcInstalled": "boolean",
+     "ybcSoftwareVersion": "string",
+     "backupInProgress": "boolean",
+     "firstTry": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yaml#DELETE /customers/{cUUID}/universes/{uniUUID}/clusters/{clsUUID}",
+     "openapi/_original/openapi.yaml#POST /customers/{cUUID}/universes/{uniUUID}/clusters",
+     "openapi/_original/openapi_2.yaml#POST /api/v1/customers/{cUUID}/universes/clusters",
+     "openapi/_original/platform.swagger.json#POST /api/v1/customers/{cUUID}/universes/clusters",
+     "openapi/_original/yugabytedb-anywhere-v1-full.yaml#POST /api/v1/customers/{cUUID}/universes/clusters",
+     "openapi/_original/yugabytedb-anywhere-v1-universes.yaml#POST /api/v1/customers/{cUUID}/universes/clusters",
+     "openapi/_original/yugabytedb-anywhere-v2-openapi.yaml#DELETE /customers/{cUUID}/universes/{uniUUID}/clusters/{clsUUID}",
+     "openapi/_original/yugabytedb-anywhere-v2-openapi.yaml#POST /customers/{cUUID}/universes/{uniUUID}/clusters"
+    ]
+   }
+  },
+  "database": {
+   "aiven": {
+    "segments": [
+     "db"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "databases": "array",
+     "errors": "array",
+     "message": "string",
+     "more_info": "string",
+     "status": "integer",
+     "database": "string",
+     "lc_collate": "string",
+     "lc_ctype": "string"
+    },
+    "evidence": [
+     "openapi/_original/aiven-aiven-api-openapi.yml#DELETE /project/{project}/service/{service_name}/clickhouse/db/{database}",
+     "openapi/_original/aiven-aiven-api-openapi.yml#DELETE /project/{project}/service/{service_name}/db/{dbname}",
+     "openapi/_original/aiven-aiven-api-openapi.yml#GET /project/{project}/service/{service_name}/clickhouse/db",
+     "openapi/_original/aiven-aiven-api-openapi.yml#GET /project/{project}/service/{service_name}/db",
+     "openapi/_original/aiven-aiven-api-openapi.yml#POST /project/{project}/service/{service_name}/clickhouse/db",
+     "openapi/_original/aiven-aiven-api-openapi.yml#POST /project/{project}/service/{service_name}/db"
+    ]
+   },
+   "apache-hive": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "databases": "array",
+     "name": "string",
+     "comment": "string",
+     "location": "string",
+     "ownerName": "string",
+     "ownerType": "string"
+    },
+    "evidence": [
+     "openapi/_original/apache-hive-webhcat-openapi.yml#GET /ddl/database",
+     "openapi/_original/apache-hive-webhcat-openapi.yml#GET /ddl/database/{dbName}"
+    ]
+   },
+   "apache-shardingsphere": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "databases": "array",
+     "name": "string",
+     "dataSources": "array"
+    },
+    "evidence": [
+     "openapi/_original/apache-shardingsphere-rest-api.yaml#DELETE /databases/{databaseName}",
+     "openapi/_original/apache-shardingsphere-rest-api.yaml#GET /databases",
+     "openapi/_original/apache-shardingsphere-rest-api.yaml#GET /databases/{databaseName}",
+     "openapi/_original/apache-shardingsphere-rest-api.yaml#POST /databases"
+    ]
+   },
+   "appwrite": {
+    "segments": [
+     "databases",
+     "database"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "$id": "string",
+     "name": "string",
+     "$createdAt": "string",
+     "$updatedAt": "string",
+     "enabled": "boolean",
+     "type": "string",
+     "status": "string",
+     "engine": "string",
+     "specification": "string",
+     "replicas": "integer",
+     "error": "string",
+     "containerStatus": "string",
+     "lifecycleState": "string",
+     "policies": "array",
+     "archives": "array",
+     "databaseId": "string",
+     "projectId": "string",
+     "projectInternalId": "string",
+     "databaseInternalId": "string",
+     "database": "string",
+     "hostname": "string",
+     "port": "integer",
+     "lastErrorCode": "string",
+     "suspended": "boolean",
+     "suspendedReason": "string",
+     "region": "string",
+     "backend": "string",
+     "sqlApiEnabled": "boolean",
+     "sqlApiAllowedStatements": "array",
+     "sqlApiMaxRows": "integer",
+     "sqlApiMaxBytes": "integer",
+     "sqlApiTimeoutSeconds": "integer",
+     "createdAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /databases/{databaseId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /console/databases",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /databases",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /databases/{databaseId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /manager/projects/{projectId}/databases/{databaseId}",
+     "openapi/_original/appwrite-open-api3-latest.json#PATCH /manager/database/{databaseId}",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /databases",
+     "openapi/_original/appwrite-open-api3-latest.json#PUT /databases/{databaseId}",
+     "openapi/_original/appwrite-openapi.yaml#GET /databases"
+    ]
+   },
+   "arangodb": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "active": "boolean",
+     "extra": "object",
+     "passwd": "string",
+     "username": "string",
+     "grant": "string"
+    },
+    "evidence": [
+     "openapi/_original/arangodb-core-openapi-original.json#DELETE /_db/_system/_api/database/{database-name}",
+     "openapi/_original/arangodb-core-openapi-original.json#DELETE /_db/{database-name}/_api/user/{user}/database/{dbname}",
+     "openapi/_original/arangodb-core-openapi-original.json#GET /_db/_system/_api/database",
+     "openapi/_original/arangodb-core-openapi-original.json#GET /_db/{database-name}/_api/user/{user}/database",
+     "openapi/_original/arangodb-core-openapi-original.json#GET /_db/{database-name}/_api/user/{user}/database/{dbname}",
+     "openapi/_original/arangodb-core-openapi-original.json#POST /_db/_system/_api/database",
+     "openapi/_original/arangodb-core-openapi-original.json#PUT /_db/{database-name}/_api/user/{user}/database/{dbname}"
+    ]
+   },
+   "artie": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "dataPlaneName": "string",
+     "defaultDatabase": [
+      "null",
+      "string"
+     ],
+     "draftPipelineUUID": [
+      "null",
+      "string"
+     ],
+     "environmentUUID": [
+      "null",
+      "string"
+     ],
+     "label": "string",
+     "privateLinkUUID": [
+      "null",
+      "string"
+     ],
+     "sharedConfig": [
+      "object",
+      "null"
+     ],
+     "snapshotPrivateLinkUUID": [
+      "null",
+      "string"
+     ],
+     "sshTunnelUUID": [
+      "null",
+      "string"
+     ],
+     "type": "string",
+     "uuid": "string"
+    },
+    "evidence": [
+     "openapi/_original/artie-openapi.yml#GET /connectors/{uuid}/databases",
+     "openapi/_original/artie-openapi.yml#POST /connectors/databases"
+    ]
+   },
+   "azure-cosmos-db": {
+    "segments": [
+     "dbs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "Databases": "array",
+     "id": "string"
+    },
+    "evidence": [
+     "openapi/_original/azure-cosmos-db-openapi.yml#DELETE /dbs/{dbId}",
+     "openapi/_original/azure-cosmos-db-openapi.yml#GET /dbs",
+     "openapi/_original/azure-cosmos-db-openapi.yml#GET /dbs/{dbId}",
+     "openapi/_original/azure-cosmos-db-openapi.yml#POST /dbs"
+    ]
+   },
+   "baserow": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "order": "integer",
+     "database_id": "integer",
+     "data_sync": "object",
+     "synced_properties": "array",
+     "type": null,
+     "table_name": "string",
+     "auto_add_new_properties": "boolean",
+     "two_way_sync": "boolean",
+     "ical_url": "string",
+     "data": "array",
+     "first_row_header": "boolean",
+     "importer_type": "string",
+     "original_file_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/baserow-rest-api-openapi.yml#GET /api/database/tables/database/{database_id}/",
+     "openapi/_original/baserow-rest-api-openapi.yml#POST /api/database/data-sync/database/{database_id}/",
+     "openapi/_original/baserow-rest-api-openapi.yml#POST /api/database/tables/database/{database_id}/"
+    ]
+   },
+   "border0": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "response": "string",
+     "database_name": "string",
+     "database_type": "string",
+     "question": "string",
+     "schemas": "string"
+    },
+    "evidence": [
+     "openapi/_original/border0-openapi.json#POST /client/ai_assistants/database"
+    ]
+   },
+   "bytebase": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "name": "string",
+     "state": null,
+     "successfulSyncTime": null,
+     "project": "string",
+     "release": "string",
+     "environment": [
+      "string",
+      "null"
+     ],
+     "effectiveEnvironment": [
+      "string",
+      "null"
+     ],
+     "labels": "object",
+     "instanceResource": null,
+     "backupAvailable": "boolean",
+     "syncStatus": null,
+     "syncError": "string"
+    },
+    "evidence": [
+     "openapi/_original/bytebase-openapi.yml#GET /v1/instances/{instance}/databases",
+     "openapi/_original/bytebase-openapi.yml#GET /v1/instances/{instance}/databases/{database}",
+     "openapi/_original/bytebase-openapi.yml#GET /v1/projects/{project}/databases",
+     "openapi/_original/bytebase-openapi.yml#GET /v1/projects/{project}/instances/{instance}/databases",
+     "openapi/_original/bytebase-openapi.yml#GET /v1/projects/{project}/instances/{instance}/databases/{database}",
+     "openapi/_original/bytebase-openapi.yml#GET /v1/workspaces/{workspace}/databases",
+     "openapi/_original/bytebase-openapi.yml#PATCH /v1/instances/{instance}/databases/{database}",
+     "openapi/_original/bytebase-openapi.yml#PATCH /v1/projects/{project}/instances/{instance}/databases/{database}"
+    ]
+   },
+   "chroma": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "configuration_json": "object",
+     "database": "string",
+     "dimension": [
+      "integer",
+      "null"
+     ],
+     "id": "string",
+     "log_position": "integer",
+     "metadata": null,
+     "name": "string",
+     "schema": null,
+     "tenant": "string",
+     "version": "integer"
+    },
+    "evidence": [
+     "openapi/_original/chroma-openapi.json#DELETE /api/v2/tenants/{tenant}/databases/{database}",
+     "openapi/_original/chroma-openapi.json#GET /api/v2/tenants/{tenant}/databases",
+     "openapi/_original/chroma-openapi.json#GET /api/v2/tenants/{tenant}/databases/{database}",
+     "openapi/_original/chroma-openapi.json#POST /api/v2/tenants/{tenant}/databases"
+    ]
+   },
+   "cloudkit": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/cloudkit-openapi.yml#POST /changes/database"
+    ]
+   },
+   "cockroach-labs": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "databases": "array",
+     "pagination": "object",
+     "name": "string",
+     "table_count": "integer",
+     "new_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#DELETE /api/v1/clusters/{cluster_id}/databases/{name}",
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#GET /api/v1/clusters/{cluster_id}/databases",
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#PATCH /api/v1/clusters/{cluster_id}/databases/{name}",
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#POST /api/v1/clusters/{cluster_id}/databases",
+     "openapi/_original/cockroach-labs-openapi.json#DELETE /api/v1/clusters/{cluster_id}/databases/{name}",
+     "openapi/_original/cockroach-labs-openapi.json#GET /api/v1/clusters/{cluster_id}/databases",
+     "openapi/_original/cockroach-labs-openapi.json#PATCH /api/v1/clusters/{cluster_id}/databases",
+     "openapi/_original/cockroach-labs-openapi.json#PATCH /api/v1/clusters/{cluster_id}/databases/{name}",
+     "openapi/_original/cockroach-labs-openapi.json#POST /api/v1/clusters/{cluster_id}/databases"
+    ]
+   },
+   "datastax": {
+    "segments": [
+     "databases",
+     "database"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "orgId": "string",
+     "ownerId": "string",
+     "info": "object",
+     "creationTime": "string",
+     "terminationTime": "string",
+     "status": "string",
+     "storage": "object",
+     "availableActions": "array",
+     "message": "string",
+     "grafanaUrl": "string",
+     "cqlshUrl": "string",
+     "graphqlUrl": "string",
+     "dataEndpointUrl": "string",
+     "name": "string",
+     "keyspace": "string",
+     "cloudProvider": "string",
+     "tier": "string",
+     "capacityUnits": "integer",
+     "region": "string",
+     "dbType": "string",
+     "pcuGroupUUID": "string",
+     "connectionId": "string",
+     "currentVpc": "object",
+     "otherVpc": "object",
+     "tenantId": "string",
+     "subscriptionId": "string",
+     "resourceGroupName": "string",
+     "virtualNetworkName": "string"
+    },
+    "evidence": [
+     "openapi/_original/datastax-devops-openapi.json#DELETE /v2/peering/provider/{provider}/database/{databaseID}",
+     "openapi/_original/datastax-devops-openapi.json#GET /v2/databases",
+     "openapi/_original/datastax-devops-openapi.json#GET /v2/databases/{databaseID}",
+     "openapi/_original/datastax-devops-openapi.json#GET /v2/peering/provider/{provider}/database/{databaseID}",
+     "openapi/_original/datastax-devops-openapi.json#POST /v2/databases",
+     "openapi/_original/datastax-devops-openapi.json#POST /v2/peering/provider/{provider}/database/{databaseID}"
+    ]
+   },
+   "dolthub": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ownerName": "string",
+     "repoName": "string",
+     "visibility": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/dolthub-openapi.yml#POST /database"
+    ]
+   },
+   "firebolt": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "compute_region_id": "object",
+     "create_actor": "string",
+     "create_time": "string",
+     "current_status": "string",
+     "data_size_compressed": "string",
+     "data_size_full": "string",
+     "description": "string",
+     "desired_status": "string",
+     "emoji": "string",
+     "health_status": "string",
+     "id": "object",
+     "is_system_database": "boolean",
+     "last_update_actor": "string",
+     "last_update_time": "string",
+     "name": "string",
+     "storage_bucket_name": "string",
+     "bindings": "array",
+     "database": "object",
+     "engine_revisions": "array",
+     "engines": "array",
+     "engine_bindings": "object",
+     "database_id": "string",
+     "update_mask": "object"
+    },
+    "evidence": [
+     "openapi/_original/firebolt-openapi.json#DELETE /core/v1/account/databases/{database_id}",
+     "openapi/_original/firebolt-openapi.json#GET /core/v1/account/databases",
+     "openapi/_original/firebolt-openapi.json#GET /core/v1/account/databases/{database_id}",
+     "openapi/_original/firebolt-openapi.json#PATCH /core/v1/account/databases/{database_id}",
+     "openapi/_original/firebolt-openapi.json#POST /core/v1/account/databases"
+    ]
+   },
+   "google-cloud-firestore": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "locationId": "string",
+     "type": "string",
+     "concurrencyMode": "string",
+     "appEngineIntegrationMode": "string",
+     "pointInTimeRecoveryEnablement": "string",
+     "etag": "string",
+     "uid": "string",
+     "done": "boolean",
+     "metadata": "object",
+     "error": "object"
+    },
+    "evidence": [
+     "openapi/_original/cloud-firestore-openapi.yml#DELETE /projects/{project}/databases/{database}",
+     "openapi/_original/cloud-firestore-openapi.yml#GET /projects/{project}/databases",
+     "openapi/_original/cloud-firestore-openapi.yml#GET /projects/{project}/databases/{database}",
+     "openapi/_original/cloud-firestore-openapi.yml#POST /projects/{project}/databases"
+    ]
+   },
+   "google-cloud-spanner": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "state": "string",
+     "createTime": "string",
+     "versionRetentionPeriod": "string",
+     "earliestVersionTime": "string",
+     "defaultLeader": "string",
+     "databaseDialect": "string",
+     "done": "boolean",
+     "metadata": "object",
+     "error": "object",
+     "createStatement": "string",
+     "extraStatements": "array"
+    },
+    "evidence": [
+     "openapi/_original/cloud-spanner-openapi.yml#DELETE /projects/{project}/instances/{instance}/databases/{database}",
+     "openapi/_original/cloud-spanner-openapi.yml#GET /projects/{project}/instances/{instance}/databases",
+     "openapi/_original/cloud-spanner-openapi.yml#GET /projects/{project}/instances/{instance}/databases/{database}",
+     "openapi/_original/cloud-spanner-openapi.yml#POST /projects/{project}/instances/{instance}/databases"
+    ]
+   },
+   "google-cloud-sql": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "kind": "string",
+     "name": "string",
+     "instance": "string",
+     "project": "string",
+     "charset": "string",
+     "collation": "string",
+     "selfLink": "string",
+     "status": "string",
+     "operationType": "string",
+     "targetId": "string",
+     "targetProject": "string",
+     "insertTime": "string",
+     "startTime": "string",
+     "endTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/cloud-sql-openapi.yml#DELETE /projects/{project}/instances/{instance}/databases/{database}",
+     "openapi/_original/cloud-sql-openapi.yml#GET /projects/{project}/instances/{instance}/databases",
+     "openapi/_original/cloud-sql-openapi.yml#GET /projects/{project}/instances/{instance}/databases/{database}",
+     "openapi/_original/cloud-sql-openapi.yml#POST /projects/{project}/instances/{instance}/databases"
+    ]
+   },
+   "insforge": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "tables": "array",
+     "totalTables": "integer",
+     "totalRecords": "integer",
+     "databaseSize": "string",
+     "lastUpdated": "string"
+    },
+    "evidence": [
+     "openapi/_original/insforge-metadata-openapi.yaml#GET /api/metadata/database"
+    ]
+   },
+   "macrometa": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "_system": "string",
+     "code": "integer",
+     "error": "boolean",
+     "result": "string",
+     "grant": "string",
+     "name": "string",
+     "tenant": "string",
+     "options": "object",
+     "users": "array"
+    },
+    "evidence": [
+     "openapi/_original/macrometa-gdn-openapi-original.json#DELETE /_api/key/{keyid}/database/{dbname}",
+     "openapi/_original/macrometa-gdn-openapi-original.json#DELETE /_api/user/{user}/database/{geofabric}",
+     "openapi/_original/macrometa-gdn-openapi-original.json#DELETE /_fabric/_system/_api/database/{fabric}",
+     "openapi/_original/macrometa-gdn-openapi-original.json#GET /_api/key/{keyid}/database",
+     "openapi/_original/macrometa-gdn-openapi-original.json#GET /_api/key/{keyid}/database/{dbname}",
+     "openapi/_original/macrometa-gdn-openapi-original.json#GET /_api/user/{user}/database",
+     "openapi/_original/macrometa-gdn-openapi-original.json#GET /_api/user/{user}/database/{geofabric}",
+     "openapi/_original/macrometa-gdn-openapi-original.json#GET /_fabric/_system/_api/database",
+     "openapi/_original/macrometa-gdn-openapi-original.json#POST /_fabric/_system/_api/database",
+     "openapi/_original/macrometa-gdn-openapi-original.json#PUT /_api/key/{keyid}/database/{dbname}",
+     "openapi/_original/macrometa-gdn-openapi-original.json#PUT /_api/user/{user}/database/{geofabric}"
+    ]
+   },
+   "metabase": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "engine": "string",
+     "details": "object",
+     "is_sample": "boolean",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/metabase-openapi.yml#GET /database",
+     "openapi/_original/metabase-openapi.yml#GET /database/{id}",
+     "openapi/_original/metabase-openapi.yml#POST /database"
+    ]
+   },
+   "mongodb": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "databaseName": "string",
+     "links": "array",
+     "name": "string"
+    },
+    "evidence": [
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/processes/{processId}/databases",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/processes/{processId}/databases/{databaseName}",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}/databases",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}/databases/{databaseName}",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/processes/{processId}/databases",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/processes/{processId}/databases/{databaseName}"
+    ]
+   },
+   "neon": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "branch_id": "string",
+     "name": "string",
+     "owner_name": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "project_id": "string",
+     "endpoint_id": "string",
+     "action": "string",
+     "status": "string",
+     "failures_count": "integer",
+     "database": "object"
+    },
+    "evidence": [
+     "openapi/_original/neon-management-api-openapi.yml#DELETE /projects/{project_id}/branches/{branch_id}/databases/{database_name}",
+     "openapi/_original/neon-management-api-openapi.yml#GET /projects/{project_id}/branches/{branch_id}/databases",
+     "openapi/_original/neon-management-api-openapi.yml#GET /projects/{project_id}/branches/{branch_id}/databases/{database_name}",
+     "openapi/_original/neon-management-api-openapi.yml#PATCH /projects/{project_id}/branches/{branch_id}/databases/{database_name}",
+     "openapi/_original/neon-management-api-openapi.yml#POST /projects/{project_id}/branches/{branch_id}/databases"
+    ]
+   },
+   "notion": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "object": "string",
+     "id": "string",
+     "created_time": "string",
+     "last_edited_time": "string",
+     "created_by": "object",
+     "last_edited_by": "object",
+     "title": "array",
+     "description": "array",
+     "icon": null,
+     "cover": null,
+     "properties": "object",
+     "parent": "object",
+     "url": "string",
+     "public_url": [
+      "string",
+      "null"
+     ],
+     "archived": "boolean",
+     "in_trash": "boolean",
+     "is_inline": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/notion-openapi.yml#GET /databases/{database_id}",
+     "openapi/_original/notion-openapi.yml#PATCH /databases/{database_id}",
+     "openapi/_original/notion-openapi.yml#POST /databases"
+    ]
+   },
+   "oracle": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "characterSet": "string",
+     "compartmentId": "string",
+     "connectionStrings": "object",
+     "dataGuardGroup": "object",
+     "databaseManagementConfig": "object",
+     "databaseSoftwareImageId": "string",
+     "dbBackupConfig": "object",
+     "dbHomeId": "string",
+     "dbName": "string",
+     "dbSystemId": "string",
+     "dbUniqueName": "string",
+     "dbWorkload": "string",
+     "definedTags": "object",
+     "encryptionKeyLocationDetails": "object",
+     "freeformTags": "object",
+     "homeType": "string",
+     "id": "string",
+     "isCdb": "boolean",
+     "kmsKeyId": "string",
+     "kmsKeyVersionId": "string",
+     "lastBackupDurationInSeconds": "integer",
+     "lastBackupTimestamp": "string",
+     "lastFailedBackupTimestamp": "string",
+     "lifecycleDetails": "string",
+     "lifecycleState": "string",
+     "managedSoftwareUpdateDetails": "object",
+     "ncharacterSet": "string",
+     "pdbName": "string",
+     "sidPrefix": "string",
+     "sourceDatabasePointInTimeRecoveryTimestamp": "string",
+     "storageSizeDetails": "object",
+     "systemTags": "object",
+     "timeCreated": "string",
+     "vaultId": "string",
+     "vmClusterId": "string",
+     "dbVersion": "string",
+     "source": "string",
+     "newAdminPassword": "string",
+     "newTdeWalletPassword": "string",
+     "oldTdeWalletPassword": "string"
+    },
+    "evidence": [
+     "openapi/_original/oci-database-openapi.yaml#DELETE /databases/{databaseId}",
+     "openapi/_original/oci-database-openapi.yaml#GET /databases",
+     "openapi/_original/oci-database-openapi.yaml#GET /databases/{databaseId}",
+     "openapi/_original/oci-database-openapi.yaml#POST /databases",
+     "openapi/_original/oci-database-openapi.yaml#PUT /databases/{databaseId}"
+    ]
+   },
+   "oracle-cloud": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "characterSet": "string",
+     "compartmentId": "string",
+     "connectionStrings": "object",
+     "dataGuardGroup": "object",
+     "databaseManagementConfig": "object",
+     "databaseSoftwareImageId": "string",
+     "dbBackupConfig": "object",
+     "dbHomeId": "string",
+     "dbName": "string",
+     "dbSystemId": "string",
+     "dbUniqueName": "string",
+     "dbWorkload": "string",
+     "definedTags": "object",
+     "encryptionKeyLocationDetails": "object",
+     "freeformTags": "object",
+     "homeType": "string",
+     "id": "string",
+     "isCdb": "boolean",
+     "kmsKeyId": "string",
+     "kmsKeyVersionId": "string",
+     "lastBackupDurationInSeconds": "integer",
+     "lastBackupTimestamp": "string",
+     "lastFailedBackupTimestamp": "string",
+     "lifecycleDetails": "string",
+     "lifecycleState": "string",
+     "managedSoftwareUpdateDetails": "object",
+     "ncharacterSet": "string",
+     "pdbName": "string",
+     "sidPrefix": "string",
+     "sourceDatabasePointInTimeRecoveryTimestamp": "string",
+     "storageSizeDetails": "object",
+     "systemTags": "object",
+     "timeCreated": "string",
+     "vaultId": "string",
+     "vmClusterId": "string",
+     "dbVersion": "string",
+     "source": "string",
+     "autoFailoverConfiguration": "object",
+     "databaseAdminPassword": "string",
+     "isActiveDataGuardEnabled": "boolean",
+     "newAdminPassword": "string",
+     "newTdeWalletPassword": "string",
+     "oldTdeWalletPassword": "string",
+     "protectionMode": "string",
+     "transportType": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-cloud-database-openapi.yaml#DELETE /databases/{databaseId}",
+     "openapi/_original/oracle-cloud-database-openapi.yaml#GET /databases",
+     "openapi/_original/oracle-cloud-database-openapi.yaml#GET /databases/{databaseId}",
+     "openapi/_original/oracle-cloud-database-openapi.yaml#POST /databases",
+     "openapi/_original/oracle-cloud-database-openapi.yaml#PUT /databases/{databaseId}"
+    ]
+   },
+   "oracle-database": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "compartmentId": "string",
+     "dbName": "string",
+     "dbHomeId": "string",
+     "lifecycleState": "string",
+     "timeCreated": "string",
+     "dbUniqueName": "string",
+     "dbSystemId": "string",
+     "characterSet": "string",
+     "ncharacterSet": "string",
+     "pdbName": "string",
+     "adminPassword": "string",
+     "dbBackupConfig": "object",
+     "freeformTags": "object",
+     "database_name": "string",
+     "role": "string",
+     "enabled": "boolean",
+     "transport_lag": "string",
+     "apply_lag": "string",
+     "connect_identifier": "string",
+     "action": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-database-oci-openapi.yml#DELETE /databases/{databaseId}",
+     "openapi/_original/oracle-database-oci-openapi.yml#GET /databases",
+     "openapi/_original/oracle-database-oci-openapi.yml#GET /databases/{databaseId}",
+     "openapi/_original/oracle-database-oci-openapi.yml#POST /databases",
+     "openapi/_original/oracle-database-oci-openapi.yml#PUT /databases/{databaseId}",
+     "openapi/_original/oracle-database-ords-openapi.yml#DELETE /database/dataguard/databases/{database}",
+     "openapi/_original/oracle-database-ords-openapi.yml#GET /database/dataguard/databases/",
+     "openapi/_original/oracle-database-ords-openapi.yml#POST /database/dataguard/databases/",
+     "openapi/_original/oracle-database-ords-openapi.yml#PUT /database/dataguard/databases/{database}"
+    ]
+   },
+   "oracle-goldengate": {
+    "segments": [
+     "databases",
+     "db"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "databases": "array",
+     "valid": "boolean",
+     "messages": "array",
+     "host": "string",
+     "port": "integer",
+     "databaseType": "string",
+     "serviceName": "string",
+     "username": "string",
+     "password": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-goldengate-rest-api-openapi.yml#GET /services/v2/connections/{connection}/databases",
+     "openapi/_original/oracle-goldengate-veridata-rest-api-openapi.yml#POST /services/validate/connection/db"
+    ]
+   },
+   "oracle-partitioning": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "inst_id": "integer",
+     "database": "string",
+     "connection_identifier": "string",
+     "dataguard_role": "string",
+     "redo_source": "string",
+     "enabled": "string",
+     "status": "integer",
+     "severity": "string",
+     "status_message": "string",
+     "version": "string",
+     "con_id": "integer",
+     "database_name": "string",
+     "links": "array",
+     "operation": "string",
+     "name": "string",
+     "type": "string",
+     "global_database_name": "string",
+     "template_name": "string",
+     "response_file": "string",
+     "system_user_password": "string",
+     "sys_user_password": "string",
+     "container_configuration": "object",
+     "total_memory": "integer"
+    },
+    "evidence": [
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#DELETE /database/dataguard/databases/{database}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/dataguard/databases/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/dataguard/databases/{database}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /environment/databases/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /environment/databases/{databaseName}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /environment/homes/{homeName}/databases/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /environment/homes/{homeName}/databases/{databaseName}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#POST /database/dataguard/databases/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#POST /environment/databases/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#POST /environment/homes/{homeName}/databases/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#PUT /database/dataguard/databases/{database}"
+    ]
+   },
+   "oracle-platforms": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "characterSet": "string",
+     "compartmentId": "string",
+     "connectionStrings": "object",
+     "dataGuardGroup": "object",
+     "databaseManagementConfig": "object",
+     "databaseSoftwareImageId": "string",
+     "dbBackupConfig": "object",
+     "dbHomeId": "string",
+     "dbName": "string",
+     "dbSystemId": "string",
+     "dbUniqueName": "string",
+     "dbWorkload": "string",
+     "definedTags": "object",
+     "encryptionKeyLocationDetails": "object",
+     "freeformTags": "object",
+     "homeType": "string",
+     "id": "string",
+     "isCdb": "boolean",
+     "kmsKeyId": "string",
+     "kmsKeyVersionId": "string",
+     "lastBackupDurationInSeconds": "integer",
+     "lastBackupTimestamp": "string",
+     "lastFailedBackupTimestamp": "string",
+     "lifecycleDetails": "string",
+     "lifecycleState": "string",
+     "managedSoftwareUpdateDetails": "object",
+     "ncharacterSet": "string",
+     "pdbName": "string",
+     "sidPrefix": "string",
+     "sourceDatabasePointInTimeRecoveryTimestamp": "string",
+     "storageSizeDetails": "object",
+     "systemTags": "object",
+     "timeCreated": "string",
+     "vaultId": "string",
+     "vmClusterId": "string",
+     "dbVersion": "string",
+     "source": "string",
+     "autoFailoverConfiguration": "object",
+     "databaseAdminPassword": "string",
+     "isActiveDataGuardEnabled": "boolean",
+     "newAdminPassword": "string",
+     "newTdeWalletPassword": "string",
+     "oldTdeWalletPassword": "string",
+     "protectionMode": "string",
+     "transportType": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-platforms-database-openapi.yml#DELETE /databases/{databaseId}",
+     "openapi/_original/oracle-platforms-database-openapi.yml#GET /databases",
+     "openapi/_original/oracle-platforms-database-openapi.yml#GET /databases/{databaseId}",
+     "openapi/_original/oracle-platforms-database-openapi.yml#POST /databases",
+     "openapi/_original/oracle-platforms-database-openapi.yml#PUT /databases/{databaseId}"
+    ]
+   },
+   "planetscale": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "state": "string",
+     "plan": "string",
+     "cluster_size": "string",
+     "region": "object",
+     "default_branch": "string",
+     "production_branch_web_console": "boolean",
+     "insights_enabled": "boolean",
+     "migration_framework": "string",
+     "require_approval_for_deploy": "boolean",
+     "allow_data_branching": "boolean",
+     "created_at": "string",
+     "updated_at": "string",
+     "html_url": "string",
+     "migration_table_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/planetscale-platform-api-openapi.yml#DELETE /organizations/{organization}/databases/{database}",
+     "openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases",
+     "openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}",
+     "openapi/_original/planetscale-platform-api-openapi.yml#PATCH /organizations/{organization}/databases/{database}",
+     "openapi/_original/planetscale-platform-api-openapi.yml#POST /organizations/{organization}/databases"
+    ]
+   },
+   "popsink": {
+    "segments": [
+     "db"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/popsink-onprem-api-openapi-original.json#GET /healthchecks/db"
+    ]
+   },
+   "prisma": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "url": "string",
+     "name": "string",
+     "status": "string",
+     "createdAt": "string",
+     "isDefault": "boolean",
+     "defaultConnectionId": [
+      "string",
+      "null"
+     ],
+     "connections": "array",
+     "project": "object",
+     "region": [
+      "object",
+      "null"
+     ],
+     "source": null,
+     "branchId": [
+      "string",
+      "null"
+     ],
+     "projectId": "string",
+     "branchGitName": [
+      "string",
+      "null"
+     ],
+     "apiKeys": "array",
+     "connectionString": [
+      "string",
+      "null"
+     ],
+     "directConnection": [
+      "object",
+      "null"
+     ],
+     "fromDatabase": "object",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/prisma-postgres-management-api-openapi.json#DELETE /v1/databases/{databaseId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/databases",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/databases/{databaseId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/projects/{projectId}/databases",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#PATCH /v1/databases/{databaseId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#POST /v1/databases",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#POST /v1/projects/{projectId}/databases",
+     "openapi/_original/prisma-postgres-management-openapi.yml#DELETE /databases/{databaseId}",
+     "openapi/_original/prisma-postgres-management-openapi.yml#GET /databases/{databaseId}",
+     "openapi/_original/prisma-postgres-management-openapi.yml#POST /projects/{projectId}/databases"
+    ]
+   },
+   "redis": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "databaseId": "integer",
+     "links": "array",
+     "taskId": "string",
+     "commandType": "string",
+     "status": "string",
+     "description": "string",
+     "timestamp": "string",
+     "response": "object",
+     "subscriptionId": "integer",
+     "dryRun": "boolean",
+     "name": "string",
+     "memoryLimitInGb": "number",
+     "datasetSizeInGb": "number",
+     "respVersion": "string",
+     "throughputMeasurement": "object",
+     "dataPersistence": "string",
+     "dataEvictionPolicy": "string",
+     "replication": "boolean",
+     "regexRules": "array",
+     "replicaOf": "array",
+     "replica": "object",
+     "supportOSSClusterApi": "boolean",
+     "useExternalEndpointForOSSClusterApi": "boolean",
+     "password": "string",
+     "saslUsername": "string",
+     "saslPassword": "string",
+     "sourceIp": "array",
+     "clientSslCertificate": "string",
+     "clientTlsCertificates": "array",
+     "enableTls": "boolean",
+     "enableDefaultUser": "boolean",
+     "periodicBackupPath": "string",
+     "remoteBackup": "object",
+     "alerts": "array",
+     "ramPercentage": "integer",
+     "autoMinorVersionUpgrade": "boolean",
+     "queryPerformanceFactor": "string",
+     "protocol": "string",
+     "provider": "string",
+     "region": "string",
+     "redisVersion": "string",
+     "redisVersionCompliance": "string",
+     "planMemoryLimit": "number",
+     "planDatasetSize": "number",
+     "memoryLimitMeasurementUnit": "string",
+     "memoryUsedInMb": "number",
+     "networkMonthlyUsageInByte": "number",
+     "memoryStorage": "string",
+     "redisFlex": "boolean",
+     "activatedOn": "string",
+     "lastModified": "string",
+     "publicEndpoint": "string",
+     "privateEndpoint": "string",
+     "dynamicEndpoints": "object",
+     "replicaAsSourceEndpoints": "object",
+     "enableDatabaseClustering": "boolean",
+     "numberOfShards": "integer",
+     "sourceIps": "array",
+     "accountId": "integer",
+     "port": "integer",
+     "localThroughputMeasurement": "array",
+     "averageItemSizeInBytes": "integer",
+     "modules": "array",
+     "shardingType": "string"
+    },
+    "evidence": [
+     "openapi/_original/redis-cloud-openapi.yml#DELETE /v1/fixed/subscriptions/{subscriptionId}/databases/{databaseId}",
+     "openapi/_original/redis-cloud-openapi.yml#DELETE /v1/subscriptions/{subscriptionId}/databases/{databaseId}",
+     "openapi/_original/redis-cloud-openapi.yml#GET /v1/fixed/subscriptions/{subscriptionId}/databases",
+     "openapi/_original/redis-cloud-openapi.yml#GET /v1/fixed/subscriptions/{subscriptionId}/databases/{databaseId}",
+     "openapi/_original/redis-cloud-openapi.yml#GET /v1/subscriptions/{subscriptionId}/databases",
+     "openapi/_original/redis-cloud-openapi.yml#GET /v1/subscriptions/{subscriptionId}/databases/{databaseId}",
+     "openapi/_original/redis-cloud-openapi.yml#POST /v1/fixed/subscriptions/{subscriptionId}/databases",
+     "openapi/_original/redis-cloud-openapi.yml#POST /v1/subscriptions/{subscriptionId}/databases",
+     "openapi/_original/redis-cloud-openapi.yml#PUT /v1/fixed/subscriptions/{subscriptionId}/databases/{databaseId}",
+     "openapi/_original/redis-cloud-openapi.yml#PUT /v1/subscriptions/{subscriptionId}/databases/{databaseId}"
+    ]
+   },
+   "scaleway": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "owner": "string",
+     "managed": "boolean",
+     "size": "integer"
+    },
+    "evidence": [
+     "openapi/_original/scaleway-database-openapi.yml#DELETE /rdb/v1/regions/{region}/instances/{instance_id}/databases/{name}",
+     "openapi/_original/scaleway-database-openapi.yml#GET /rdb/v1/regions/{region}/instances/{instance_id}/databases",
+     "openapi/_original/scaleway-database-openapi.yml#POST /rdb/v1/regions/{region}/instances/{instance_id}/databases"
+    ]
+   },
+   "sevalla": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "display_name": "string",
+     "type": "string",
+     "version": "string",
+     "status": "string",
+     "resource_type": "string",
+     "cluster": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/sevalla-openapi.yml#DELETE /databases/{id}",
+     "openapi/_original/sevalla-openapi.yml#GET /databases",
+     "openapi/_original/sevalla-openapi.yml#GET /databases/{id}",
+     "openapi/_original/sevalla-openapi.yml#POST /databases"
+    ]
+   },
+   "snowflake": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "created_on": "string",
+     "name": null,
+     "kind": "string",
+     "is_default": "boolean",
+     "is_current": "boolean",
+     "origin": "string",
+     "owner": "string",
+     "comment": "string",
+     "options": "string",
+     "retention_time": "integer",
+     "dropped_on": "string",
+     "budget": "string",
+     "owner_role_type": "string",
+     "data_retention_time_in_days": "integer",
+     "default_ddl_collation": "string",
+     "log_level": "string",
+     "max_data_extension_time_in_days": "integer",
+     "suspend_task_after_num_failures": "integer",
+     "trace_level": "string",
+     "user_task_managed_initial_warehouse_size": "string",
+     "user_task_timeout_ms": "integer",
+     "serverless_task_min_statement_size": "string",
+     "serverless_task_max_statement_size": "string"
+    },
+    "evidence": [
+     "openapi/_original/database.yaml#DELETE /api/v2/databases/{name}",
+     "openapi/_original/database.yaml#GET /api/v2/databases",
+     "openapi/_original/database.yaml#GET /api/v2/databases/{name}",
+     "openapi/_original/database.yaml#POST /api/v2/databases",
+     "openapi/_original/database.yaml#PUT /api/v2/databases/{name}",
+     "openapi/_original/database_2.yaml#DELETE /api/v2/databases/{name}",
+     "openapi/_original/database_2.yaml#GET /api/v2/databases",
+     "openapi/_original/database_2.yaml#GET /api/v2/databases/{name}",
+     "openapi/_original/database_2.yaml#POST /api/v2/databases",
+     "openapi/_original/database_2.yaml#PUT /api/v2/databases/{name}"
+    ]
+   },
+   "softr": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string"
+    },
+    "evidence": [
+     "openapi/_original/softr-openapi.yml#GET /databases"
+    ]
+   },
+   "sybase": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "dbId": "integer",
+     "owner": "string",
+     "status": "string",
+     "sizeMB": "number",
+     "dataUsedMB": "number",
+     "logUsedMB": "number",
+     "created": "string",
+     "deviceName": "string",
+     "logDeviceName": "string",
+     "logSizeMB": "number"
+    },
+    "evidence": [
+     "openapi/_original/sybase-ase-rest-api-openapi.yml#GET /servers/{serverId}/databases",
+     "openapi/_original/sybase-ase-rest-api-openapi.yml#GET /servers/{serverId}/databases/{databaseName}",
+     "openapi/_original/sybase-ase-rest-api-openapi.yml#POST /servers/{serverId}/databases"
+    ]
+   },
+   "tessell": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "taskId": "string",
+     "taskType": "string",
+     "resourceId": "string",
+     "associatedResourceIds": "array",
+     "details": "object",
+     "databaseName": "string",
+     "description": "string",
+     "sourceDatabaseId": "string",
+     "databaseConfiguration": "object",
+     "collectionConfig": "object",
+     "status": "string",
+     "message": "string",
+     "comment": "string",
+     "deleteConfiguration": "object"
+    },
+    "evidence": [
+     "openapi/_original/tessell-openapi-original.json#DELETE /services/{service-id}/databases/{database-id}",
+     "openapi/_original/tessell-openapi-original.json#PATCH /services/{service-id}/databases/{database-id}",
+     "openapi/_original/tessell-openapi-original.json#POST /services/{service-id}/databases"
+    ]
+   },
+   "thenile": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "status": "string",
+     "sharedPdb": "object",
+     "placementStrategy": "string",
+     "workspace": "object",
+     "region": "string",
+     "expandable": "boolean",
+     "created": "string",
+     "deleted": "string",
+     "apiHost": "string",
+     "dbHost": "string",
+     "parent": "object",
+     "databaseName": "string"
+    },
+    "evidence": [
+     "openapi/_original/api-openapi.json#DELETE /databases/{databaseId}",
+     "openapi/_original/api-openapi.json#GET /databases/{databaseId}",
+     "openapi/_original/api-openapi.json#GET /internal/reconciliation/databases",
+     "openapi/_original/global-openapi.json#DELETE /workspaces/{workspaceSlug}/databases/{databaseName}",
+     "openapi/_original/global-openapi.json#GET /workspaces/{workspaceSlug}/databases",
+     "openapi/_original/global-openapi.json#GET /workspaces/{workspaceSlug}/databases/{databaseName}",
+     "openapi/_original/global-openapi.json#POST /workspaces/{workspaceSlug}/databases",
+     "openapi/_original/global-openapi.json#PUT /workspaces/{workspaceSlug}/databases/{databaseName}",
+     "openapi/_original/global-openapi.yaml#DELETE /workspaces/{workspaceSlug}/databases/{databaseName}",
+     "openapi/_original/global-openapi.yaml#GET /workspaces/{workspaceSlug}/databases",
+     "openapi/_original/global-openapi.yaml#GET /workspaces/{workspaceSlug}/databases/{databaseName}",
+     "openapi/_original/global-openapi.yaml#POST /workspaces/{workspaceSlug}/databases"
+    ]
+   },
+   "timescale": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "type": "string",
+     "size": "string",
+     "status": "string",
+     "host": "string",
+     "port": "integer",
+     "password": "string",
+     "storage_mib": "integer",
+     "compute_minutes": "integer",
+     "share_token": "string"
+    },
+    "evidence": [
+     "openapi/_original/timescale-ghost-openapi-original.yml#DELETE /spaces/{space_id}/databases/{database_ref}",
+     "openapi/_original/timescale-ghost-openapi-original.yml#GET /spaces/{space_id}/databases",
+     "openapi/_original/timescale-ghost-openapi-original.yml#GET /spaces/{space_id}/databases/{database_ref}",
+     "openapi/_original/timescale-ghost-openapi-original.yml#POST /spaces/{space_id}/databases"
+    ]
+   },
+   "turso": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "Name": "string",
+     "DbId": "string",
+     "Hostname": "string",
+     "block_reads": "boolean",
+     "block_writes": "boolean",
+     "regions": "array",
+     "primaryRegion": "string",
+     "group": "string",
+     "delete_protection": "boolean",
+     "parent": "object",
+     "name": "string",
+     "seed": "object",
+     "size_limit": "string",
+     "remote_encryption": "object",
+     "database": "string"
+    },
+    "evidence": [
+     "openapi/_original/turso-platform-api-openapi.yml#DELETE /v1/organizations/{organizationSlug}/databases/{databaseName}",
+     "openapi/_original/turso-platform-api-openapi.yml#GET /v1/organizations/{organizationSlug}/databases",
+     "openapi/_original/turso-platform-api-openapi.yml#GET /v1/organizations/{organizationSlug}/databases/{databaseName}",
+     "openapi/_original/turso-platform-api-openapi.yml#POST /v1/organizations/{organizationSlug}/databases"
+    ]
+   },
+   "upcloud": {
+    "segments": [
+     "database"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "uuid": "string",
+     "zone": "string",
+     "name": "string",
+     "title": "string",
+     "type": "string",
+     "plan": "string",
+     "plan_components": "object",
+     "additional_disk_space_gib": "integer",
+     "state": "string",
+     "state_error": "object",
+     "powered": "boolean",
+     "termination_protection": "boolean",
+     "node_count": "integer",
+     "create_time": "string",
+     "update_time": "string",
+     "service_uri": "string",
+     "service_uri_params": "object",
+     "maintenance": "object",
+     "metadata": "object",
+     "properties": "object",
+     "networks": "array",
+     "node_states": "array",
+     "labels": "array",
+     "backups": "array",
+     "components": "array",
+     "connection_pools": "array",
+     "users": "array",
+     "databases": "array",
+     "acls": "array",
+     "service_integrations": "array",
+     "hostname_prefix": "string",
+     "set_service_uuid": "string",
+     "plan_compute": "string",
+     "plan_node_count": "integer",
+     "plan_storage_gib": "integer",
+     "plan_backups": "string"
+    },
+    "evidence": [
+     "openapi/_original/upcloud-openapi.json#DELETE /1.3/database/{uuid}",
+     "openapi/_original/upcloud-openapi.json#GET /1.3/database",
+     "openapi/_original/upcloud-openapi.json#GET /1.3/database/{uuid}",
+     "openapi/_original/upcloud-openapi.json#PATCH /1.3/database/{uuid}",
+     "openapi/_original/upcloud-openapi.json#POST /1.3/database",
+     "openapi/_original/upcloud-openapi.yml#DELETE /1.3/database/{uuid}",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/database",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/database/{uuid}",
+     "openapi/_original/upcloud-openapi.yml#PATCH /1.3/database/{uuid}",
+     "openapi/_original/upcloud-openapi.yml#POST /1.3/database"
+    ]
+   },
+   "upstash": {
+    "segments": [
+     "databases",
+     "database"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "database_id": "string",
+     "database_name": "string",
+     "region": "string",
+     "port": "integer",
+     "creation_time": "integer",
+     "state": "string",
+     "endpoint": "string",
+     "name": "string",
+     "tls": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/upstash-openapi.yml#DELETE /redis/database/{databaseId}",
+     "openapi/_original/upstash-openapi.yml#GET /redis/database/{databaseId}",
+     "openapi/_original/upstash-openapi.yml#GET /redis/databases",
+     "openapi/_original/upstash-openapi.yml#POST /redis/databases"
+    ]
+   },
+   "vultr": {
+    "segments": [
+     "databases"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "date_created": "string",
+     "plan": "string",
+     "plan_disk": "integer",
+     "plan_ram": "integer",
+     "plan_vcpus": "integer",
+     "plan_replicas": "integer",
+     "region": "string",
+     "database_engine": "string",
+     "database_engine_version": "string",
+     "vpc_id": "string",
+     "status": "string",
+     "label": "string",
+     "tag": "string",
+     "dbname": "string",
+     "ferretdb_credentials": "object",
+     "host": "string",
+     "public_host": "string",
+     "user": "string",
+     "password": "string",
+     "port": "string",
+     "maintenance_dow": "string",
+     "maintenance_time": "string",
+     "latest_backup": "string",
+     "trusted_ips": "array",
+     "mysql_sql_modes": "array",
+     "mysql_require_primary_key": "boolean",
+     "mysql_slow_query_log": "boolean",
+     "mysql_long_query_time": "integer",
+     "pg_available_extensions": "array",
+     "redis_eviction_policy": "string",
+     "cluster_time_zone": "string",
+     "read_replicas": "array"
+    },
+    "evidence": [
+     "openapi/_original/vultr-openapi.yml#DELETE /databases/{database-id}",
+     "openapi/_original/vultr-openapi.yml#GET /databases",
+     "openapi/_original/vultr-openapi.yml#GET /databases/{database-id}",
+     "openapi/_original/vultr-openapi.yml#POST /databases",
+     "openapi/_original/vultr-openapi.yml#PUT /databases/{database-id}",
+     "openapi/_original/vultr-v2-openapi.yaml#DELETE /databases/{database-id}",
+     "openapi/_original/vultr-v2-openapi.yaml#GET /databases",
+     "openapi/_original/vultr-v2-openapi.yaml#GET /databases/{database-id}",
+     "openapi/_original/vultr-v2-openapi.yaml#POST /databases",
+     "openapi/_original/vultr-v2-openapi.yaml#PUT /databases/{database-id}"
+    ]
+   },
+   "weaviate": {
+    "segments": [
+     "db"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "roles": "array",
+     "userId": "string",
+     "dbUserType": "string",
+     "active": "boolean",
+     "createdAt": [
+      "string",
+      "null"
+     ],
+     "apiKeyFirstLetters": [
+      "string",
+      "null"
+     ],
+     "lastUsedAt": [
+      "string",
+      "null"
+     ],
+     "namespace": "string",
+     "apikey": "string",
+     "import": "boolean",
+     "createTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/weaviate-openapi.yml#DELETE /users/db/{user_id}",
+     "openapi/_original/weaviate-openapi.yml#GET /users/db",
+     "openapi/_original/weaviate-openapi.yml#GET /users/db/{user_id}",
+     "openapi/_original/weaviate-openapi.yml#POST /users/db/{user_id}"
+    ]
+   }
+  },
+  "database_user": {
+   "couchbase": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "access": "array",
+     "audit": "object",
+     "password": "string"
+    },
+    "evidence": [
+     "openapi/_original/couchbase-capella-management-api-openapi.yml#GET /v4/organizations/{organizationId}/projects/{projectId}/clusters/{clusterId}/users",
+     "openapi/_original/couchbase-capella-management-api-openapi.yml#POST /v4/organizations/{organizationId}/projects/{projectId}/clusters/{clusterId}/users"
+    ]
+   },
+   "google-cloud-sql": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "kind": "string",
+     "name": "string",
+     "host": "string",
+     "instance": "string",
+     "project": "string",
+     "password": "string",
+     "type": "string",
+     "status": "string",
+     "operationType": "string",
+     "targetId": "string",
+     "targetProject": "string",
+     "insertTime": "string",
+     "startTime": "string",
+     "endTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/cloud-sql-openapi.yml#GET /projects/{project}/instances/{instance}/users",
+     "openapi/_original/cloud-sql-openapi.yml#POST /projects/{project}/instances/{instance}/users"
+    ]
+   },
+   "neon": {
+    "segments": [
+     "roles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "branch_id": "string",
+     "name": "string",
+     "password": "string",
+     "protected": "boolean",
+     "created_at": "string",
+     "updated_at": "string",
+     "id": "string",
+     "project_id": "string",
+     "endpoint_id": "string",
+     "action": "string",
+     "status": "string",
+     "failures_count": "integer",
+     "role": "object"
+    },
+    "evidence": [
+     "openapi/_original/neon-management-api-openapi.yml#DELETE /projects/{project_id}/branches/{branch_id}/roles/{role_name}",
+     "openapi/_original/neon-management-api-openapi.yml#GET /projects/{project_id}/branches/{branch_id}/roles",
+     "openapi/_original/neon-management-api-openapi.yml#GET /projects/{project_id}/branches/{branch_id}/roles/{role_name}",
+     "openapi/_original/neon-management-api-openapi.yml#POST /projects/{project_id}/branches/{branch_id}/roles"
+    ]
+   },
+   "oracle-database": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "username": "string",
+     "account_status": "string",
+     "default_tablespace": "string",
+     "created": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-database-ords-openapi.yml#GET /database/security/users/"
+    ]
+   },
+   "oracle-partitioning": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "username": "string",
+     "user_id": "integer",
+     "account_status": "string",
+     "lock_date": "string",
+     "expiry_date": "string",
+     "default_tablespace": "string",
+     "temporary_tablespace": "string",
+     "local_temp_tablespace": "string",
+     "created": "string",
+     "profile": "string",
+     "initial_rsrc_consumer_group": "string",
+     "external_name": "string",
+     "password_versions": "string",
+     "editions_enabled": "string",
+     "authentication_type": "string",
+     "proxy_only_connect": "string",
+     "common": "string",
+     "last_login": "string",
+     "oracle_maintained": "string",
+     "inherited": "string",
+     "default_collation": "string",
+     "implicit": "string",
+     "all_shard": "string",
+     "locked_account": "integer",
+     "expired_account": "integer",
+     "open_account": "integer",
+     "days_left": "integer",
+     "links": "array"
+    },
+    "evidence": [
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/security/users/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/security/users/{username}"
+    ]
+   },
+   "planetscale": {
+    "segments": [
+     "roles"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "role": "string",
+     "username": "string",
+     "password": "string",
+     "hostname": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/planetscale-platform-api-openapi.yml#POST /organizations/{organization}/databases/{database}/branches/{branch}/roles"
+    ]
+   },
+   "scaleway": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "users": "array",
+     "total_count": "integer",
+     "name": "string",
+     "is_admin": "boolean",
+     "password": "string"
+    },
+    "evidence": [
+     "openapi/_original/scaleway-database-openapi.yml#DELETE /rdb/v1/regions/{region}/instances/{instance_id}/users/{name}",
+     "openapi/_original/scaleway-database-openapi.yml#GET /rdb/v1/regions/{region}/instances/{instance_id}/users",
+     "openapi/_original/scaleway-database-openapi.yml#PATCH /rdb/v1/regions/{region}/instances/{instance_id}/users/{name}",
+     "openapi/_original/scaleway-database-openapi.yml#POST /rdb/v1/regions/{region}/instances/{instance_id}/users"
+    ]
+   },
+   "snowflake": {
+    "segments": [
+     "roles"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "created_on": "string",
+     "name": "string",
+     "comment": "string"
+    },
+    "evidence": [
+     "openapi/_original/service.yaml#GET /api/v2/databases/{database}/schemas/{schema}/services/{name}/roles",
+     "openapi/_original/service_2.yaml#GET /api/v2/databases/{database}/schemas/{schema}/services/{name}/roles"
+    ]
+   },
+   "thenile": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "tenants": "array",
+     "email": "string",
+     "name": "string",
+     "givenName": "string",
+     "familyName": "string",
+     "picture": "string",
+     "created": "string",
+     "updated": "string",
+     "token": "object",
+     "password": "string",
+     "newTenant": "string",
+     "emailVerified": "string"
+    },
+    "evidence": [
+     "openapi/_original/api-openapi.json#DELETE /databases/{databaseId}/users/{userId}",
+     "openapi/_original/api-openapi.json#DELETE /workspaces/{workspaceSlug}/databases/{databaseName}/users/{userId}",
+     "openapi/_original/api-openapi.json#GET /databases/{databaseId}/tenants/{tenantId}/users",
+     "openapi/_original/api-openapi.json#GET /databases/{databaseId}/tenants/{tenantId}/users/{userId}",
+     "openapi/_original/api-openapi.json#GET /databases/{databaseId}/users",
+     "openapi/_original/api-openapi.json#GET /databases/{databaseId}/users/{userId}",
+     "openapi/_original/api-openapi.json#GET /workspaces/{workspaceSlug}/databases/{databaseName}/tenants/{tenantId}/users",
+     "openapi/_original/api-openapi.json#GET /workspaces/{workspaceSlug}/databases/{databaseName}/tenants/{tenantId}/users/{userId}",
+     "openapi/_original/api-openapi.json#GET /workspaces/{workspaceSlug}/databases/{databaseName}/users",
+     "openapi/_original/api-openapi.json#GET /workspaces/{workspaceSlug}/databases/{databaseName}/users/{userId}",
+     "openapi/_original/api-openapi.json#POST /databases/{databaseId}/tenants/{tenantId}/users",
+     "openapi/_original/api-openapi.json#POST /databases/{databaseId}/users"
+    ]
+   },
+   "upcloud": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "username": "string",
+     "password": "string",
+     "authentication": "string",
+     "type": "string",
+     "pg_access_control": "object",
+     "redis_access_control": "object",
+     "valkey_access_control": "object",
+     "opensearch_access_control": "object"
+    },
+    "evidence": [
+     "openapi/_original/upcloud-openapi.json#DELETE /1.3/database/{uuid}/users/{username}",
+     "openapi/_original/upcloud-openapi.json#GET /1.3/database/{uuid}/users",
+     "openapi/_original/upcloud-openapi.json#GET /1.3/database/{uuid}/users/{username}",
+     "openapi/_original/upcloud-openapi.json#PATCH /1.3/database/{uuid}/users/{username}",
+     "openapi/_original/upcloud-openapi.json#POST /1.3/database/{uuid}/users",
+     "openapi/_original/upcloud-openapi.yml#DELETE /1.3/database/{uuid}/users/{username}",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/database/{uuid}/users",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/database/{uuid}/users/{username}",
+     "openapi/_original/upcloud-openapi.yml#PATCH /1.3/database/{uuid}/users/{username}",
+     "openapi/_original/upcloud-openapi.yml#POST /1.3/database/{uuid}/users"
+    ]
+   },
+   "vultr": {
+    "segments": [
+     "users"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "username": "string",
+     "password": "string",
+     "encryption": "string",
+     "access_control": "object"
+    },
+    "evidence": [
+     "openapi/_original/vultr-openapi.yml#DELETE /databases/{database-id}/users/{username}",
+     "openapi/_original/vultr-openapi.yml#GET /databases/{database-id}/users",
+     "openapi/_original/vultr-openapi.yml#GET /databases/{database-id}/users/{username}",
+     "openapi/_original/vultr-openapi.yml#POST /databases/{database-id}/users",
+     "openapi/_original/vultr-openapi.yml#PUT /databases/{database-id}/users/{username}",
+     "openapi/_original/vultr-v2-openapi.yaml#DELETE /databases/{database-id}/users/{username}",
+     "openapi/_original/vultr-v2-openapi.yaml#GET /databases/{database-id}/users",
+     "openapi/_original/vultr-v2-openapi.yaml#GET /databases/{database-id}/users/{username}",
+     "openapi/_original/vultr-v2-openapi.yaml#POST /databases/{database-id}/users",
+     "openapi/_original/vultr-v2-openapi.yaml#PUT /databases/{database-id}/users/{username}"
+    ]
+   }
+  },
+  "backup": {
+   "aiven": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "backup_progress": "string",
+     "backups": "array",
+     "errors": "array",
+     "message": "string",
+     "pitr": "object",
+     "scheduled_backup_time": "object"
+    },
+    "evidence": [
+     "openapi/_original/aiven-aiven-api-openapi.yml#GET /project/{project}/service/{service_name}/backups"
+    ]
+   },
+   "appwrite": {
+    "segments": [
+     "backups",
+     "backup"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "$id": "string",
+     "$createdAt": "string",
+     "databaseId": "string",
+     "projectId": "string",
+     "policyId": "string",
+     "trigger": "string",
+     "type": "string",
+     "requestedType": "string",
+     "fallbackReason": "string",
+     "status": "string",
+     "sizeBytes": "integer",
+     "startedAt": "string",
+     "completedAt": "string",
+     "verifiedAt": "string",
+     "expiresAt": "string",
+     "logPosition": "string",
+     "error": "string",
+     "$updatedAt": "string",
+     "name": "string",
+     "total": "integer",
+     "prefs": "object",
+     "billingBudget": "integer",
+     "budgetAlerts": "array",
+     "billingPlan": "string",
+     "billingPlanId": "string",
+     "billingPlanDetails": "object",
+     "billingEmail": "string",
+     "billingStartDate": "string",
+     "billingCurrentInvoiceDate": "string",
+     "billingNextInvoiceDate": "string",
+     "billingTrialStartDate": "string",
+     "billingTrialDays": "integer",
+     "billingAggregationId": "string",
+     "billingInvoiceId": "string",
+     "paymentMethodId": "string",
+     "billingAddressId": "string",
+     "backupPaymentMethodId": "string",
+     "remarks": "string",
+     "agreementBAA": "string",
+     "programManagerName": "string",
+     "programManagerCalendar": "string",
+     "programDiscordChannelName": "string",
+     "programDiscordChannelUrl": "string",
+     "billingLimits": "object",
+     "billingPlanDowngrade": "string",
+     "billingTaxId": "string",
+     "markedForDeletion": "boolean",
+     "platform": "string",
+     "projects": "array"
+    },
+    "evidence": [
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /mongo/{databaseId}/backups/{backupId}",
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /mysql/{databaseId}/backups/{backupId}",
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /organizations/{organizationId}/payment-method/backup",
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /postgresql/{databaseId}/backups/{backupId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /mongo/{databaseId}/backups",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /mongo/{databaseId}/backups/{backupId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /mysql/{databaseId}/backups",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /mysql/{databaseId}/backups/{backupId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /postgresql/{databaseId}/backups",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /postgresql/{databaseId}/backups/{backupId}",
+     "openapi/_original/appwrite-open-api3-latest.json#PATCH /organizations/{organizationId}/payment-method/backup",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /mongo/{databaseId}/backups"
+    ]
+   },
+   "clickhouse": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "serviceId": "string",
+     "startedAt": "string",
+     "finishedAt": "string",
+     "sizeInBytes": "number",
+     "durationInSeconds": "number",
+     "type": "string",
+     "backupName": "string",
+     "bucket": null
+    },
+    "evidence": [
+     "openapi/_original/clickhouse-cloud-api-openapi.json#GET /v1/organizations/{organizationId}/services/{serviceId}/backups",
+     "openapi/_original/clickhouse-cloud-api-openapi.json#GET /v1/organizations/{organizationId}/services/{serviceId}/backups/{backupId}"
+    ]
+   },
+   "cockroach-labs": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "backups": "array",
+     "pagination": "object"
+    },
+    "evidence": [
+     "openapi/_original/cockroach-labs-cloud-api-openapi.yml#GET /api/v1/clusters/{cluster_id}/backups",
+     "openapi/_original/cockroach-labs-openapi.json#GET /api/v1/clusters/{cluster_id}/backups"
+    ]
+   },
+   "couchbase": {
+    "segments": [
+     "backup"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "full_backup": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/couchbase-backup-service-rest-api-openapi.yml#POST /api/v1/cluster/self/repository/active/{repositoryId}/backup"
+    ]
+   },
+   "datastax": {
+    "segments": [
+     "snapshots"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/datastax-devops-openapi.json#GET /v2/databases/{databaseID}/snapshots"
+    ]
+   },
+   "instaclustr": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "state": "string",
+     "progress": "number",
+     "start": "number",
+     "end": "number"
+    },
+    "evidence": [
+     "openapi/_original/instaclustr-deprecated-openapi.json#GET /provisioning/v1/{clusterId}/backups",
+     "openapi/_original/instaclustr-deprecated-openapi.json#POST /provisioning/v1/{clusterId}/backups",
+     "openapi/_original/instaclustr-deprecated-openapi.yml#GET /provisioning/v1/{clusterId}/backups",
+     "openapi/_original/instaclustr-deprecated-openapi.yml#POST /provisioning/v1/{clusterId}/backups"
+    ]
+   },
+   "mongodb": {
+    "segments": [
+     "snapshots"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "cloudProvider": "string",
+     "copyRegions": "array",
+     "createdAt": "string",
+     "description": "string",
+     "expiresAt": "string",
+     "frequencyType": "string",
+     "id": "string",
+     "links": "array",
+     "masterKeyUUID": "string",
+     "mongodVersion": "string",
+     "policyItems": "array",
+     "replicaSetName": "string",
+     "snapshotType": "string",
+     "status": "string",
+     "storageSizeBytes": "integer",
+     "type": "string",
+     "retentionInDays": "integer",
+     "retentionUnit": "string",
+     "retentionValue": "integer",
+     "clusterId": "string",
+     "clusterName": "string",
+     "complete": "boolean",
+     "created": "object",
+     "doNotDelete": "boolean",
+     "expires": "string",
+     "groupId": "string",
+     "incremental": "boolean",
+     "lastOplogAppliedTimestamp": "object",
+     "parts": "array"
+    },
+    "evidence": [
+     "openapi/_original/mongodb-atlas-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/snapshots/{snapshotId}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/snapshots",
+     "openapi/_original/mongodb-atlas-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/snapshots/{snapshotId}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#PATCH /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#PATCH /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/snapshots/{snapshotId}",
+     "openapi/_original/mongodb-atlas-openapi.yaml#POST /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots",
+     "openapi/_original/mongodb-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots/{snapshotId}",
+     "openapi/_original/mongodb-openapi.yaml#DELETE /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/snapshots/{snapshotId}",
+     "openapi/_original/mongodb-openapi.yaml#GET /api/atlas/v2/groups/{groupId}/clusters/{clusterName}/backup/snapshots"
+    ]
+   },
+   "neo4j": {
+    "segments": [
+     "snapshots"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "snapshot_id": "string",
+     "instance_id": "string",
+     "status": "string",
+     "timestamp": "string",
+     "exportable": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/neo4j-aura-api-openapi.yml#GET /instances/{instanceId}/snapshots",
+     "openapi/_original/neo4j-aura-api-openapi.yml#GET /instances/{instanceId}/snapshots/{snapshotId}",
+     "openapi/_original/neo4j-aura-api-openapi.yml#POST /instances/{instanceId}/snapshots"
+    ]
+   },
+   "oracle": {
+    "segments": [
+     "backups",
+     "backup"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "availabilityDomain": "string",
+     "backupDestinationType": "string",
+     "compartmentId": "string",
+     "databaseEdition": "string",
+     "databaseId": "string",
+     "databaseSizeInGBs": "number",
+     "displayName": "string",
+     "encryptionKeyLocationDetails": "object",
+     "id": "string",
+     "isUsingOracleManagedKeys": "boolean",
+     "kmsKeyId": "string",
+     "kmsKeyVersionId": "string",
+     "lifecycleDetails": "string",
+     "lifecycleState": "string",
+     "retentionPeriodInDays": "integer",
+     "retentionPeriodInYears": "integer",
+     "secondaryKmsKeyIds": "array",
+     "shape": "string",
+     "timeEnded": "string",
+     "timeExpiryScheduled": "string",
+     "timeStarted": "string",
+     "type": "string",
+     "vaultId": "string",
+     "version": "string",
+     "backupLocation": "object",
+     "isIncludeKeys": "boolean",
+     "backupPreparationStatus": "string",
+     "backupSizeInGBs": "integer",
+     "backupType": "string",
+     "creationType": "string",
+     "dataStorageSizeInGBs": "integer",
+     "dbSystemId": "string",
+     "dbSystemSnapshotSummary": "object",
+     "definedTags": "object",
+     "description": "string",
+     "encryptData": "object",
+     "freeformTags": "object",
+     "immediateSourceBackupId": "string",
+     "mysqlVersion": "string",
+     "originalSourceBackupId": "string",
+     "retentionInDays": "integer",
+     "shapeName": "string",
+     "softDelete": "string",
+     "systemTags": "object",
+     "timeCopyCreated": "string",
+     "timeCreated": "string",
+     "validationStatus": "string",
+     "backupValidationDetails": "object",
+     "dbSystemSnapshot": "object",
+     "timeUpdated": "string",
+     "backupSize": "integer",
+     "copyStatus": "array",
+     "retentionPeriod": "integer",
+     "sourceType": "string",
+     "timeCreatedPrecise": "string",
+     "dbSystemDetails": "object",
+     "lastAcceptedRequestToken": "string",
+     "lastCompletedRequestToken": "string",
+     "sourceBackupDetails": "object",
+     "managedInstanceId": "string"
+    },
+    "evidence": [
+     "openapi/_original/oci-database-openapi.yaml#DELETE /backups/{backupId}",
+     "openapi/_original/oci-database-openapi.yaml#GET /backups",
+     "openapi/_original/oci-database-openapi.yaml#GET /backups/{backupId}",
+     "openapi/_original/oci-database-openapi.yaml#POST /backups",
+     "openapi/_original/oci-database-openapi.yaml#PUT /backups/{backupId}",
+     "openapi/_original/oci-key-openapi.yaml#POST /20180608/keys/{keyId}/actions/backup",
+     "openapi/_original/oci-key-openapi.yaml#POST /20180608/vaults/{vaultId}/actions/backup",
+     "openapi/_original/oci-mysql-openapi.yaml#DELETE /backups/{backupId}",
+     "openapi/_original/oci-mysql-openapi.yaml#GET /backups",
+     "openapi/_original/oci-mysql-openapi.yaml#GET /backups/{backupId}",
+     "openapi/_original/oci-mysql-openapi.yaml#POST /backups",
+     "openapi/_original/oci-mysql-openapi.yaml#PUT /backups/{backupId}"
+    ]
+   },
+   "oracle-cloud": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "availabilityDomain": "string",
+     "backupDestinationType": "string",
+     "compartmentId": "string",
+     "databaseEdition": "string",
+     "databaseId": "string",
+     "databaseSizeInGBs": "number",
+     "displayName": "string",
+     "encryptionKeyLocationDetails": "object",
+     "id": "string",
+     "isUsingOracleManagedKeys": "boolean",
+     "kmsKeyId": "string",
+     "kmsKeyVersionId": "string",
+     "lifecycleDetails": "string",
+     "lifecycleState": "string",
+     "retentionPeriodInDays": "integer",
+     "retentionPeriodInYears": "integer",
+     "secondaryKmsKeyIds": "array",
+     "shape": "string",
+     "timeEnded": "string",
+     "timeExpiryScheduled": "string",
+     "timeStarted": "string",
+     "type": "string",
+     "vaultId": "string",
+     "version": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-cloud-database-openapi.yaml#DELETE /backups/{backupId}",
+     "openapi/_original/oracle-cloud-database-openapi.yaml#GET /backups",
+     "openapi/_original/oracle-cloud-database-openapi.yaml#GET /backups/{backupId}",
+     "openapi/_original/oracle-cloud-database-openapi.yaml#POST /backups",
+     "openapi/_original/oracle-cloud-database-openapi.yaml#PUT /backups/{backupId}"
+    ]
+   },
+   "oracle-database": {
+    "segments": [
+     "snapshots",
+     "backups"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "string",
+     "databaseId": "string",
+     "displayName": "string",
+     "type": "string",
+     "lifecycleState": "string",
+     "timeStarted": "string",
+     "databaseSizeInGBs": "number",
+     "timeEnded": "string",
+     "snapshot_name": "string",
+     "snapshot_scn": "integer",
+     "creation_time": "string",
+     "pdb_name": "string",
+     "auto_snapshot_enabled": "boolean",
+     "snapshot_interval_minutes": "integer",
+     "max_snapshots": "integer"
+    },
+    "evidence": [
+     "openapi/_original/oracle-database-oci-openapi.yml#DELETE /backups/{backupId}",
+     "openapi/_original/oracle-database-oci-openapi.yml#GET /backups",
+     "openapi/_original/oracle-database-oci-openapi.yml#GET /backups/{backupId}",
+     "openapi/_original/oracle-database-oci-openapi.yml#POST /backups",
+     "openapi/_original/oracle-database-ords-openapi.yml#DELETE /database/snapshots/{snapshot_name}",
+     "openapi/_original/oracle-database-ords-openapi.yml#GET /database/snapshots/",
+     "openapi/_original/oracle-database-ords-openapi.yml#GET /database/snapshots/{snapshot_name}",
+     "openapi/_original/oracle-database-ords-openapi.yml#POST /database/snapshots/",
+     "openapi/_original/oracle-database-ords-openapi.yml#POST /database/snapshots/{snapshot_name}",
+     "openapi/_original/oracle-database-ords-openapi.yml#PUT /database/snapshots/"
+    ]
+   },
+   "oracle-partitioning": {
+    "segments": [
+     "snapshots"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT collection"
+    ],
+    "properties": {
+     "con_id": "integer",
+     "con_uid": "integer",
+     "con_name": "string",
+     "snapshot_name": "string",
+     "snapshot_scn": "integer",
+     "previous_snapshot_scn": "integer",
+     "snapshot_time": "integer",
+     "previous_snapshot_time": "integer",
+     "full_snapshot_path": "string",
+     "links": "array",
+     "maxSnapshot": "integer",
+     "snapshotMode": "string",
+     "snapshot_files": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#DELETE /database/snapshots/{snapshot_name}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/snapshots/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/snapshots/{snapshot_name}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#POST /database/snapshots/",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#POST /database/snapshots/{snapshot_name}",
+     "openapi/_original/oracle-partitioning-ords-database-api-openapi.json#PUT /database/snapshots/"
+    ]
+   },
+   "oracle-platforms": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "availabilityDomain": "string",
+     "backupDestinationType": "string",
+     "compartmentId": "string",
+     "databaseEdition": "string",
+     "databaseId": "string",
+     "databaseSizeInGBs": "number",
+     "displayName": "string",
+     "encryptionKeyLocationDetails": "object",
+     "id": "string",
+     "isUsingOracleManagedKeys": "boolean",
+     "kmsKeyId": "string",
+     "kmsKeyVersionId": "string",
+     "lifecycleDetails": "string",
+     "lifecycleState": "string",
+     "retentionPeriodInDays": "integer",
+     "retentionPeriodInYears": "integer",
+     "secondaryKmsKeyIds": "array",
+     "shape": "string",
+     "timeEnded": "string",
+     "timeExpiryScheduled": "string",
+     "timeStarted": "string",
+     "type": "string",
+     "vaultId": "string",
+     "version": "string"
+    },
+    "evidence": [
+     "openapi/_original/oracle-platforms-database-openapi.yml#DELETE /backups/{backupId}",
+     "openapi/_original/oracle-platforms-database-openapi.yml#GET /backups",
+     "openapi/_original/oracle-platforms-database-openapi.yml#GET /backups/{backupId}",
+     "openapi/_original/oracle-platforms-database-openapi.yml#POST /backups",
+     "openapi/_original/oracle-platforms-database-openapi.yml#PUT /backups/{backupId}"
+    ]
+   },
+   "pinecone": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "backup_id": "string",
+     "source_index_name": "string",
+     "source_index_id": "string",
+     "name": "string",
+     "description": "string",
+     "status": "string",
+     "cloud": "string",
+     "region": "string",
+     "dimension": "integer",
+     "metric": "string",
+     "schema": "object",
+     "record_count": "integer",
+     "namespace_count": "integer",
+     "size_bytes": "integer",
+     "tags": "object",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/pinecone-db-control-openapi.yaml#DELETE /backups/{backup_id}",
+     "openapi/_original/pinecone-db-control-openapi.yaml#GET /backups",
+     "openapi/_original/pinecone-db-control-openapi.yaml#GET /backups/{backup_id}",
+     "openapi/_original/pinecone-db-control-openapi.yaml#GET /indexes/{index_name}/backups",
+     "openapi/_original/pinecone-db-control-openapi.yaml#POST /indexes/{index_name}/backups"
+    ]
+   },
+   "pingcap": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "type": "string",
+     "create_timestamp": "string",
+     "size": "string",
+     "status": "string",
+     "tidbId": "string",
+     "organizationId": "string",
+     "servicePlan": null,
+     "displayName": "string",
+     "createTime": "string",
+     "sizeBytes": "string",
+     "state": null,
+     "triggerType": null,
+     "expirationTime": "string",
+     "backupTs": "string",
+     "regionId": "string",
+     "customerManaged": "boolean",
+     "encryptionKeyId": "string",
+     "backupId": "string"
+    },
+    "evidence": [
+     "openapi/_original/pingcap-tidb-cloud-v1beta-openapi-original.json#DELETE /api/v1beta/projects/{project_id}/clusters/{cluster_id}/backups/{backup_id}",
+     "openapi/_original/pingcap-tidb-cloud-v1beta-openapi-original.json#GET /api/v1beta/projects/{project_id}/clusters/{cluster_id}/backups",
+     "openapi/_original/pingcap-tidb-cloud-v1beta-openapi-original.json#GET /api/v1beta/projects/{project_id}/clusters/{cluster_id}/backups/{backup_id}",
+     "openapi/_original/pingcap-tidb-cloud-v1beta-openapi-original.json#POST /api/v1beta/projects/{project_id}/clusters/{cluster_id}/backups",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#DELETE /backups/{backupId}",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#DELETE /tidbs/{tidbId}/backups/{backupId}",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#GET /backups",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#GET /tidbs/{tidbId}/backups",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#POST /tidbs/{tidbId}/backups"
+    ]
+   },
+   "planetscale": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "state": "string",
+     "size": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "completed_at": "string",
+     "expires_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/planetscale-platform-api-openapi.yml#DELETE /organizations/{organization}/databases/{database}/branches/{branch}/backups/{backup_id}",
+     "openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}/branches/{branch}/backups",
+     "openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}/branches/{branch}/backups/{backup_id}",
+     "openapi/_original/planetscale-platform-api-openapi.yml#POST /organizations/{organization}/databases/{database}/branches/{branch}/backups"
+    ]
+   },
+   "prisma": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "backupType": "string",
+     "createdAt": "string",
+     "size": "number",
+     "status": "string",
+     "type": "string",
+     "databaseId": "string",
+     "sizeBytes": "integer",
+     "completedAt": "string",
+     "label": "string"
+    },
+    "evidence": [
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/databases/{databaseId}/backups",
+     "openapi/_original/prisma-postgres-management-openapi.yml#GET /databases/{databaseId}/backups",
+     "openapi/_original/prisma-postgres-management-openapi.yml#POST /databases/{databaseId}/backups"
+    ]
+   },
+   "redis": {
+    "segments": [
+     "backup"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "taskId": "string",
+     "commandType": "string",
+     "status": "string",
+     "description": "string",
+     "timestamp": "string",
+     "response": "object",
+     "links": "array",
+     "subscriptionId": "integer",
+     "databaseId": "integer",
+     "regionName": "string",
+     "adhocBackupPath": "string"
+    },
+    "evidence": [
+     "openapi/_original/redis-cloud-openapi.yml#GET /v1/fixed/subscriptions/{subscriptionId}/databases/{databaseId}/backup",
+     "openapi/_original/redis-cloud-openapi.yml#GET /v1/subscriptions/{subscriptionId}/databases/{databaseId}/backup",
+     "openapi/_original/redis-cloud-openapi.yml#POST /v1/fixed/subscriptions/{subscriptionId}/databases/{databaseId}/backup",
+     "openapi/_original/redis-cloud-openapi.yml#POST /v1/subscriptions/{subscriptionId}/databases/{databaseId}/backup"
+    ]
+   },
+   "scaleway": {
+    "segments": [
+     "backups",
+     "snapshots"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "instance_id": "string",
+     "database_name": "string",
+     "name": "string",
+     "status": "string",
+     "size": "integer",
+     "expires_at": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "instance_name": "string",
+     "download_url": "string",
+     "download_url_expires_at": "string",
+     "region": "string",
+     "same_region": "boolean",
+     "node_type": "string",
+     "volume_type": "object"
+    },
+    "evidence": [
+     "openapi/_original/scaleway-database-openapi.yml#DELETE /rdb/v1/regions/{region}/backups/{database_backup_id}",
+     "openapi/_original/scaleway-database-openapi.yml#GET /rdb/v1/regions/{region}/backups",
+     "openapi/_original/scaleway-database-openapi.yml#GET /rdb/v1/regions/{region}/backups/{database_backup_id}",
+     "openapi/_original/scaleway-database-openapi.yml#PATCH /rdb/v1/regions/{region}/backups/{database_backup_id}",
+     "openapi/_original/scaleway-database-openapi.yml#POST /rdb/v1/regions/{region}/backups",
+     "openapi/_original/scaleway-database-openapi.yml#POST /rdb/v1/regions/{region}/instances/{instance_id}/snapshots"
+    ]
+   },
+   "sevalla": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "status": "string",
+     "size_bytes": "integer",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/sevalla-openapi.yml#GET /databases/{id}/backups",
+     "openapi/_original/sevalla-openapi.yml#POST /databases/{id}/backups"
+    ]
+   },
+   "skyvia": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "created": "string",
+     "modified": "string",
+     "scheduled": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/backups",
+     "openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/backups/{backupId}"
+    ]
+   },
+   "sybase": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "databaseName": "string",
+     "type": "string",
+     "status": "string",
+     "startTime": "string",
+     "endTime": "string",
+     "sizeMB": "number",
+     "deviceName": "string",
+     "compress": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/sybase-ase-rest-api-openapi.yml#GET /servers/{serverId}/backups",
+     "openapi/_original/sybase-ase-rest-api-openapi.yml#POST /servers/{serverId}/backups"
+    ]
+   },
+   "tessell": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "availabilityMachineId": "string",
+     "tessellServiceId": "string",
+     "serviceName": "string",
+     "engineType": "string",
+     "timeZone": "string",
+     "owner": "string",
+     "backupCatalog": "array",
+     "multiDisk": "boolean",
+     "backups": "array",
+     "taskId": "string",
+     "taskType": "string",
+     "resourceId": "string",
+     "associatedResourceIds": "array",
+     "details": "object",
+     "backupSource": "string",
+     "snapshotId": "string",
+     "name": "string",
+     "targetId": "string",
+     "targetType": "string",
+     "id": "string",
+     "backupTime": "string",
+     "status": "string",
+     "size": "integer",
+     "manual": "boolean",
+     "isIncremental": "boolean",
+     "cloudAvailability": "array",
+     "availabilityConfig": "array",
+     "databases": "array",
+     "backupInfo": "object",
+     "sharedWith": "object",
+     "downloadUrlStatus": "string",
+     "targetName": "string",
+     "message": "string"
+    },
+    "evidence": [
+     "openapi/_original/tessell-openapi-original.json#DELETE /availability-machines/{availabilityMachineId}/backups/{id}",
+     "openapi/_original/tessell-openapi-original.json#GET /availability-machines/{availabilityMachineId}/backups",
+     "openapi/_original/tessell-openapi-original.json#GET /availability-machines/{availabilityMachineId}/backups/{id}",
+     "openapi/_original/tessell-openapi-original.json#GET /dataflix/{id}/catalog/backups",
+     "openapi/_original/tessell-openapi-original.json#POST /availability-machines/{availabilityMachineId}/backups"
+    ]
+   },
+   "tidb": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "tidbId": "string",
+     "organizationId": "string",
+     "servicePlan": null,
+     "displayName": "string",
+     "description": "string",
+     "createTime": "string",
+     "sizeBytes": "string",
+     "state": null,
+     "type": null,
+     "triggerType": null,
+     "expirationTime": "string",
+     "backupTs": "string",
+     "regionId": "string",
+     "customerManaged": "boolean",
+     "encryptionKeyId": "string",
+     "backupId": "string",
+     "name": "string",
+     "create_timestamp": "string",
+     "size": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#DELETE /backups/{backupId}",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#DELETE /tidbs/{tidbId}/backups/{backupId}",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#GET /backups",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#GET /tidbs/{tidbId}/backups",
+     "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json#POST /tidbs/{tidbId}/backups",
+     "openapi/_original/tidb-cloud-v1beta-openapi-original.json#DELETE /api/v1beta/projects/{project_id}/clusters/{cluster_id}/backups/{backup_id}",
+     "openapi/_original/tidb-cloud-v1beta-openapi-original.json#GET /api/v1beta/projects/{project_id}/clusters/{cluster_id}/backups",
+     "openapi/_original/tidb-cloud-v1beta-openapi-original.json#GET /api/v1beta/projects/{project_id}/clusters/{cluster_id}/backups/{backup_id}",
+     "openapi/_original/tidb-cloud-v1beta-openapi-original.json#POST /api/v1beta/projects/{project_id}/clusters/{cluster_id}/backups"
+    ]
+   },
+   "ubicloud": {
+    "segments": [
+     "backup"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "key": "string",
+     "last_modified": "string"
+    },
+    "evidence": [
+     "openapi/_original/ubicloud-openapi.yml#GET /project/{project_id}/location/{location}/postgres/{postgres_database_reference}/backup",
+     "openapi/_original/ubicloud-openapi_2.yml#GET /project/{project_id}/location/{location}/postgres/{postgres_database_reference}/backup"
+    ]
+   },
+   "upcloud": {
+    "segments": [
+     "backup"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "access": "string",
+     "encrypted": "string",
+     "labels": "array",
+     "license": "number",
+     "part_of_plan": "string",
+     "progress": "string",
+     "created": "string",
+     "origin": "string",
+     "size": "integer",
+     "state": "string",
+     "tier": "string",
+     "title": "string",
+     "type": "string",
+     "template_type": "string",
+     "uuid": "string",
+     "zone": "string",
+     "backup_rule": null,
+     "backups": "object",
+     "servers": "object",
+     "storage": "object"
+    },
+    "evidence": [
+     "openapi/_original/upcloud-openapi.json#GET /1.3/storage/backup",
+     "openapi/_original/upcloud-openapi.json#POST /1.3/storage/{uuid}/backup",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/storage/backup",
+     "openapi/_original/upcloud-openapi.yml#POST /1.3/storage/{uuid}/backup"
+    ]
+   },
+   "vultr": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "date_created": "string",
+     "description": "string",
+     "size": "integer",
+     "status": "string",
+     "latest_backup": "object",
+     "oldest_backup": "object"
+    },
+    "evidence": [
+     "openapi/_original/vultr-openapi.yml#GET /backups",
+     "openapi/_original/vultr-openapi.yml#GET /backups/{backup-id}",
+     "openapi/_original/vultr-openapi.yml#GET /databases/{database-id}/backups",
+     "openapi/_original/vultr-schema-openapi.json#GET /backups",
+     "openapi/_original/vultr-schema-openapi.json#GET /backups/{backup-id}",
+     "openapi/_original/vultr-v2-openapi.yaml#GET /backups",
+     "openapi/_original/vultr-v2-openapi.yaml#GET /backups/{backup-id}",
+     "openapi/_original/vultr-v2-openapi.yaml#GET /databases/{database-id}/backups"
+    ]
+   },
+   "weaviate": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "classes": "array",
+     "status": "string",
+     "startedAt": "string",
+     "completedAt": "string",
+     "size": "number",
+     "backend": "string",
+     "bucket": "string",
+     "path": "string",
+     "error": "string",
+     "config": "object",
+     "include": "array",
+     "exclude": "array",
+     "incremental_base_backup_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/weaviate-openapi.yml#GET /backups/{backend}",
+     "openapi/_original/weaviate-openapi.yml#POST /backups/{backend}"
+    ]
+   },
+   "xata": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "branchID": "string",
+     "earliestRestore": "string",
+     "latestRestore": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/xata-management-api-openapi.yml#GET /organizations/{organizationID}/projects/{projectID}/backups",
+     "openapi/_original/xata-management-api-openapi.yml#GET /organizations/{organizationID}/projects/{projectID}/backups/{backupID}"
+    ]
+   },
+   "yugabyte": {
+    "segments": [
+     "backups",
+     "backup"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "ybc_task_id": "string",
+     "tserver_ip": "string",
+     "user_operation": "string",
+     "ybdb_api": "string",
+     "database_keyspace": "string",
+     "task_start_time": "string",
+     "task_status": "string",
+     "time_taken": "string",
+     "bytes_transferred": "string",
+     "actual_size": "string",
+     "resourceUUID": "string",
+     "taskUUID": "string",
+     "alterLoadBalancer": "boolean",
+     "backupCategory": "string",
+     "backupStats": "boolean",
+     "backupType": "string",
+     "backupUUID": "string",
+     "baseBackupUUID": "string",
+     "cmkArn": "string",
+     "communicationPorts": "object",
+     "creatingUser": "object",
+     "cronExpression": "string",
+     "customerUUID": "string",
+     "deviceInfo": "object",
+     "disableChecksum": "boolean",
+     "disableMultipart": "boolean",
+     "disableParallelism": "boolean",
+     "dumpRoleChecks": "boolean",
+     "enablePointInTimeRestore": "boolean",
+     "enableVerboseLogs": "boolean",
+     "enableYbc": "boolean",
+     "encryptionAtRestConfig": "object",
+     "errorString": "string",
+     "expectedUniverseVersion": "integer",
+     "expiryTimeUnit": "string",
+     "extraDependencies": "object",
+     "frequencyTimeUnit": "string",
+     "ignoreErrors": "boolean",
+     "incrementalBackupFrequency": "integer",
+     "incrementalBackupFrequencyTimeUnit": "string",
+     "installYbc": "boolean",
+     "keyspaceTableList": "array",
+     "kmsConfigUUID": "string",
+     "minNumBackupsToRetain": "integer",
+     "nodeDetailsSet": "array",
+     "nodeExporterUser": "string",
+     "parallelDBBackups": "integer",
+     "parallelism": "integer",
+     "platformUrl": "string",
+     "platformVersion": "string",
+     "previousTaskUUID": "string",
+     "runOnlyPrechecks": "boolean",
+     "scheduleName": "string",
+     "scheduleUUID": "string",
+     "schedulingFrequency": "integer",
+     "sleepAfterMasterRestartMillis": "integer",
+     "sleepAfterTServerRestartMillis": "integer",
+     "sourceXClusterConfigs": "array",
+     "sse": "boolean",
+     "storageConfigUUID": "string",
+     "tableByTableBackup": "boolean",
+     "targetXClusterConfigs": "array",
+     "timeBeforeDelete": "integer",
+     "universeUUID": "string",
+     "useLocalTimezone": "boolean",
+     "useRoles": "boolean",
+     "useTablespaces": "boolean",
+     "ybPrevSoftwareVersion": "string",
+     "ybcInstalled": "boolean",
+     "ybcSoftwareVersion": "string",
+     "backupInfo": "object",
+     "category": "string",
+     "completionTime": "string",
+     "createTime": "string",
+     "expiry": "string",
+     "firstSnapshotTime": "integer",
+     "hasKMSHistory": "boolean",
+     "incrementalBackup": "boolean",
+     "kubernetesOperatorControlled": "boolean",
+     "parentBackup": "boolean",
+     "retryCount": "integer",
+     "state": "string",
+     "universeName": "string",
+     "updateTime": "string",
+     "version": "string",
+     "timeBeforeDeleteFromPresentInMillis": "integer",
+     "id": "string",
+     "cluster_id": "string",
+     "backup_type": "string",
+     "retention_period_in_days": "integer",
+     "created_at": "string",
+     "expiry_time": "string"
+    },
+    "evidence": [
+     "openapi/_original/yugabyte-yugabyted-openapi-original.yaml#GET /backup",
+     "openapi/_original/yugabytedb-backups-api-openapi.yml#DELETE /api/v1/customers/{cUUID}/backups",
+     "openapi/_original/yugabytedb-backups-api-openapi.yml#GET /accounts/{accountId}/projects/{projectId}/clusters/{clusterId}/backups",
+     "openapi/_original/yugabytedb-backups-api-openapi.yml#GET /api/v1/customers/{cUUID}/backups/{backupUUID}",
+     "openapi/_original/yugabytedb-backups-api-openapi.yml#GET /api/v1/customers/{cUUID}/universes/{uniUUID}/backups",
+     "openapi/_original/yugabytedb-backups-api-openapi.yml#POST /accounts/{accountId}/projects/{projectId}/clusters/{clusterId}/backups",
+     "openapi/_original/yugabytedb-backups-api-openapi.yml#POST /api/v1/customers/{cUUID}/backups",
+     "openapi/_original/yugabytedb-backups-api-openapi.yml#PUT /api/v1/customers/{cUUID}/backups/{backupUUID}"
+    ]
+   },
+   "yugabytedb": {
+    "segments": [
+     "backups"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "resourceUUID": "string",
+     "taskUUID": "string",
+     "alterLoadBalancer": "boolean",
+     "backupCategory": "string",
+     "backupStats": "boolean",
+     "backupType": "string",
+     "backupUUID": "string",
+     "baseBackupUUID": "string",
+     "cmkArn": "string",
+     "communicationPorts": "object",
+     "creatingUser": "object",
+     "cronExpression": "string",
+     "customerUUID": "string",
+     "deviceInfo": "object",
+     "disableChecksum": "boolean",
+     "disableMultipart": "boolean",
+     "disableParallelism": "boolean",
+     "dumpRoleChecks": "boolean",
+     "enablePointInTimeRestore": "boolean",
+     "enableVerboseLogs": "boolean",
+     "enableYbc": "boolean",
+     "encryptionAtRestConfig": "object",
+     "errorString": "string",
+     "expectedUniverseVersion": "integer",
+     "expiryTimeUnit": "string",
+     "extraDependencies": "object",
+     "frequencyTimeUnit": "string",
+     "ignoreErrors": "boolean",
+     "incrementalBackupFrequency": "integer",
+     "incrementalBackupFrequencyTimeUnit": "string",
+     "installYbc": "boolean",
+     "keyspaceTableList": "array",
+     "kmsConfigUUID": "string",
+     "minNumBackupsToRetain": "integer",
+     "nodeDetailsSet": "array",
+     "nodeExporterUser": "string",
+     "parallelDBBackups": "integer",
+     "parallelism": "integer",
+     "platformUrl": "string",
+     "platformVersion": "string",
+     "previousTaskUUID": "string",
+     "runOnlyPrechecks": "boolean",
+     "scheduleName": "string",
+     "scheduleUUID": "string",
+     "schedulingFrequency": "integer",
+     "sleepAfterMasterRestartMillis": "integer",
+     "sleepAfterTServerRestartMillis": "integer",
+     "sourceXClusterConfigs": "array",
+     "sse": "boolean",
+     "storageConfigUUID": "string",
+     "tableByTableBackup": "boolean",
+     "targetXClusterConfigs": "array",
+     "timeBeforeDelete": "integer",
+     "universeUUID": "string",
+     "useLocalTimezone": "boolean",
+     "useRoles": "boolean",
+     "useTablespaces": "boolean",
+     "ybPrevSoftwareVersion": "string",
+     "ybcInstalled": "boolean",
+     "ybcSoftwareVersion": "string",
+     "backupInfo": "object",
+     "category": "string",
+     "completionTime": "string",
+     "createTime": "string",
+     "expiry": "string",
+     "firstSnapshotTime": "integer",
+     "hasKMSHistory": "boolean",
+     "incrementalBackup": "boolean",
+     "kubernetesOperatorControlled": "boolean",
+     "parentBackup": "boolean",
+     "retryCount": "integer",
+     "state": "string",
+     "universeName": "string",
+     "updateTime": "string",
+     "version": "string",
+     "timeBeforeDeleteFromPresentInMillis": "integer",
+     "firstTry": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/openapi_2.yaml#DELETE /api/v1/customers/{cUUID}/backups",
+     "openapi/_original/openapi_2.yaml#GET /api/v1/customers/{cUUID}/backups/{backupUUID}",
+     "openapi/_original/openapi_2.yaml#GET /api/v1/customers/{cUUID}/universes/{uniUUID}/backups",
+     "openapi/_original/openapi_2.yaml#POST /api/v1/customers/{cUUID}/backups",
+     "openapi/_original/openapi_2.yaml#PUT /api/v1/customers/{cUUID}/backups/{backupUUID}",
+     "openapi/_original/platform.swagger.json#DELETE /api/v1/customers/{cUUID}/backups",
+     "openapi/_original/platform.swagger.json#GET /api/v1/customers/{cUUID}/backups/{backupUUID}",
+     "openapi/_original/platform.swagger.json#GET /api/v1/customers/{cUUID}/universes/{uniUUID}/backups",
+     "openapi/_original/platform.swagger.json#POST /api/v1/customers/{cUUID}/backups",
+     "openapi/_original/platform.swagger.json#PUT /api/v1/customers/{cUUID}/backups/{backupUUID}",
+     "openapi/_original/yugabytedb-anywhere-v1-backups-restore.yaml#DELETE /api/v1/customers/{cUUID}/backups",
+     "openapi/_original/yugabytedb-anywhere-v1-backups-restore.yaml#GET /api/v1/customers/{cUUID}/backups/{backupUUID}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "4paradigm",
+    "abloatai",
+    "aerospike",
+    "aifordatabase",
+    "airtable",
+    "aiven",
+    "altinity",
+    "amazon-aurora-dsql",
+    "amazon-keyspaces",
+    "amazon-lightsail",
+    "amazon-neptune",
+    "amazon-qldb",
+    "apache-hbase",
+    "apache-hive",
+    "apache-ignite",
+    "apache-shardingsphere",
+    "appwrite",
+    "arangodb",
+    "ardent",
+    "artie",
+    "azure-cloud",
+    "azure-cosmos-db",
+    "backendless",
+    "baserow",
+    "bigchaindb",
+    "border0",
+    "bubble",
+    "bytebase",
+    "carto",
+    "cdata",
+    "chroma",
+    "clickhouse",
+    "cloudkit",
+    "cockroach-labs",
+    "coda",
+    "codehooks",
+    "convex",
+    "couchbase",
+    "data-world",
+    "databricks",
+    "datastax",
+    "dbt",
+    "debezium",
+    "delphix",
+    "ditto-live",
+    "dolthub",
+    "dremio-intelligent-lakehouse-platform",
+    "dune-analytics",
+    "ehrbase",
+    "elasticsearch",
+    "electric-sql",
+    "enterprisedb",
+    "fauna",
+    "feldera",
+    "firebolt",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-bigtable",
+    "google-cloud-datastore",
+    "google-cloud-firestore",
+    "google-cloud-memorystore",
+    "google-cloud-spanner",
+    "google-cloud-sql",
+    "grist",
+    "hatchet",
+    "ibm",
+    "influxdata",
+    "influxdb",
+    "insforge",
+    "instaclustr",
+    "instantdb",
+    "knack",
+    "koyeb",
+    "kvdb",
+    "listmonk",
+    "macrometa",
+    "manticore",
+    "materialize",
+    "metabase",
+    "microsoft-azure-cache-for-redis",
+    "microsoft-azure-synapse-analytics",
+    "milvus",
+    "mode",
+    "mongodb",
+    "mongodb-atlas",
+    "mysql",
+    "neo4j",
+    "neon",
+    "nhost",
+    "ninox",
+    "nocodb",
+    "notion",
+    "nutanix",
+    "ocient",
+    "oracle",
+    "oracle-apex",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-database-19c",
+    "oracle-goldengate",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "pinecone",
+    "pingcap",
+    "planetscale",
+    "plinth-us-grants-data",
+    "popsink",
+    "presto-foundation",
+    "prisma",
+    "qdrant",
+    "quasar",
+    "questdb",
+    "quickbase",
+    "quote-garden",
+    "rawg",
+    "redis",
+    "relational-data-modeling",
+    "render",
+    "riak",
+    "sap-hana",
+    "scaleway",
+    "schema-free",
+    "scylladb",
+    "sequin-io",
+    "sevalla",
+    "singlestore",
+    "skyvia",
+    "smartmind",
+    "snowflake",
+    "softr",
+    "spring-data",
+    "startree",
+    "startree-cortexdata",
+    "supabase",
+    "superblocks",
+    "sybase",
+    "teable",
+    "teradata",
+    "tessell",
+    "thenile",
+    "tidb",
+    "tikv",
+    "tiledb",
+    "timescale",
+    "tinybird",
+    "trino",
+    "triplit",
+    "turso",
+    "ubicloud",
+    "upcloud",
+    "upstash",
+    "vastdata",
+    "vertica",
+    "victoriametrics",
+    "vultr",
+    "weaviate",
+    "xano",
+    "xata",
+    "yugabyte",
+    "yugabytedb",
+    "yunqi",
+    "zoho-creator"
+   ],
+   "kebab-case": [
+    "aerospike",
+    "aifordatabase",
+    "aiven",
+    "altinity",
+    "amazon-aurora-dsql",
+    "amazon-lightsail",
+    "amazon-qldb",
+    "apache-ignite",
+    "apache-shardingsphere",
+    "appwrite",
+    "arangodb",
+    "ardent",
+    "artie",
+    "baserow",
+    "border0",
+    "cdata",
+    "chroma",
+    "clickhouse",
+    "cockroach-labs",
+    "databricks",
+    "datastax",
+    "debezium",
+    "delphix",
+    "dremio-intelligent-lakehouse-platform",
+    "dune-analytics",
+    "flipside",
+    "grist",
+    "hatchet",
+    "insforge",
+    "instaclustr",
+    "koyeb",
+    "macrometa",
+    "milvus",
+    "neon",
+    "nhost",
+    "oracle",
+    "oracle-database",
+    "oracle-database-19c",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "pinecone",
+    "pingcap",
+    "planetscale",
+    "plinth-us-grants-data",
+    "popsink",
+    "prisma",
+    "quasar",
+    "rawg",
+    "redis",
+    "relational-data-modeling",
+    "render",
+    "scaleway",
+    "scylladb",
+    "sequin-io",
+    "sevalla",
+    "snowflake",
+    "softr",
+    "supabase",
+    "teradata",
+    "tessell",
+    "thenile",
+    "tidb",
+    "timescale",
+    "triplit",
+    "turso",
+    "ubicloud",
+    "upcloud",
+    "upstash",
+    "vastdata",
+    "vultr",
+    "weaviate",
+    "xano",
+    "xata",
+    "yugabyte",
+    "yugabytedb"
+   ],
+   "other": [
+    "aerospike",
+    "aiven",
+    "amazon-athena",
+    "amazon-aurora",
+    "amazon-dms",
+    "amazon-documentdb",
+    "amazon-dynamodb",
+    "amazon-elasticache",
+    "amazon-lightsail",
+    "amazon-neptune",
+    "amazon-qldb",
+    "amazon-rds",
+    "amazon-redshift",
+    "amazon-simpledb",
+    "amazon-timestream",
+    "arangodb",
+    "ardent",
+    "aws-redshift",
+    "azure-cloud",
+    "baserow",
+    "bytebase",
+    "cockroach-labs",
+    "codehooks",
+    "couchbase",
+    "databricks",
+    "dbt",
+    "dokploy",
+    "dynamodb",
+    "ehrbase",
+    "elasticsearch",
+    "fauna",
+    "firebolt",
+    "google-cloud-datastore",
+    "google-cloud-firestore",
+    "google-cloud-memorystore",
+    "grist",
+    "macrometa",
+    "manticore",
+    "microsoft-azure-cache-for-redis",
+    "microsoft-azure-synapse-analytics",
+    "mode",
+    "mongodb",
+    "nhost",
+    "oracle",
+    "oracle-database",
+    "oracle-database-19c",
+    "oracle-goldengate",
+    "oracle-partitioning",
+    "pingcap",
+    "quasar",
+    "redis",
+    "snowflake",
+    "thesportsdb",
+    "tidb",
+    "tiledb",
+    "upcloud",
+    "vultr",
+    "weaviate"
+   ],
+   "camelCase": [
+    "amazon-dms",
+    "amazon-lightsail",
+    "amazon-neptune",
+    "apache-ignite",
+    "appwrite",
+    "arangodb",
+    "azure-cloud",
+    "bubble",
+    "bytebase",
+    "cdata",
+    "clickhouse",
+    "coda",
+    "couchbase",
+    "data-world",
+    "datastax",
+    "delphix",
+    "ditto-live",
+    "firebolt",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-sql",
+    "grist",
+    "influxdata",
+    "influxdb",
+    "instaclustr",
+    "microsoft-azure-cache-for-redis",
+    "microsoft-azure-synapse-analytics",
+    "mongodb",
+    "mongodb-atlas",
+    "oracle",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-goldengate",
+    "oracle-platforms",
+    "pingcap",
+    "prisma",
+    "quickbase",
+    "redis",
+    "sap-hana",
+    "schema-free",
+    "singlestore",
+    "tessell",
+    "tidb",
+    "timescale",
+    "xata",
+    "yugabyte",
+    "yugabytedb",
+    "yunqi"
+   ],
+   "snake_case": [
+    "4paradigm",
+    "abloatai",
+    "aiven",
+    "appwrite",
+    "ardent",
+    "baserow",
+    "border0",
+    "chroma",
+    "clickhouse",
+    "convex",
+    "couchbase",
+    "data-world",
+    "delphix",
+    "ditto-live",
+    "ehrbase",
+    "feldera",
+    "instaclustr",
+    "instantdb",
+    "koyeb",
+    "milvus",
+    "mode",
+    "neon",
+    "nutanix",
+    "ocient",
+    "oracle",
+    "oracle-apex",
+    "oracle-database",
+    "oracle-partitioning",
+    "pinecone",
+    "pingcap",
+    "popsink",
+    "sap-hana",
+    "scaleway",
+    "sequin-io",
+    "smartmind",
+    "snowflake",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "tinybird",
+    "upcloud",
+    "vastdata",
+    "victoriametrics",
+    "yugabyte",
+    "yugabytedb"
+   ],
+   "PascalCase": [
+    "airtable",
+    "amazon-lightsail",
+    "amazon-redshift",
+    "bytebase",
+    "cockroach-labs",
+    "datastax",
+    "grist",
+    "instaclustr",
+    "microsoft-azure-synapse-analytics",
+    "oracle",
+    "oracle-cloud",
+    "oracle-platforms",
+    "thegamesdb",
+    "vultr"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "4paradigm",
+    "abloatai",
+    "aifordatabase",
+    "aiven",
+    "amazon-aurora-dsql",
+    "amazon-lightsail",
+    "amazon-neptune",
+    "amazon-qldb",
+    "amuncore",
+    "apache-hbase",
+    "apache-ignite",
+    "appwrite",
+    "arangodb",
+    "artie",
+    "backendless",
+    "baserow",
+    "border0",
+    "bubble",
+    "bytebase",
+    "carto",
+    "cdata",
+    "chroma",
+    "clickhouse",
+    "cockroach-labs",
+    "codehooks",
+    "couchbase",
+    "data-world",
+    "datastax",
+    "debezium",
+    "ditto-live",
+    "dolthub",
+    "dremio-intelligent-lakehouse-platform",
+    "dune-analytics",
+    "ehrbase",
+    "elasticsearch",
+    "feldera",
+    "gcp",
+    "google-cloud-bigtable",
+    "google-cloud-firestore",
+    "google-cloud-memorystore",
+    "google-cloud-spanner",
+    "google-cloud-sql",
+    "grist",
+    "hatchet",
+    "ibm",
+    "influxdata",
+    "influxdb",
+    "insforge",
+    "instaclustr",
+    "koyeb",
+    "kvdb",
+    "listmonk",
+    "macrometa",
+    "manticore",
+    "metabase",
+    "microsoft-azure-cache-for-redis",
+    "mode",
+    "mongodb",
+    "mongodb-atlas",
+    "nhost",
+    "nutanix",
+    "ocient",
+    "oracle",
+    "oracle-apex",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-database-19c",
+    "oracle-goldengate",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "pinecone",
+    "pingcap",
+    "planetscale",
+    "plinth-us-grants-data",
+    "popsink",
+    "presto-foundation",
+    "prisma",
+    "qdrant",
+    "quasar",
+    "quickbase",
+    "rawg",
+    "render",
+    "riak",
+    "scaleway",
+    "sevalla",
+    "smartmind",
+    "snowflake",
+    "softr",
+    "spring-data",
+    "supabase",
+    "superblocks",
+    "teable",
+    "teradata",
+    "tessell",
+    "thenile",
+    "tidb",
+    "tikv",
+    "tiledb",
+    "timescale",
+    "tinybird",
+    "trino",
+    "turso",
+    "ubicloud",
+    "upcloud",
+    "upstash",
+    "vastdata",
+    "victoriametrics",
+    "vultr",
+    "weaviate",
+    "yugabyte",
+    "yugabytedb"
+   ],
+   "camelCase": [
+    "4paradigm",
+    "abloatai",
+    "aifordatabase",
+    "airtable",
+    "amazon-aurora-dsql",
+    "amazon-keyspaces",
+    "amazon-lightsail",
+    "amazon-neptune",
+    "amazon-qldb",
+    "amuncore",
+    "apache-hbase",
+    "apache-hive",
+    "apache-ignite",
+    "apache-shardingsphere",
+    "appwrite",
+    "arangodb",
+    "artie",
+    "azure-cloud",
+    "azure-cosmos-db",
+    "bubble",
+    "bytebase",
+    "carto",
+    "cdata",
+    "clickhouse",
+    "cockroach-labs",
+    "coda",
+    "convex",
+    "couchbase",
+    "data-world",
+    "datastax",
+    "dbt",
+    "delphix",
+    "dolthub",
+    "dremio-intelligent-lakehouse-platform",
+    "dune-analytics",
+    "ehrbase",
+    "google-bigquery",
+    "google-cloud-datastore",
+    "google-cloud-firestore",
+    "grist",
+    "influxdata",
+    "influxdb",
+    "insforge",
+    "instaclustr",
+    "macrometa",
+    "microsoft-azure-cache-for-redis",
+    "microsoft-azure-synapse-analytics",
+    "mongodb",
+    "mongodb-atlas",
+    "neo4j",
+    "ninox",
+    "nocodb",
+    "oracle",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-goldengate",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "pingcap",
+    "presto-foundation",
+    "prisma",
+    "quickbase",
+    "redis",
+    "relational-data-modeling",
+    "render",
+    "sap-hana",
+    "scylladb",
+    "sevalla",
+    "singlestore",
+    "skyvia",
+    "snowflake",
+    "softr",
+    "supabase",
+    "sybase",
+    "teable",
+    "teradata",
+    "tessell",
+    "thenile",
+    "tidb",
+    "tinybird",
+    "trino",
+    "turso",
+    "upcloud",
+    "upstash",
+    "weaviate",
+    "xata",
+    "yugabyte",
+    "yugabytedb"
+   ],
+   "snake_case": [
+    "4paradigm",
+    "aiven",
+    "appwrite",
+    "ardent",
+    "baserow",
+    "bigchaindb",
+    "border0",
+    "cdata",
+    "chroma",
+    "cockroach-labs",
+    "convex",
+    "ditto-live",
+    "dune-analytics",
+    "ehrbase",
+    "feldera",
+    "firebolt",
+    "ibm",
+    "influxdata",
+    "influxdb",
+    "knack",
+    "koyeb",
+    "kvdb",
+    "listmonk",
+    "macrometa",
+    "mode",
+    "neon",
+    "notion",
+    "oracle-database",
+    "oracle-partitioning",
+    "pinecone",
+    "pingcap",
+    "planetscale",
+    "plinth-us-grants-data",
+    "popsink",
+    "qdrant",
+    "rawg",
+    "riak",
+    "scaleway",
+    "sequin-io",
+    "smartmind",
+    "snowflake",
+    "supabase",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "ubicloud",
+    "upcloud",
+    "vastdata",
+    "vultr",
+    "weaviate",
+    "xano",
+    "yugabyte",
+    "zoho-creator"
+   ],
+   "kebab-case": [
+    "arangodb",
+    "backendless",
+    "hatchet",
+    "ibm",
+    "macrometa",
+    "pingcap",
+    "tessell",
+    "upcloud",
+    "vultr"
+   ],
+   "other": [
+    "arangodb",
+    "oracle-database",
+    "oracle-partitioning",
+    "pingcap",
+    "tidb",
+    "upcloud",
+    "zoho-creator"
+   ],
+   "PascalCase": [
+    "instaclustr",
+    "oracle-goldengate",
+    "redis"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "4paradigm",
+    "abloatai",
+    "aifordatabase",
+    "airtable",
+    "aiven",
+    "altinity",
+    "amazon-lightsail",
+    "amazon-neptune",
+    "amuncore",
+    "apache-ignite",
+    "appwrite",
+    "arangodb",
+    "ardent",
+    "artie",
+    "backendless",
+    "baserow",
+    "bigchaindb",
+    "border0",
+    "bubble",
+    "bytebase",
+    "carto",
+    "cdata",
+    "chroma",
+    "clickhouse",
+    "cockroach-labs",
+    "coda",
+    "codehooks",
+    "convex",
+    "couchbase",
+    "data-world",
+    "databricks",
+    "datastax",
+    "debezium",
+    "delphix",
+    "dokploy",
+    "dolthub",
+    "dremio-intelligent-lakehouse-platform",
+    "dune-analytics",
+    "ehrbase",
+    "elasticsearch",
+    "electric-sql",
+    "fauna",
+    "feldera",
+    "firebolt",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-datastore",
+    "google-cloud-spanner",
+    "google-cloud-sql",
+    "grist",
+    "hatchet",
+    "ibm",
+    "influxdata",
+    "influxdb",
+    "insforge",
+    "instaclustr",
+    "instantdb",
+    "knack",
+    "koyeb",
+    "kvdb",
+    "listmonk",
+    "macrometa",
+    "materialize",
+    "metabase",
+    "microsoft-azure-cache-for-redis",
+    "microsoft-azure-synapse-analytics",
+    "mode",
+    "mongodb",
+    "myscale",
+    "neon",
+    "nhost",
+    "ninox",
+    "nocodb",
+    "nutanix",
+    "ocient",
+    "oracle",
+    "oracle-apex",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-database-19c",
+    "oracle-goldengate",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "pinecone",
+    "pingcap",
+    "planetscale",
+    "plinth-us-grants-data",
+    "popsink",
+    "prisma",
+    "qdrant",
+    "quasar",
+    "questdb",
+    "quickbase",
+    "quote-garden",
+    "rawg",
+    "redis",
+    "render",
+    "riak",
+    "sap-hana",
+    "scaleway",
+    "scylladb",
+    "sevalla",
+    "singlestore",
+    "skyvia",
+    "smartmind",
+    "snowflake",
+    "softr",
+    "spring-data",
+    "supabase",
+    "superblocks",
+    "sybase",
+    "teable",
+    "teradata",
+    "tessell",
+    "thegamesdb",
+    "thenile",
+    "thesportsdb",
+    "tidb",
+    "tikv",
+    "tiledb",
+    "timescale",
+    "tinybird",
+    "trino",
+    "turso",
+    "ubicloud",
+    "upcloud",
+    "vastdata",
+    "victoriametrics",
+    "vultr",
+    "weaviate",
+    "xano",
+    "xata",
+    "yugabyte",
+    "yugabytedb",
+    "zoho-creator"
+   ],
+   "camelCase": [
+    "4paradigm",
+    "abloatai",
+    "aifordatabase",
+    "airtable",
+    "amazon-aurora-dsql",
+    "amazon-lightsail",
+    "amazon-neptune",
+    "amazon-qldb",
+    "amuncore",
+    "apache-ignite",
+    "appwrite",
+    "arangodb",
+    "artie",
+    "backendless",
+    "bytebase",
+    "cdata",
+    "cockroach-labs",
+    "coda",
+    "convex",
+    "couchbase",
+    "data-world",
+    "datastax",
+    "debezium",
+    "delphix",
+    "dokploy",
+    "dolthub",
+    "dune-analytics",
+    "ehrbase",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-bigtable",
+    "google-cloud-datastore",
+    "google-cloud-firestore",
+    "google-cloud-memorystore",
+    "google-cloud-spanner",
+    "google-cloud-sql",
+    "grist",
+    "hatchet",
+    "influxdata",
+    "influxdb",
+    "insforge",
+    "instaclustr",
+    "macrometa",
+    "microsoft-azure-synapse-analytics",
+    "milvus",
+    "mongodb",
+    "mysql",
+    "neo4j",
+    "nhost",
+    "nocodb",
+    "oracle",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-goldengate",
+    "oracle-platforms",
+    "pinecone",
+    "pingcap",
+    "presto-foundation",
+    "prisma",
+    "questdb",
+    "quickbase",
+    "redis",
+    "render",
+    "sap-hana",
+    "scylladb",
+    "singlestore",
+    "skyvia",
+    "snowflake",
+    "softr",
+    "sybase",
+    "teable",
+    "teradata",
+    "tessell",
+    "thenile",
+    "tidb",
+    "trino",
+    "triplit",
+    "vultr",
+    "weaviate",
+    "yugabyte",
+    "yugabytedb"
+   ],
+   "snake_case": [
+    "4paradigm",
+    "abloatai",
+    "aiven",
+    "amazon-qldb",
+    "appwrite",
+    "ardent",
+    "baserow",
+    "bigchaindb",
+    "border0",
+    "cdata",
+    "chroma",
+    "clickhouse",
+    "cockroach-labs",
+    "couchbase",
+    "databricks",
+    "datastax",
+    "delphix",
+    "dune-analytics",
+    "ehrbase",
+    "electric-sql",
+    "feldera",
+    "firebolt",
+    "grist",
+    "hatchet",
+    "ibm",
+    "insforge",
+    "instantdb",
+    "knack",
+    "koyeb",
+    "listmonk",
+    "macrometa",
+    "manticore",
+    "mode",
+    "myscale",
+    "neon",
+    "nhost",
+    "notion",
+    "nutanix",
+    "ocient",
+    "oracle-partitioning",
+    "pinecone",
+    "pingcap",
+    "planetscale",
+    "plinth-us-grants-data",
+    "popsink",
+    "prisma",
+    "qdrant",
+    "rawg",
+    "scaleway",
+    "sequin-io",
+    "smartmind",
+    "snowflake",
+    "supabase",
+    "thegamesdb",
+    "thenile",
+    "tidb",
+    "tiledb",
+    "turso",
+    "ubicloud",
+    "upcloud",
+    "vastdata",
+    "vultr",
+    "weaviate",
+    "xano",
+    "xata",
+    "yugabyte",
+    "yugabytedb",
+    "zoho-creator"
+   ],
+   "other": [
+    "airtable",
+    "amazon-rds",
+    "baserow",
+    "bytebase",
+    "cockroach-labs",
+    "datastax",
+    "electric-sql",
+    "firebolt",
+    "google-cloud-firestore",
+    "koyeb",
+    "microsoft-azure-synapse-analytics",
+    "nhost",
+    "oracle-partitioning",
+    "prisma",
+    "tessell",
+    "thegamesdb",
+    "vastdata",
+    "victoriametrics"
+   ],
+   "kebab-case": [
+    "aiven",
+    "azure-cloud",
+    "data-world",
+    "datastax",
+    "instantdb",
+    "macrometa",
+    "microsoft-azure-synapse-analytics",
+    "nhost",
+    "oracle",
+    "oracle-partitioning",
+    "teradata",
+    "tessell"
+   ],
+   "PascalCase": [
+    "amazon-dms",
+    "amazon-documentdb",
+    "amazon-elasticache",
+    "amazon-neptune",
+    "amazon-qldb",
+    "amazon-rds",
+    "amazon-redshift",
+    "amazon-simpledb",
+    "arangodb",
+    "aws-redshift",
+    "yunqi"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "4paradigm",
+    "abloatai",
+    "aiven",
+    "amazon-neptune",
+    "appwrite",
+    "ardent",
+    "baserow",
+    "bigchaindb",
+    "bytebase",
+    "cdata",
+    "chroma",
+    "clickhouse",
+    "cockroach-labs",
+    "coda",
+    "codehooks",
+    "convex",
+    "couchbase",
+    "data-world",
+    "databricks",
+    "datastax",
+    "delphix",
+    "dokploy",
+    "dune-analytics",
+    "feldera",
+    "grist",
+    "hatchet",
+    "ibm",
+    "influxdata",
+    "influxdb",
+    "insforge",
+    "koyeb",
+    "kvdb",
+    "macrometa",
+    "neon",
+    "ninox",
+    "nocodb",
+    "oracle",
+    "oracle-apex",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-database-19c",
+    "oracle-goldengate",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "pinecone",
+    "pingcap",
+    "plinth-us-grants-data",
+    "prisma",
+    "questdb",
+    "quote-garden",
+    "redis",
+    "render",
+    "sevalla",
+    "smartmind",
+    "softr",
+    "supabase",
+    "superblocks",
+    "tessell",
+    "thenile",
+    "tidb",
+    "trino",
+    "ubicloud",
+    "upcloud",
+    "vastdata",
+    "weaviate",
+    "xata",
+    "zoho-creator"
+   ],
+   "offset": [
+    "4paradigm",
+    "airtable",
+    "aiven",
+    "appwrite",
+    "arangodb",
+    "ardent",
+    "backendless",
+    "baserow",
+    "chroma",
+    "clickhouse",
+    "cockroach-labs",
+    "codehooks",
+    "couchbase",
+    "databricks",
+    "delphix",
+    "dokploy",
+    "dune-analytics",
+    "ehrbase",
+    "electric-sql",
+    "hatchet",
+    "influxdata",
+    "influxdb",
+    "insforge",
+    "koyeb",
+    "macrometa",
+    "ninox",
+    "nocodb",
+    "oracle",
+    "oracle-apex",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-database-19c",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "prisma",
+    "redis",
+    "sevalla",
+    "smartmind",
+    "softr",
+    "supabase",
+    "superblocks",
+    "upcloud",
+    "weaviate"
+   ],
+   "page": [
+    "4paradigm",
+    "aifordatabase",
+    "amazon-neptune",
+    "amuncore",
+    "baserow",
+    "border0",
+    "couchbase",
+    "knack",
+    "listmonk",
+    "oracle",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-goldengate",
+    "oracle-platforms",
+    "pingcap",
+    "planetscale",
+    "plinth-us-grants-data",
+    "popsink",
+    "quote-garden",
+    "rawg",
+    "scaleway",
+    "snowflake",
+    "spring-data",
+    "supabase",
+    "thegamesdb",
+    "tidb",
+    "tiledb",
+    "timescale",
+    "turso",
+    "vastdata",
+    "xano"
+   ],
+   "page_size": [
+    "4paradigm",
+    "aifordatabase",
+    "airtable",
+    "amuncore",
+    "backendless",
+    "border0",
+    "bytebase",
+    "delphix",
+    "google-cloud-datastore",
+    "google-cloud-firestore",
+    "google-cloud-memorystore",
+    "google-cloud-spanner",
+    "instaclustr",
+    "notion",
+    "pingcap",
+    "quickbase",
+    "rawg",
+    "sap-hana",
+    "scaleway",
+    "tessell",
+    "tidb",
+    "turso",
+    "ubicloud",
+    "vastdata"
+   ],
+   "cursor": [
+    "abloatai",
+    "airtable",
+    "aiven",
+    "cdata",
+    "clickhouse",
+    "convex",
+    "delphix",
+    "dune-analytics",
+    "electric-sql",
+    "neon",
+    "oracle",
+    "prisma",
+    "render",
+    "timescale",
+    "vultr",
+    "xata"
+   ],
+   "start": [
+    "arangodb",
+    "cockroach-labs",
+    "ibm",
+    "influxdata",
+    "influxdb",
+    "koyeb",
+    "macrometa",
+    "mongodb",
+    "oracle",
+    "oracle-cloud",
+    "quasar",
+    "singlestore",
+    "thenile",
+    "tiledb",
+    "ubicloud",
+    "victoriametrics"
+   ],
+   "page_token": [
+    "amazon-lightsail",
+    "bytebase",
+    "coda",
+    "dolthub",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-bigtable",
+    "google-cloud-datastore",
+    "google-cloud-firestore",
+    "google-cloud-memorystore",
+    "google-cloud-spanner",
+    "google-cloud-sql",
+    "pingcap",
+    "sap-hana",
+    "tidb"
+   ],
+   "count": [
+    "airtable",
+    "arangodb",
+    "baserow",
+    "cockroach-labs",
+    "datastax",
+    "instaclustr",
+    "macrometa",
+    "oracle",
+    "prisma",
+    "questdb",
+    "quote-garden",
+    "vastdata",
+    "vultr"
+   ],
+   "per_page": [
+    "ardent",
+    "couchbase",
+    "listmonk",
+    "planetscale",
+    "scaleway",
+    "supabase",
+    "tiledb",
+    "vultr",
+    "xano"
+   ],
+   "max_results": [
+    "amazon-aurora-dsql",
+    "amazon-neptune",
+    "amazon-qldb",
+    "aws-redshift",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-sql",
+    "smartmind"
+   ],
+   "size": [
+    "appwrite",
+    "arangodb",
+    "baserow",
+    "data-world",
+    "elasticsearch",
+    "microsoft-azure-synapse-analytics",
+    "popsink",
+    "spring-data"
+   ],
+   "skip": [
+    "macrometa",
+    "microsoft-azure-synapse-analytics",
+    "pingcap",
+    "prisma",
+    "quickbase",
+    "skyvia",
+    "teable",
+    "tidb"
+   ],
+   "after": [
+    "abloatai",
+    "influxdata",
+    "influxdb",
+    "weaviate"
+   ],
+   "starting_after": [
+    "abloatai",
+    "datastax"
+   ],
+   "before": [
+    "baserow",
+    "insforge"
+   ],
+   "next": [
+    "data-world"
+   ],
+   "top": [
+    "quickbase"
+   ]
+  },
+  "property": {
+   "lower": [
+    "abloatai",
+    "aiven",
+    "amazon-aurora-dsql",
+    "apache-hive",
+    "apache-shardingsphere",
+    "appwrite",
+    "arangodb",
+    "ardent",
+    "artie",
+    "azure-cosmos-db",
+    "baserow",
+    "border0",
+    "bytebase",
+    "chroma",
+    "clickhouse",
+    "cockroach-labs",
+    "couchbase",
+    "datastax",
+    "dolthub",
+    "firebolt",
+    "google-cloud-firestore",
+    "google-cloud-spanner",
+    "google-cloud-sql",
+    "insforge",
+    "instaclustr",
+    "koyeb",
+    "macrometa",
+    "metabase",
+    "mongodb",
+    "neo4j",
+    "neon",
+    "notion",
+    "nutanix",
+    "oracle",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-goldengate",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "pinecone",
+    "pingcap",
+    "planetscale",
+    "popsink",
+    "prisma",
+    "qdrant",
+    "quasar",
+    "redis",
+    "scaleway",
+    "scylladb",
+    "sevalla",
+    "skyvia",
+    "snowflake",
+    "softr",
+    "sybase",
+    "tessell",
+    "thenile",
+    "tidb",
+    "timescale",
+    "turso",
+    "ubicloud",
+    "upcloud",
+    "upstash",
+    "vastdata",
+    "vultr",
+    "weaviate",
+    "xata",
+    "yugabyte",
+    "yugabytedb"
+   ],
+   "camelCase": [
+    "amazon-aurora-dsql",
+    "apache-hive",
+    "apache-shardingsphere",
+    "appwrite",
+    "artie",
+    "bytebase",
+    "clickhouse",
+    "couchbase",
+    "datastax",
+    "dolthub",
+    "google-cloud-firestore",
+    "google-cloud-spanner",
+    "google-cloud-sql",
+    "insforge",
+    "instaclustr",
+    "mongodb",
+    "oracle",
+    "oracle-cloud",
+    "oracle-database",
+    "oracle-goldengate",
+    "oracle-partitioning",
+    "oracle-platforms",
+    "pingcap",
+    "prisma",
+    "quasar",
+    "redis",
+    "scylladb",
+    "sybase",
+    "tessell",
+    "thenile",
+    "tidb",
+    "turso",
+    "weaviate",
+    "xata",
+    "yugabyte",
+    "yugabytedb"
+   ],
+   "snake_case": [
+    "abloatai",
+    "aiven",
+    "ardent",
+    "baserow",
+    "border0",
+    "chroma",
+    "cockroach-labs",
+    "couchbase",
+    "firebolt",
+    "koyeb",
+    "metabase",
+    "neo4j",
+    "neon",
+    "notion",
+    "nutanix",
+    "oracle-database",
+    "oracle-partitioning",
+    "pinecone",
+    "pingcap",
+    "planetscale",
+    "qdrant",
+    "scaleway",
+    "sevalla",
+    "snowflake",
+    "tidb",
+    "timescale",
+    "turso",
+    "ubicloud",
+    "upcloud",
+    "upstash",
+    "vastdata",
+    "vultr",
+    "weaviate",
+    "yugabyte",
+    "yugabytedb"
+   ],
+   "PascalCase": [
+    "apache-hbase",
+    "azure-cosmos-db",
+    "turso"
+   ],
+   "other": [
+    "appwrite",
+    "macrometa",
+    "oracle-partitioning"
+   ]
+  }
+ }
+}

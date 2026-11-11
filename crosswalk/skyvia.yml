@@ -1,0 +1,16 @@
+provider: skyvia
+apis_io: https://apis.io/providers/skyvia/
+context: databases
+generated: '2026-11-11'
+concepts:
+  backup:
+    path_segment:
+    - backups
+    properties:
+      id: id
+      created_at: created
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/backups
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/backups/{backupId}

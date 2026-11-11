@@ -1,0 +1,65 @@
+provider: scaleway
+apis_io: https://apis.io/providers/scaleway/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    properties:
+      id: id
+      name: name
+      status: status
+      created_at: created_at
+      engine: type
+      region: region
+      updated_at: updated_at
+      version: version
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/scaleway-kubernetes-openapi.yml#DELETE /k8s/v1/regions/{region}/clusters/{cluster_id}
+    - openapi/_original/scaleway-kubernetes-openapi.yml#GET /k8s/v1/regions/{region}/clusters
+    - openapi/_original/scaleway-kubernetes-openapi.yml#GET /k8s/v1/regions/{region}/clusters/{cluster_id}
+    - openapi/_original/scaleway-kubernetes-openapi.yml#PATCH /k8s/v1/regions/{region}/clusters/{cluster_id}
+    - openapi/_original/scaleway-kubernetes-openapi.yml#POST /k8s/v1/regions/{region}/clusters
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/scaleway-database-openapi.yml#DELETE /rdb/v1/regions/{region}/instances/{instance_id}/databases/{name}
+    - openapi/_original/scaleway-database-openapi.yml#GET /rdb/v1/regions/{region}/instances/{instance_id}/databases
+    - openapi/_original/scaleway-database-openapi.yml#POST /rdb/v1/regions/{region}/instances/{instance_id}/databases
+  database_user:
+    path_segment:
+    - users
+    properties:
+      username: name
+      password: password
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/scaleway-database-openapi.yml#DELETE /rdb/v1/regions/{region}/instances/{instance_id}/users/{name}
+    - openapi/_original/scaleway-database-openapi.yml#GET /rdb/v1/regions/{region}/instances/{instance_id}/users
+    - openapi/_original/scaleway-database-openapi.yml#PATCH /rdb/v1/regions/{region}/instances/{instance_id}/users/{name}
+    - openapi/_original/scaleway-database-openapi.yml#POST /rdb/v1/regions/{region}/instances/{instance_id}/users
+  backup:
+    path_segment:
+    - backups
+    - snapshots
+    properties:
+      id:
+      - id
+      - instance_id
+      status: status
+      created_at: created_at
+      name: name
+      size: size
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/scaleway-database-openapi.yml#DELETE /rdb/v1/regions/{region}/backups/{database_backup_id}
+    - openapi/_original/scaleway-database-openapi.yml#GET /rdb/v1/regions/{region}/backups
+    - openapi/_original/scaleway-database-openapi.yml#GET /rdb/v1/regions/{region}/backups/{database_backup_id}
+    - openapi/_original/scaleway-database-openapi.yml#PATCH /rdb/v1/regions/{region}/backups/{database_backup_id}
+    - openapi/_original/scaleway-database-openapi.yml#POST /rdb/v1/regions/{region}/backups

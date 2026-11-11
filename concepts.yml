@@ -1,0 +1,55 @@
+context: databases
+name: Databases
+intro: >-
+  The common managed-database vocabulary -- database clusters and instances, the databases inside
+  them, their users, and their backups -- distilled from the APIs that already exist.
+tags: [Database, Databases, SQL, PostgreSQL, MySQL, NoSQL, Database as a Service, MongoDB, Redis]
+
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, result, results,
+           value, next, previous, has_more, message, page_info, cursor, total_count, per_page, total_pages, object]
+
+common_fields:
+  id: [uuid, guid, external_id, cluster_id, database_id, instance_id, backup_id]
+  created_at: [created, created_date, create_time, creation_time, created_on, inserted_at]
+  updated_at: [updated, modified_at, update_time, last_modified]
+  status: [state]
+  name: [title, display_name]
+
+concepts:
+  database_cluster:
+    path: /database-clusters
+    segments: [clusters, cluster, instances@database|databases|db|dbaas|sql, deployments@database|databases|db, projects@database|db, branches]
+    aliases:
+      engine: [type, database_type, db_type, provider]
+      version: [engine_version, db_version, postgres_version, pg_version]
+      region: [location, region_id, zone]
+      size: [plan, tier, instance_type, compute_size, size_slug]
+  database:
+    segments: [databases, database, dbs, db, schemas@databases|database|clusters|cluster]
+    aliases:
+      owner: [owner_name]
+  database_user:
+    path: /database-users
+    requires_any: [database_cluster, database]
+    segments: [users@databases|database|clusters|cluster|instances|db|projects|branches, roles@databases|database|clusters|cluster|branches, dbusers, database_users]
+    aliases:
+      username: [user, name, role_name]
+  backup:
+    segments: [backups, backup, snapshots@databases|database|clusters|cluster|instances]
+    aliases:
+      size: [size_bytes, size_gigabytes]
+
+findings:
+  - >-
+    Managed databases agree on little beyond identity: clusters on id, name and status, databases on
+    name and id, backups on id and status. The engine reaches only 30% of clusters, because most
+    providers serve one engine and never say which.
+  - >-
+    Database users agree on username and password -- every provider returns the password at creation --
+    with created_at at 55%.
+decisions:
+  - >-
+    database_cluster covers clusters, instances, deployments and serverless projects: the provisioned
+    unit that holds databases.
+  - >-
+    Neon-style branches count as clusters for now; revisit if branching spreads beyond a few providers.

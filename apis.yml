@@ -1,0 +1,54 @@
+aid: common-databases
+name: Databases
+type: Common
+description: 'The common Databases vocabulary, distilled from the harvested OpenAPI of 184 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Database
+- Databases
+- SQL
+- PostgreSQL
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/databases/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-databases:databases
+  name: Common Databases Interface
+  description: The Databases interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/databases
+  tags:
+  - Database
+  - Databases
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/databases/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/databases/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/databases/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: database_cluster
+    url: https://raw.githubusercontent.com/api-commons/databases/main/schema/database_cluster.json
+  - type: JSONSchema
+    name: database
+    url: https://raw.githubusercontent.com/api-commons/databases/main/schema/database.json
+  - type: JSONSchema
+    name: database_user
+    url: https://raw.githubusercontent.com/api-commons/databases/main/schema/database_user.json
+  - type: JSONSchema
+    name: backup
+    url: https://raw.githubusercontent.com/api-commons/databases/main/schema/backup.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/databases/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,419 @@
+context: databases
+generated: '2026-11-11'
+adopters:
+- provider: abloatai
+  apis_io: https://apis.io/providers/abloatai/
+  crosswalk: crosswalk/abloatai.yml
+  concepts:
+  - database_cluster
+- provider: aerospike
+  apis_io: https://apis.io/providers/aerospike/
+  crosswalk: crosswalk/aerospike.yml
+  concepts:
+  - database_cluster
+- provider: aiven
+  apis_io: https://apis.io/providers/aiven/
+  crosswalk: crosswalk/aiven.yml
+  concepts:
+  - backup
+  - database
+- provider: amazon-aurora-dsql
+  apis_io: https://apis.io/providers/amazon-aurora-dsql/
+  crosswalk: crosswalk/amazon-aurora-dsql.yml
+  concepts:
+  - database_cluster
+- provider: apache-hbase
+  apis_io: https://apis.io/providers/apache-hbase/
+  crosswalk: crosswalk/apache-hbase.yml
+  concepts:
+  - database_cluster
+- provider: apache-hive
+  apis_io: https://apis.io/providers/apache-hive/
+  crosswalk: crosswalk/apache-hive.yml
+  concepts:
+  - database
+- provider: apache-ignite
+  apis_io: https://apis.io/providers/apache-ignite/
+  crosswalk: crosswalk/apache-ignite.yml
+  concepts:
+  - database_cluster
+- provider: apache-shardingsphere
+  apis_io: https://apis.io/providers/apache-shardingsphere/
+  crosswalk: crosswalk/apache-shardingsphere.yml
+  concepts:
+  - database
+- provider: appwrite
+  apis_io: https://apis.io/providers/appwrite/
+  crosswalk: crosswalk/appwrite.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+- provider: arangodb
+  apis_io: https://apis.io/providers/arangodb/
+  crosswalk: crosswalk/arangodb.yml
+  concepts:
+  - database
+- provider: ardent
+  apis_io: https://apis.io/providers/ardent/
+  crosswalk: crosswalk/ardent.yml
+  concepts:
+  - database_cluster
+- provider: artie
+  apis_io: https://apis.io/providers/artie/
+  crosswalk: crosswalk/artie.yml
+  concepts:
+  - database
+- provider: azure-cosmos-db
+  apis_io: https://apis.io/providers/azure-cosmos-db/
+  crosswalk: crosswalk/azure-cosmos-db.yml
+  concepts:
+  - database
+- provider: baserow
+  apis_io: https://apis.io/providers/baserow/
+  crosswalk: crosswalk/baserow.yml
+  concepts:
+  - database
+- provider: border0
+  apis_io: https://apis.io/providers/border0/
+  crosswalk: crosswalk/border0.yml
+  concepts:
+  - database
+- provider: bytebase
+  apis_io: https://apis.io/providers/bytebase/
+  crosswalk: crosswalk/bytebase.yml
+  concepts:
+  - database
+- provider: chroma
+  apis_io: https://apis.io/providers/chroma/
+  crosswalk: crosswalk/chroma.yml
+  concepts:
+  - database
+- provider: clickhouse
+  apis_io: https://apis.io/providers/clickhouse/
+  crosswalk: crosswalk/clickhouse.yml
+  concepts:
+  - backup
+- provider: cloudkit
+  apis_io: https://apis.io/providers/cloudkit/
+  crosswalk: crosswalk/cloudkit.yml
+  concepts:
+  - database
+- provider: cockroach-labs
+  apis_io: https://apis.io/providers/cockroach-labs/
+  crosswalk: crosswalk/cockroach-labs.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+- provider: couchbase
+  apis_io: https://apis.io/providers/couchbase/
+  crosswalk: crosswalk/couchbase.yml
+  concepts:
+  - backup
+  - database_cluster
+  - database_user
+- provider: datastax
+  apis_io: https://apis.io/providers/datastax/
+  crosswalk: crosswalk/datastax.yml
+  concepts:
+  - backup
+  - database
+- provider: dolthub
+  apis_io: https://apis.io/providers/dolthub/
+  crosswalk: crosswalk/dolthub.yml
+  concepts:
+  - database
+  - database_cluster
+- provider: firebolt
+  apis_io: https://apis.io/providers/firebolt/
+  crosswalk: crosswalk/firebolt.yml
+  concepts:
+  - database
+- provider: google-cloud-firestore
+  apis_io: https://apis.io/providers/google-cloud-firestore/
+  crosswalk: crosswalk/google-cloud-firestore.yml
+  concepts:
+  - database
+- provider: google-cloud-spanner
+  apis_io: https://apis.io/providers/google-cloud-spanner/
+  crosswalk: crosswalk/google-cloud-spanner.yml
+  concepts:
+  - database
+- provider: google-cloud-sql
+  apis_io: https://apis.io/providers/google-cloud-sql/
+  crosswalk: crosswalk/google-cloud-sql.yml
+  concepts:
+  - database
+  - database_user
+- provider: insforge
+  apis_io: https://apis.io/providers/insforge/
+  crosswalk: crosswalk/insforge.yml
+  concepts:
+  - database
+- provider: instaclustr
+  apis_io: https://apis.io/providers/instaclustr/
+  crosswalk: crosswalk/instaclustr.yml
+  concepts:
+  - backup
+  - database_cluster
+- provider: koyeb
+  apis_io: https://apis.io/providers/koyeb/
+  crosswalk: crosswalk/koyeb.yml
+  concepts:
+  - database_cluster
+- provider: macrometa
+  apis_io: https://apis.io/providers/macrometa/
+  crosswalk: crosswalk/macrometa.yml
+  concepts:
+  - database
+- provider: metabase
+  apis_io: https://apis.io/providers/metabase/
+  crosswalk: crosswalk/metabase.yml
+  concepts:
+  - database
+- provider: mongodb
+  apis_io: https://apis.io/providers/mongodb/
+  crosswalk: crosswalk/mongodb.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+- provider: mongodb-atlas
+  apis_io: https://apis.io/providers/mongodb-atlas/
+  crosswalk: crosswalk/mongodb-atlas.yml
+  concepts:
+  - database_cluster
+- provider: neo4j
+  apis_io: https://apis.io/providers/neo4j/
+  crosswalk: crosswalk/neo4j.yml
+  concepts:
+  - backup
+- provider: neon
+  apis_io: https://apis.io/providers/neon/
+  crosswalk: crosswalk/neon.yml
+  concepts:
+  - database
+  - database_user
+- provider: notion
+  apis_io: https://apis.io/providers/notion/
+  crosswalk: crosswalk/notion.yml
+  concepts:
+  - database
+- provider: nutanix
+  apis_io: https://apis.io/providers/nutanix/
+  crosswalk: crosswalk/nutanix.yml
+  concepts:
+  - database_cluster
+- provider: oracle
+  apis_io: https://apis.io/providers/oracle/
+  crosswalk: crosswalk/oracle.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+- provider: oracle-cloud
+  apis_io: https://apis.io/providers/oracle-cloud/
+  crosswalk: crosswalk/oracle-cloud.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+- provider: oracle-database
+  apis_io: https://apis.io/providers/oracle-database/
+  crosswalk: crosswalk/oracle-database.yml
+  concepts:
+  - backup
+  - database
+  - database_user
+- provider: oracle-goldengate
+  apis_io: https://apis.io/providers/oracle-goldengate/
+  crosswalk: crosswalk/oracle-goldengate.yml
+  concepts:
+  - database
+- provider: oracle-partitioning
+  apis_io: https://apis.io/providers/oracle-partitioning/
+  crosswalk: crosswalk/oracle-partitioning.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+  - database_user
+- provider: oracle-platforms
+  apis_io: https://apis.io/providers/oracle-platforms/
+  crosswalk: crosswalk/oracle-platforms.yml
+  concepts:
+  - backup
+  - database
+- provider: pinecone
+  apis_io: https://apis.io/providers/pinecone/
+  crosswalk: crosswalk/pinecone.yml
+  concepts:
+  - backup
+- provider: pingcap
+  apis_io: https://apis.io/providers/pingcap/
+  crosswalk: crosswalk/pingcap.yml
+  concepts:
+  - backup
+  - database_cluster
+- provider: planetscale
+  apis_io: https://apis.io/providers/planetscale/
+  crosswalk: crosswalk/planetscale.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+  - database_user
+- provider: popsink
+  apis_io: https://apis.io/providers/popsink/
+  crosswalk: crosswalk/popsink.yml
+  concepts:
+  - database
+- provider: prisma
+  apis_io: https://apis.io/providers/prisma/
+  crosswalk: crosswalk/prisma.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+- provider: qdrant
+  apis_io: https://apis.io/providers/qdrant/
+  crosswalk: crosswalk/qdrant.yml
+  concepts:
+  - database_cluster
+- provider: quasar
+  apis_io: https://apis.io/providers/quasar/
+  crosswalk: crosswalk/quasar.yml
+  concepts:
+  - database_cluster
+- provider: redis
+  apis_io: https://apis.io/providers/redis/
+  crosswalk: crosswalk/redis.yml
+  concepts:
+  - backup
+  - database
+- provider: scaleway
+  apis_io: https://apis.io/providers/scaleway/
+  crosswalk: crosswalk/scaleway.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+  - database_user
+- provider: scylladb
+  apis_io: https://apis.io/providers/scylladb/
+  crosswalk: crosswalk/scylladb.yml
+  concepts:
+  - database_cluster
+- provider: sevalla
+  apis_io: https://apis.io/providers/sevalla/
+  crosswalk: crosswalk/sevalla.yml
+  concepts:
+  - backup
+  - database
+- provider: skyvia
+  apis_io: https://apis.io/providers/skyvia/
+  crosswalk: crosswalk/skyvia.yml
+  concepts:
+  - backup
+- provider: snowflake
+  apis_io: https://apis.io/providers/snowflake/
+  crosswalk: crosswalk/snowflake.yml
+  concepts:
+  - database
+  - database_cluster
+  - database_user
+- provider: softr
+  apis_io: https://apis.io/providers/softr/
+  crosswalk: crosswalk/softr.yml
+  concepts:
+  - database
+- provider: sybase
+  apis_io: https://apis.io/providers/sybase/
+  crosswalk: crosswalk/sybase.yml
+  concepts:
+  - backup
+  - database
+- provider: tessell
+  apis_io: https://apis.io/providers/tessell/
+  crosswalk: crosswalk/tessell.yml
+  concepts:
+  - backup
+  - database
+- provider: thenile
+  apis_io: https://apis.io/providers/thenile/
+  crosswalk: crosswalk/thenile.yml
+  concepts:
+  - database
+  - database_user
+- provider: tidb
+  apis_io: https://apis.io/providers/tidb/
+  crosswalk: crosswalk/tidb.yml
+  concepts:
+  - backup
+  - database_cluster
+- provider: timescale
+  apis_io: https://apis.io/providers/timescale/
+  crosswalk: crosswalk/timescale.yml
+  concepts:
+  - database
+- provider: turso
+  apis_io: https://apis.io/providers/turso/
+  crosswalk: crosswalk/turso.yml
+  concepts:
+  - database
+  - database_cluster
+- provider: ubicloud
+  apis_io: https://apis.io/providers/ubicloud/
+  crosswalk: crosswalk/ubicloud.yml
+  concepts:
+  - backup
+- provider: upcloud
+  apis_io: https://apis.io/providers/upcloud/
+  crosswalk: crosswalk/upcloud.yml
+  concepts:
+  - backup
+  - database
+  - database_user
+- provider: upstash
+  apis_io: https://apis.io/providers/upstash/
+  crosswalk: crosswalk/upstash.yml
+  concepts:
+  - database
+  - database_cluster
+- provider: vastdata
+  apis_io: https://apis.io/providers/vastdata/
+  crosswalk: crosswalk/vastdata.yml
+  concepts:
+  - database_cluster
+- provider: vultr
+  apis_io: https://apis.io/providers/vultr/
+  crosswalk: crosswalk/vultr.yml
+  concepts:
+  - backup
+  - database
+  - database_cluster
+  - database_user
+- provider: weaviate
+  apis_io: https://apis.io/providers/weaviate/
+  crosswalk: crosswalk/weaviate.yml
+  concepts:
+  - backup
+  - database
+- provider: xata
+  apis_io: https://apis.io/providers/xata/
+  crosswalk: crosswalk/xata.yml
+  concepts:
+  - backup
+- provider: yugabyte
+  apis_io: https://apis.io/providers/yugabyte/
+  crosswalk: crosswalk/yugabyte.yml
+  concepts:
+  - backup
+  - database_cluster
+- provider: yugabytedb
+  apis_io: https://apis.io/providers/yugabytedb/
+  crosswalk: crosswalk/yugabytedb.yml
+  concepts:
+  - backup
+  - database_cluster

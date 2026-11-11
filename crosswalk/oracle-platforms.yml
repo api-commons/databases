@@ -1,0 +1,33 @@
+provider: oracle-platforms
+apis_io: https://apis.io/providers/oracle-platforms/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oracle-platforms-database-openapi.yml#DELETE /databases/{databaseId}
+    - openapi/_original/oracle-platforms-database-openapi.yml#GET /databases
+    - openapi/_original/oracle-platforms-database-openapi.yml#GET /databases/{databaseId}
+    - openapi/_original/oracle-platforms-database-openapi.yml#POST /databases
+    - openapi/_original/oracle-platforms-database-openapi.yml#PUT /databases/{databaseId}
+  backup:
+    path_segment:
+    - backups
+    properties:
+      id:
+      - databaseId
+      - id
+      type: type
+      name: displayName
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oracle-platforms-database-openapi.yml#DELETE /backups/{backupId}
+    - openapi/_original/oracle-platforms-database-openapi.yml#GET /backups
+    - openapi/_original/oracle-platforms-database-openapi.yml#GET /backups/{backupId}
+    - openapi/_original/oracle-platforms-database-openapi.yml#POST /backups
+    - openapi/_original/oracle-platforms-database-openapi.yml#PUT /backups/{backupId}

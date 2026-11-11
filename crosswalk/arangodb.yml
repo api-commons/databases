@@ -1,0 +1,16 @@
+provider: arangodb
+apis_io: https://apis.io/providers/arangodb/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - database
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/arangodb-core-openapi-original.json#DELETE /_db/_system/_api/database/{database-name}
+    - openapi/_original/arangodb-core-openapi-original.json#DELETE /_db/{database-name}/_api/user/{user}/database/{dbname}
+    - openapi/_original/arangodb-core-openapi-original.json#GET /_db/_system/_api/database
+    - openapi/_original/arangodb-core-openapi-original.json#GET /_db/{database-name}/_api/user/{user}/database
+    - openapi/_original/arangodb-core-openapi-original.json#GET /_db/{database-name}/_api/user/{user}/database/{dbname}

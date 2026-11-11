@@ -1,0 +1,13 @@
+provider: quasar
+apis_io: https://apis.io/providers/quasar/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - cluster
+    properties:
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/quasar-rest-openapi-original.json#GET /cluster

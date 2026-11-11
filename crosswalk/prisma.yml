@@ -1,0 +1,51 @@
+provider: prisma
+apis_io: https://apis.io/providers/prisma/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - branches
+    properties:
+      id: id
+      created_at: createdAt
+      engine: type
+      updated_at: updatedAt
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/prisma-postgres-management-api-openapi.json#DELETE /v1/branches/{branchId}
+    - openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/branches/{branchId}
+    - openapi/_original/prisma-postgres-management-api-openapi.json#PATCH /v1/branches/{branchId}
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+      id: id
+      status: status
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/prisma-postgres-management-api-openapi.json#DELETE /v1/databases/{databaseId}
+    - openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/databases
+    - openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/databases/{databaseId}
+    - openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/projects/{projectId}/databases
+    - openapi/_original/prisma-postgres-management-api-openapi.json#PATCH /v1/databases/{databaseId}
+  backup:
+    path_segment:
+    - backups
+    properties:
+      id:
+      - id
+      - databaseId
+      status: status
+      created_at: createdAt
+      type: type
+      size:
+      - size
+      - sizeBytes
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/databases/{databaseId}/backups
+    - openapi/_original/prisma-postgres-management-openapi.yml#GET /databases/{databaseId}/backups
+    - openapi/_original/prisma-postgres-management-openapi.yml#POST /databases/{databaseId}/backups

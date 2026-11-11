@@ -1,0 +1,16 @@
+provider: azure-cosmos-db
+apis_io: https://apis.io/providers/azure-cosmos-db/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - dbs
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/azure-cosmos-db-openapi.yml#DELETE /dbs/{dbId}
+    - openapi/_original/azure-cosmos-db-openapi.yml#GET /dbs
+    - openapi/_original/azure-cosmos-db-openapi.yml#GET /dbs/{dbId}
+    - openapi/_original/azure-cosmos-db-openapi.yml#POST /dbs

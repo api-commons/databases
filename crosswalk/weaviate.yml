@@ -1,0 +1,29 @@
+provider: weaviate
+apis_io: https://apis.io/providers/weaviate/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - db
+    properties:
+      created_at:
+      - createdAt
+      - createTime
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/weaviate-openapi.yml#DELETE /users/db/{user_id}
+    - openapi/_original/weaviate-openapi.yml#GET /users/db
+    - openapi/_original/weaviate-openapi.yml#GET /users/db/{user_id}
+    - openapi/_original/weaviate-openapi.yml#POST /users/db/{user_id}
+  backup:
+    path_segment:
+    - backups
+    properties:
+      id: id
+      status: status
+      size: size
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/weaviate-openapi.yml#GET /backups/{backend}
+    - openapi/_original/weaviate-openapi.yml#POST /backups/{backend}

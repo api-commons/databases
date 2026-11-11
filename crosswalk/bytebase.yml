@@ -1,0 +1,18 @@
+provider: bytebase
+apis_io: https://apis.io/providers/bytebase/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+      status: state
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/bytebase-openapi.yml#GET /v1/instances/{instance}/databases
+    - openapi/_original/bytebase-openapi.yml#GET /v1/instances/{instance}/databases/{database}
+    - openapi/_original/bytebase-openapi.yml#GET /v1/projects/{project}/databases
+    - openapi/_original/bytebase-openapi.yml#GET /v1/projects/{project}/instances/{instance}/databases
+    - openapi/_original/bytebase-openapi.yml#GET /v1/projects/{project}/instances/{instance}/databases/{database}

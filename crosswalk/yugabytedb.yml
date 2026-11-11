@@ -1,0 +1,29 @@
+provider: yugabytedb
+apis_io: https://apis.io/providers/yugabytedb/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openapi.yaml#DELETE /customers/{cUUID}/universes/{uniUUID}/clusters/{clsUUID}
+    - openapi/_original/openapi.yaml#POST /customers/{cUUID}/universes/{uniUUID}/clusters
+    - openapi/_original/openapi_2.yaml#POST /api/v1/customers/{cUUID}/universes/clusters
+    - openapi/_original/platform.swagger.json#POST /api/v1/customers/{cUUID}/universes/clusters
+    - openapi/_original/yugabytedb-anywhere-v1-full.yaml#POST /api/v1/customers/{cUUID}/universes/clusters
+  backup:
+    path_segment:
+    - backups
+    properties:
+      status: state
+      created_at: createTime
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openapi_2.yaml#DELETE /api/v1/customers/{cUUID}/backups
+    - openapi/_original/openapi_2.yaml#GET /api/v1/customers/{cUUID}/backups/{backupUUID}
+    - openapi/_original/openapi_2.yaml#GET /api/v1/customers/{cUUID}/universes/{uniUUID}/backups
+    - openapi/_original/openapi_2.yaml#POST /api/v1/customers/{cUUID}/backups
+    - openapi/_original/openapi_2.yaml#PUT /api/v1/customers/{cUUID}/backups/{backupUUID}

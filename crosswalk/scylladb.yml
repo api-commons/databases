@@ -1,0 +1,23 @@
+provider: scylladb
+apis_io: https://apis.io/providers/scylladb/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - cluster
+    - clusters
+    properties:
+      id:
+      - id
+      - instanceId
+      status: status
+      created_at: createdAt
+      region:
+      - regionId
+      - region
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/scylladb-cloud-management-api-openapi.yml#GET /account/{accountId}/cluster/{clusterId}
+    - openapi/_original/scylladb-cloud-management-api-openapi.yml#GET /account/{accountId}/clusters
+    - openapi/_original/scylladb-cloud-management-api-openapi.yml#POST /account/{accountId}/cluster

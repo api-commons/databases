@@ -1,0 +1,44 @@
+provider: oracle-database
+apis_io: https://apis.io/providers/oracle-database/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oracle-database-oci-openapi.yml#DELETE /databases/{databaseId}
+    - openapi/_original/oracle-database-oci-openapi.yml#GET /databases
+    - openapi/_original/oracle-database-oci-openapi.yml#GET /databases/{databaseId}
+    - openapi/_original/oracle-database-oci-openapi.yml#POST /databases
+    - openapi/_original/oracle-database-oci-openapi.yml#PUT /databases/{databaseId}
+  database_user:
+    path_segment:
+    - users
+    properties:
+      username: username
+      created_at: created
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/oracle-database-ords-openapi.yml#GET /database/security/users/
+  backup:
+    path_segment:
+    - snapshots
+    - backups
+    properties:
+      id:
+      - id
+      - databaseId
+      created_at: creation_time
+      type: type
+      name: displayName
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oracle-database-oci-openapi.yml#DELETE /backups/{backupId}
+    - openapi/_original/oracle-database-oci-openapi.yml#GET /backups
+    - openapi/_original/oracle-database-oci-openapi.yml#GET /backups/{backupId}
+    - openapi/_original/oracle-database-oci-openapi.yml#POST /backups
+    - openapi/_original/oracle-database-ords-openapi.yml#DELETE /database/snapshots/{snapshot_name}

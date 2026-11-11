@@ -1,0 +1,17 @@
+provider: macrometa
+apis_io: https://apis.io/providers/macrometa/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - database
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/macrometa-gdn-openapi-original.json#DELETE /_api/key/{keyid}/database/{dbname}
+    - openapi/_original/macrometa-gdn-openapi-original.json#DELETE /_api/user/{user}/database/{geofabric}
+    - openapi/_original/macrometa-gdn-openapi-original.json#DELETE /_fabric/_system/_api/database/{fabric}
+    - openapi/_original/macrometa-gdn-openapi-original.json#GET /_api/key/{keyid}/database
+    - openapi/_original/macrometa-gdn-openapi-original.json#GET /_api/key/{keyid}/database/{dbname}

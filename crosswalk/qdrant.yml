@@ -1,0 +1,15 @@
+provider: qdrant
+apis_io: https://apis.io/providers/qdrant/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - cluster
+    properties:
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/qdrant-openapi-original.json#GET /cluster
+    - openapi/_original/qdrant-openapi-original.json#GET /collections/{collection_name}/cluster
+    - openapi/_original/qdrant-openapi-original.json#POST /collections/{collection_name}/cluster

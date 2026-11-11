@@ -1,0 +1,12 @@
+provider: aerospike
+apis_io: https://apis.io/providers/aerospike/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - cluster
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/aerospike-openapi.yml#GET /v1/cluster

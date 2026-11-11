@@ -1,0 +1,57 @@
+provider: appwrite
+apis_io: https://apis.io/providers/appwrite/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - branches
+    properties:
+      engine: engine
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /mongo/{databaseId}/branches/{branchId}
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /mysql/{databaseId}/branches/{branchId}
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /postgresql/{databaseId}/branches/{branchId}
+    - openapi/_original/appwrite-open-api3-latest.json#GET /mongo/{databaseId}/branches
+    - openapi/_original/appwrite-open-api3-latest.json#GET /mysql/{databaseId}/branches
+  database:
+    path_segment:
+    - databases
+    - database
+    properties:
+      name: name
+      id:
+      - $id
+      - databaseId
+      status: status
+      created_at:
+      - $createdAt
+      - createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /databases/{databaseId}
+    - openapi/_original/appwrite-open-api3-latest.json#GET /console/databases
+    - openapi/_original/appwrite-open-api3-latest.json#GET /databases
+    - openapi/_original/appwrite-open-api3-latest.json#GET /databases/{databaseId}
+    - openapi/_original/appwrite-open-api3-latest.json#GET /manager/projects/{projectId}/databases/{databaseId}
+  backup:
+    path_segment:
+    - backups
+    - backup
+    properties:
+      id:
+      - $id
+      - databaseId
+      status: status
+      created_at: $createdAt
+      type: type
+      name: name
+      size: sizeBytes
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /mongo/{databaseId}/backups/{backupId}
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /mysql/{databaseId}/backups/{backupId}
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /organizations/{organizationId}/payment-method/backup
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /postgresql/{databaseId}/backups/{backupId}
+    - openapi/_original/appwrite-open-api3-latest.json#GET /mongo/{databaseId}/backups

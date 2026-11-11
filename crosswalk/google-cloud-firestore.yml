@@ -1,0 +1,16 @@
+provider: google-cloud-firestore
+apis_io: https://apis.io/providers/google-cloud-firestore/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cloud-firestore-openapi.yml#DELETE /projects/{project}/databases/{database}
+    - openapi/_original/cloud-firestore-openapi.yml#GET /projects/{project}/databases
+    - openapi/_original/cloud-firestore-openapi.yml#GET /projects/{project}/databases/{database}
+    - openapi/_original/cloud-firestore-openapi.yml#POST /projects/{project}/databases

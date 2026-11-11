@@ -1,0 +1,16 @@
+provider: neo4j
+apis_io: https://apis.io/providers/neo4j/
+context: databases
+generated: '2026-11-11'
+concepts:
+  backup:
+    path_segment:
+    - snapshots
+    properties:
+      id: instance_id
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/neo4j-aura-api-openapi.yml#GET /instances/{instanceId}/snapshots
+    - openapi/_original/neo4j-aura-api-openapi.yml#GET /instances/{instanceId}/snapshots/{snapshotId}
+    - openapi/_original/neo4j-aura-api-openapi.yml#POST /instances/{instanceId}/snapshots

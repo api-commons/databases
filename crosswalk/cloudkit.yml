@@ -1,0 +1,12 @@
+provider: cloudkit
+apis_io: https://apis.io/providers/cloudkit/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - database
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cloudkit-openapi.yml#POST /changes/database

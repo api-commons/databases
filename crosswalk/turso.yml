@@ -1,0 +1,30 @@
+provider: turso
+apis_io: https://apis.io/providers/turso/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - instances
+    properties:
+      id: uuid
+      name: name
+      engine: type
+      region: region
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/turso-platform-api-openapi.yml#GET /v1/organizations/{organizationSlug}/databases/{databaseName}/instances
+    - openapi/_original/turso-platform-api-openapi.yml#GET /v1/organizations/{organizationSlug}/databases/{databaseName}/instances/{instanceName}
+  database:
+    path_segment:
+    - databases
+    properties:
+      name:
+      - Name
+      - name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/turso-platform-api-openapi.yml#DELETE /v1/organizations/{organizationSlug}/databases/{databaseName}
+    - openapi/_original/turso-platform-api-openapi.yml#GET /v1/organizations/{organizationSlug}/databases
+    - openapi/_original/turso-platform-api-openapi.yml#GET /v1/organizations/{organizationSlug}/databases/{databaseName}
+    - openapi/_original/turso-platform-api-openapi.yml#POST /v1/organizations/{organizationSlug}/databases

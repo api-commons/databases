@@ -1,0 +1,25 @@
+provider: instaclustr
+apis_io: https://apis.io/providers/instaclustr/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/instaclustr-current-openapi.json#GET /monitoring/v1/clusters/{clusterId}
+    - openapi/_original/instaclustr-openapi.yml#GET /monitoring/v1/clusters/{clusterId}
+  backup:
+    path_segment:
+    - backups
+    properties:
+      status: state
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/instaclustr-deprecated-openapi.json#GET /provisioning/v1/{clusterId}/backups
+    - openapi/_original/instaclustr-deprecated-openapi.json#POST /provisioning/v1/{clusterId}/backups
+    - openapi/_original/instaclustr-deprecated-openapi.yml#GET /provisioning/v1/{clusterId}/backups
+    - openapi/_original/instaclustr-deprecated-openapi.yml#POST /provisioning/v1/{clusterId}/backups

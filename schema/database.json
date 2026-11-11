@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/databases/main/schema/database.json",
+  "title": "Database",
+  "description": "The common database in Databases, distilled from 47 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.681,
+      "x-commons-providers": 32,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "display_name",
+        "Name"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.511,
+      "x-commons-providers": 24,
+      "x-commons-spellings": [
+        "id",
+        "database_id",
+        "databaseId",
+        "uuid",
+        "$id"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.426,
+      "x-commons-providers": 20,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.319,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "create_time",
+        "createTime",
+        "created",
+        "$createdAt",
+        "creationTime",
+        "created_on"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "databases",
+    "concept": "database",
+    "providers": 47,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

@@ -1,0 +1,13 @@
+provider: popsink
+apis_io: https://apis.io/providers/popsink/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - db
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/popsink-onprem-api-openapi-original.json#GET /healthchecks/db

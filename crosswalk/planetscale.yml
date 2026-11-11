@@ -1,0 +1,66 @@
+provider: planetscale
+apis_io: https://apis.io/providers/planetscale/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - branches
+    properties:
+      id:
+      - id
+      - backup_id
+      name: name
+      created_at: created_at
+      region: region
+      updated_at: updated_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/planetscale-platform-api-openapi.yml#DELETE /organizations/{organization}/databases/{database}/branches/{branch}
+    - openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}/branches
+    - openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}/branches/{branch}
+    - openapi/_original/planetscale-platform-api-openapi.yml#PATCH /organizations/{organization}/databases/{database}/branches/{branch}
+    - openapi/_original/planetscale-platform-api-openapi.yml#POST /organizations/{organization}/databases/{database}/branches
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+      id: id
+      status: state
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/planetscale-platform-api-openapi.yml#DELETE /organizations/{organization}/databases/{database}
+    - openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases
+    - openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}
+    - openapi/_original/planetscale-platform-api-openapi.yml#PATCH /organizations/{organization}/databases/{database}
+    - openapi/_original/planetscale-platform-api-openapi.yml#POST /organizations/{organization}/databases
+  database_user:
+    path_segment:
+    - roles
+    properties:
+      username:
+      - name
+      - username
+      password: password
+      created_at: created_at
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/planetscale-platform-api-openapi.yml#POST /organizations/{organization}/databases/{database}/branches/{branch}/roles
+  backup:
+    path_segment:
+    - backups
+    properties:
+      id: id
+      status: state
+      created_at: created_at
+      name: name
+      size: size
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/planetscale-platform-api-openapi.yml#DELETE /organizations/{organization}/databases/{database}/branches/{branch}/backups/{backup_id}
+    - openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}/branches/{branch}/backups
+    - openapi/_original/planetscale-platform-api-openapi.yml#GET /organizations/{organization}/databases/{database}/branches/{branch}/backups/{backup_id}
+    - openapi/_original/planetscale-platform-api-openapi.yml#POST /organizations/{organization}/databases/{database}/branches/{branch}/backups

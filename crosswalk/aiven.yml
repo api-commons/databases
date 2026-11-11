@@ -1,0 +1,24 @@
+provider: aiven
+apis_io: https://apis.io/providers/aiven/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - db
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/aiven-aiven-api-openapi.yml#DELETE /project/{project}/service/{service_name}/clickhouse/db/{database}
+    - openapi/_original/aiven-aiven-api-openapi.yml#DELETE /project/{project}/service/{service_name}/db/{dbname}
+    - openapi/_original/aiven-aiven-api-openapi.yml#GET /project/{project}/service/{service_name}/clickhouse/db
+    - openapi/_original/aiven-aiven-api-openapi.yml#GET /project/{project}/service/{service_name}/db
+    - openapi/_original/aiven-aiven-api-openapi.yml#POST /project/{project}/service/{service_name}/clickhouse/db
+  backup:
+    path_segment:
+    - backups
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/aiven-aiven-api-openapi.yml#GET /project/{project}/service/{service_name}/backups

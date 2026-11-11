@@ -1,0 +1,20 @@
+provider: dolthub
+apis_io: https://apis.io/providers/dolthub/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - branches
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/dolthub-openapi.yml#GET /{owner}/{database}/branches
+    - openapi/_original/dolthub-openapi.yml#POST /{owner}/{database}/branches
+  database:
+    path_segment:
+    - database
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/dolthub-openapi.yml#POST /database

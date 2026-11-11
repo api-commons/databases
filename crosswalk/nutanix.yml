@@ -1,0 +1,20 @@
+provider: nutanix
+apis_io: https://apis.io/providers/nutanix/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - clusters
+    - cluster
+    properties:
+      id:
+      - id
+      - uuid
+      name: name
+      status: status
+      version: version
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/nutanix-prism-central-v3-openapi.yml#GET /clusters/{uuid}
+    - openapi/_original/nutanix-prism-element-v2-openapi.yml#GET /cluster

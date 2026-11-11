@@ -1,0 +1,1637 @@
+[
+ {
+  "slug": "4paradigm",
+  "specs": [
+   "openapi/_original/4paradigm-openaios-billing.yaml",
+   "openapi/_original/4paradigm-openaios-billing_2.yaml",
+   "openapi/_original/4paradigm-openaios-platform-internal.yaml",
+   "openapi/_original/4paradigm-openaios-platform-internal_2.yaml",
+   "openapi/_original/4paradigm-openaios-platform.yaml",
+   "openapi/_original/4paradigm-openaios-platform_2.yaml",
+   "openapi/_original/4paradigm-openaios-webterminal.yaml",
+   "openapi/_original/4paradigm-openaios-webterminal_2.yaml"
+  ]
+ },
+ {
+  "slug": "abloatai",
+  "specs": [
+   "openapi/_original/abloatai-openapi-2026-08-19.json"
+  ]
+ },
+ {
+  "slug": "aerospike",
+  "specs": [
+   "openapi/_original/aerospike-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aifordatabase",
+  "specs": [
+   "openapi/_original/aifordatabase-openapi.json",
+   "openapi/_original/aifordatabase-openapi.yml"
+  ]
+ },
+ {
+  "slug": "airtable",
+  "specs": [
+   "openapi/_original/airtable-airtable-api-openapi.yml",
+   "openapi/_original/airtable-metadata-api-openapi.yml",
+   "openapi/_original/airtable-scim-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aiven",
+  "specs": [
+   "openapi/_original/aiven-aiven-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "altinity",
+  "specs": [
+   "openapi/_original/altinity-acm-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "amazon-athena",
+  "specs": [
+   "openapi/_original/amazon-athena-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-aurora",
+  "specs": [
+   "openapi/_original/amazon-aurora-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-aurora-dsql",
+  "specs": [
+   "openapi/_original/amazon-aurora-dsql-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-dms",
+  "specs": [
+   "openapi/_original/amazon-dms-openapi.yaml",
+   "openapi/_original/amazon-dms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-documentdb",
+  "specs": [
+   "openapi/_original/amazon-documentdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-dynamo-db",
+  "specs": [
+   "openapi/_original/amazon-dynamo-db-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-dynamodb",
+  "specs": [
+   "openapi/_original/amazon-dynamodb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-elasticache",
+  "specs": [
+   "openapi/_original/amazon-elasticache-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-keyspaces",
+  "specs": [
+   "openapi/_original/amazon-keyspaces-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-lightsail",
+  "specs": [
+   "openapi/_original/amazon-lightsail-openapi.yml",
+   "openapi/_original/amazon-lightsail-openapi_2.yml",
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-memorydb",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-neptune",
+  "specs": [
+   "openapi/_original/amazon-neptune-analytics-openapi.yml",
+   "openapi/_original/amazon-neptune-data-openapi.yml",
+   "openapi/_original/amazon-neptune-gremlin-openapi.yml",
+   "openapi/_original/amazon-neptune-loader-openapi.yml",
+   "openapi/_original/amazon-neptune-management-openapi.yml",
+   "openapi/_original/amazon-neptune-ml-openapi.yml",
+   "openapi/_original/amazon-neptune-opencypher-openapi.yml",
+   "openapi/_original/amazon-neptune-sparql-openapi.yml",
+   "openapi/_original/amazon-neptune-streams-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-qldb",
+  "specs": [
+   "openapi/_original/amazon-qldb-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-rds",
+  "specs": [
+   "openapi/_original/amazon-rds-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-redshift",
+  "specs": [
+   "openapi/_original/amazon-redshift-data-api-openapi.yml",
+   "openapi/_original/aws-redshift-amazon-redshift-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-simpledb",
+  "specs": [
+   "openapi/_original/amazon-simpledb.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-timestream",
+  "specs": [
+   "openapi/_original/amazon-timestream-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amuncore",
+  "specs": [
+   "openapi/_original/amuncore-dynamic-api-openapi.yml",
+   "openapi/_original/amuncore-openapi.json"
+  ]
+ },
+ {
+  "slug": "apache-hbase",
+  "specs": [
+   "openapi/_original/apache-hbase-rest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "apache-hive",
+  "specs": [
+   "openapi/_original/apache-hive-webhcat-openapi.yml"
+  ]
+ },
+ {
+  "slug": "apache-ignite",
+  "specs": [
+   "openapi/_original/apache-ignite-rest-api.yaml"
+  ]
+ },
+ {
+  "slug": "apache-shardingsphere",
+  "specs": [
+   "openapi/_original/apache-shardingsphere-rest-api.yaml"
+  ]
+ },
+ {
+  "slug": "appwrite",
+  "specs": [
+   "openapi/_original/appwrite-open-api3-latest.json",
+   "openapi/_original/appwrite-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "arangodb",
+  "specs": [
+   "openapi/_original/arangodb-core-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "ardent",
+  "specs": [
+   "openapi/_original/ardent-openapi.json"
+  ]
+ },
+ {
+  "slug": "artie",
+  "specs": [
+   "openapi/_original/artie-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aws-redshift",
+  "specs": [
+   "openapi/_original/aws-redshift-data-openapi.json",
+   "openapi/_original/aws-redshift-openapi.json"
+  ]
+ },
+ {
+  "slug": "azure-cloud",
+  "specs": [
+   "openapi/_original/azure-cloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "azure-cosmos-db",
+  "specs": [
+   "openapi/_original/azure-cosmos-db-openapi.yml"
+  ]
+ },
+ {
+  "slug": "backendless",
+  "specs": [
+   "openapi/_original/backendless-openapi.yml"
+  ]
+ },
+ {
+  "slug": "baserow",
+  "specs": [
+   "openapi/_original/baserow-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bigchaindb",
+  "specs": [
+   "openapi/_original/bigchaindb-http-openapi.yml"
+  ]
+ },
+ {
+  "slug": "border0",
+  "specs": [
+   "openapi/_original/border0-openapi.json"
+  ]
+ },
+ {
+  "slug": "bubble",
+  "specs": [
+   "openapi/_original/bubble-plugin-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bytebase",
+  "specs": [
+   "openapi/_original/bytebase-openapi.yml"
+  ]
+ },
+ {
+  "slug": "carto",
+  "specs": [
+   "openapi/_original/carto-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cdata",
+  "specs": [
+   "openapi/_original/cdata-management-api-openapi.yml",
+   "openapi/_original/cdata-mcp-api-embedded-openapi.yml",
+   "openapi/_original/cdata-mcp-api-embedded-openapi_2.yml",
+   "openapi/_original/cdata-mcp-api-openapi.yml",
+   "openapi/_original/cdata-odata-api-openapi.yml",
+   "openapi/_original/cdata-openapi-api-openapi.yml",
+   "openapi/_original/cdata-rest-api-embedded-openapi.yml",
+   "openapi/_original/cdata-rest-api-embedded-openapi_2.yml",
+   "openapi/_original/cdata-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "chroma",
+  "specs": [
+   "openapi/_original/chroma-openapi.json"
+  ]
+ },
+ {
+  "slug": "clickhouse",
+  "specs": [
+   "openapi/_original/clickhouse-cloud-api-openapi.json",
+   "openapi/_original/clickhouse-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudkit",
+  "specs": [
+   "openapi/_original/cloudkit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cockroach-labs",
+  "specs": [
+   "openapi/_original/cockroach-labs-cloud-api-openapi.yml",
+   "openapi/_original/cockroach-labs-cluster-api-openapi.yml",
+   "openapi/_original/cockroach-labs-openapi.json"
+  ]
+ },
+ {
+  "slug": "coda",
+  "specs": [
+   "openapi/_original/coda-openapi.json"
+  ]
+ },
+ {
+  "slug": "codehooks",
+  "specs": [
+   "openapi/_original/codehooks-database-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "convex",
+  "specs": [
+   "openapi/_original/convex-deployment-platform-api-openapi.yml",
+   "openapi/_original/convex-http-api-openapi.yml",
+   "openapi/_original/convex-openapi.json"
+  ]
+ },
+ {
+  "slug": "couchbase",
+  "specs": [
+   "openapi/_original/couchbase-analytics-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-backup-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-capella-app-services-admin-api-openapi.yml",
+   "openapi/_original/couchbase-capella-app-services-public-api-openapi.yml",
+   "openapi/_original/couchbase-capella-management-api-openapi.yml",
+   "openapi/_original/couchbase-eventing-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-query-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-search-service-rest-api-openapi.yml",
+   "openapi/_original/couchbase-server-rest-api-openapi.yml",
+   "openapi/_original/couchbase-sync-gateway-admin-rest-api-openapi.yml",
+   "openapi/_original/couchbase-sync-gateway-public-rest-api-openapi.yml",
+   "openapi/_original/couchbase-xdcr-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "data-world",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "databricks",
+  "specs": [
+   "openapi/_original/databricks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "datastax",
+  "specs": [
+   "openapi/_original/datastax-devops-openapi.json"
+  ]
+ },
+ {
+  "slug": "dbt",
+  "specs": [
+   "openapi/_original/dbt-cloud-administrative-api-openapi.yml",
+   "openapi/_original/dbt-cloud-semantic-layer-api-openapi.yml",
+   "openapi/_original/dbt-openapi.json"
+  ]
+ },
+ {
+  "slug": "debezium",
+  "specs": [
+   "openapi/_original/debezium-connect.yml"
+  ]
+ },
+ {
+  "slug": "delphix",
+  "specs": [
+   "openapi/_original/delphix-continuous-compliance-openapi.yml",
+   "openapi/_original/delphix-continuous-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ditto-live",
+  "specs": [
+   "openapi/_original/ditto-live-cloud-http-api-openapi.yml",
+   "openapi/_original/ditto-live-operator-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dokploy",
+  "specs": [
+   "openapi/_original/dokploy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dolthub",
+  "specs": [
+   "openapi/_original/dolthub-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dremio-intelligent-lakehouse-platform",
+  "specs": [
+   "openapi/_original/dremio-intelligent-lakehouse-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dune-analytics",
+  "specs": [
+   "openapi/_original/dune-analytics-openapi.json"
+  ]
+ },
+ {
+  "slug": "dynamodb",
+  "specs": [
+   "openapi/_original/dynamodb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ehrbase",
+  "specs": [
+   "openapi/_original/ehrbase-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "elasticsearch",
+  "specs": [
+   "openapi/_original/elasticsearch-openapi.yml"
+  ]
+ },
+ {
+  "slug": "electric-sql",
+  "specs": [
+   "openapi/_original/electric-sql-http-sync-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "enterprisedb",
+  "specs": [
+   "openapi/_original/pg_backup_api.yaml"
+  ]
+ },
+ {
+  "slug": "evidence-dev",
+  "specs": [
+   "openapi/_original/evidence-dev-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fauna",
+  "specs": [
+   "openapi/_original/fauna-core-http-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "feldera",
+  "specs": [
+   "openapi/_original/feldera-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "firebolt",
+  "specs": [
+   "openapi/_original/firebolt-openapi.json"
+  ]
+ },
+ {
+  "slug": "flipside",
+  "specs": [
+   "openapi/_original/flipside-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gcp",
+  "specs": [
+   "openapi/_original/gcp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-bigquery",
+  "specs": [
+   "openapi/_original/bigquery-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-bigtable",
+  "specs": [
+   "openapi/_original/cloud-bigtable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-datastore",
+  "specs": [
+   "openapi/_original/google-cloud-datastore-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-firestore",
+  "specs": [
+   "openapi/_original/cloud-firestore-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-memorystore",
+  "specs": [
+   "openapi/_original/cloud-memorystore-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-spanner",
+  "specs": [
+   "openapi/_original/cloud-spanner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-sql",
+  "specs": [
+   "openapi/_original/cloud-sql-openapi.yml"
+  ]
+ },
+ {
+  "slug": "grist",
+  "specs": [
+   "openapi/_original/grist-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hatchet",
+  "specs": [
+   "openapi/_original/hatchet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ibm",
+  "specs": [
+   "openapi/_original/ibm-cloud-iam.yml"
+  ]
+ },
+ {
+  "slug": "influxdata",
+  "specs": [
+   "openapi/_original/influxdata-cloud-openapi-original.yml",
+   "openapi/_original/influxdata-oss-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "influxdb",
+  "specs": [
+   "openapi/_original/influxdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "insforge",
+  "specs": [
+   "openapi/_original/insforge-ai-openapi.yaml",
+   "openapi/_original/insforge-auth-openapi.yaml",
+   "openapi/_original/insforge-deployments-openapi.yaml",
+   "openapi/_original/insforge-email-openapi.yaml",
+   "openapi/_original/insforge-functions-openapi.yaml",
+   "openapi/_original/insforge-health-openapi.yaml",
+   "openapi/_original/insforge-logs-openapi.yaml",
+   "openapi/_original/insforge-metadata-openapi.yaml",
+   "openapi/_original/insforge-payments-openapi.yaml",
+   "openapi/_original/insforge-realtime-openapi.yaml",
+   "openapi/_original/insforge-records-openapi.yaml",
+   "openapi/_original/insforge-secrets-openapi.yaml",
+   "openapi/_original/insforge-storage-openapi.yaml",
+   "openapi/_original/insforge-tables-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "instaclustr",
+  "specs": [
+   "openapi/_original/instaclustr-current-openapi.json",
+   "openapi/_original/instaclustr-deprecated-openapi.json",
+   "openapi/_original/instaclustr-deprecated-openapi.yml",
+   "openapi/_original/instaclustr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "instantdb",
+  "specs": [
+   "openapi/_original/instantdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "knack",
+  "specs": [
+   "openapi/_original/knack-openapi.yml"
+  ]
+ },
+ {
+  "slug": "koyeb",
+  "specs": [
+   "openapi/_original/koyeb-openapi.json"
+  ]
+ },
+ {
+  "slug": "kvdb",
+  "specs": [
+   "openapi/_original/kvdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "listmonk",
+  "specs": [
+   "openapi/_original/listmonk-collections-openapi.yml",
+   "openapi/_original/listmonk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "macrometa",
+  "specs": [
+   "openapi/_original/macrometa-gdn-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-eds-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-est-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-faas-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-fps-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-hss-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-prerender-openapi-original.json",
+   "openapi/_original/macrometa-photoniq-vwrs-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "manticore",
+  "specs": [
+   "openapi/_original/manticore-openapi.json",
+   "openapi/_original/manticore-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "materialize",
+  "specs": [
+   "openapi/_original/materialize-openapi.yml"
+  ]
+ },
+ {
+  "slug": "metabase",
+  "specs": [
+   "openapi/_original/metabase-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-cache-for-redis",
+  "specs": [
+   "openapi/_original/microsoft-azure-cache-for-redis-redis-2024-11-01-swagger.json"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-synapse-analytics",
+  "specs": [
+   "openapi/_original/azure-synapse-analytics-access-control-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-azure-ad-only-auth-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-credential-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-data-flow-debug-session-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-data-flow-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-dataset-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-firewall-rules-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-git-integration-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-integration-runtimes-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-keys-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-kql-script-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-kusto-pools-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-library-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-link-connection-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-linked-service-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-managed-private-endpoints-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-monitoring-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-notebook-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-pipeline-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-private-endpoint-connections-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-private-link-hubs-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-spark-configuration-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-spark-job-definition-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-spark-job-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-spark-pools-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-sql-pools-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-sql-script-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-synapse-link-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-trigger-openapi.yml",
+   "openapi/_original/azure-synapse-analytics-workspace-openapi.yml"
+  ]
+ },
+ {
+  "slug": "milvus",
+  "specs": [
+   "openapi/_original/milvus-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mode",
+  "specs": [
+   "openapi/_original/mode-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "mongodb",
+  "specs": [
+   "openapi/_original/mongodb-atlas-openapi.yaml",
+   "openapi/_original/mongodb-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "mongodb-atlas",
+  "specs": [
+   "openapi/_original/mongodb-atlas-openapi.yml"
+  ]
+ },
+ {
+  "slug": "myscale",
+  "specs": [
+   "openapi/_original/myscale-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mysql",
+  "specs": [
+   "openapi/_original/mysql-openapi.yml"
+  ]
+ },
+ {
+  "slug": "neo4j",
+  "specs": [
+   "openapi/_original/neo4j-aura-api-openapi.yml",
+   "openapi/_original/neo4j-http-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "neon",
+  "specs": [
+   "openapi/_original/neon-management-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nhost",
+  "specs": [
+   "openapi/_original/nhost-authentication-openapi.yml",
+   "openapi/_original/nhost-storage-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ninox",
+  "specs": [
+   "openapi/_original/ninox-public-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nocodb",
+  "specs": [
+   "openapi/_original/nocodb-data-api-openapi.yml",
+   "openapi/_original/nocodb-meta-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "notion",
+  "specs": [
+   "openapi/_original/notion-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nutanix",
+  "specs": [
+   "openapi/_original/nutanix-prism-central-v3-openapi.yml",
+   "openapi/_original/nutanix-prism-element-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ocient",
+  "specs": [
+   "openapi/_original/ocient-http-query-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "oracle",
+  "specs": [
+   "openapi/_original/oci-access-governance-cp-openapi.yaml",
+   "openapi/_original/oci-adm-openapi.yaml",
+   "openapi/_original/oci-advisor-openapi.yaml",
+   "openapi/_original/oci-ai-data-platform-openapi.yaml",
+   "openapi/_original/oci-analytics-openapi.yaml",
+   "openapi/_original/oci-announcements-openapi.yaml",
+   "openapi/_original/oci-api-gateway-openapi.yaml",
+   "openapi/_original/oci-apm-config-openapi.yaml",
+   "openapi/_original/oci-apm-control-plane-openapi.yaml",
+   "openapi/_original/oci-apm-synthetic-monitoring-openapi.yaml",
+   "openapi/_original/oci-apm-trace-explorer-openapi.yaml",
+   "openapi/_original/oci-audit-openapi.yaml",
+   "openapi/_original/oci-autoscaling-openapi.yaml",
+   "openapi/_original/oci-bastion-openapi.yaml",
+   "openapi/_original/oci-batch-openapi.yaml",
+   "openapi/_original/oci-bigdata-openapi.yaml",
+   "openapi/_original/oci-blockchain-openapi.yaml",
+   "openapi/_original/oci-budgets-openapi.yaml",
+   "openapi/_original/oci-certificates-openapi.yaml",
+   "openapi/_original/oci-certificatesmgmt-openapi.yaml",
+   "openapi/_original/oci-cloud-guard-openapi.yaml",
+   "openapi/_original/oci-clusterplacementgroups-openapi.yaml",
+   "openapi/_original/oci-compute-cloud-at-customer-openapi.yaml",
+   "openapi/_original/oci-container-instances-openapi.yaml",
+   "openapi/_original/oci-container-registry-openapi.yaml",
+   "openapi/_original/oci-containerengine-openapi.yaml",
+   "openapi/_original/oci-cost-anomaly-openapi.yaml",
+   "openapi/_original/oci-dashboard-openapi.yaml",
+   "openapi/_original/oci-data-catalog-openapi.yaml",
+   "openapi/_original/oci-data-flow-openapi.yaml",
+   "openapi/_original/oci-data-integration-openapi.yaml",
+   "openapi/_original/oci-data-safe-openapi.yaml",
+   "openapi/_original/oci-data-science-openapi.yaml",
+   "openapi/_original/oci-database-management-openapi.yaml",
+   "openapi/_original/oci-database-migration-openapi.yaml",
+   "openapi/_original/oci-database-multicloud-integrations-openapi.yaml",
+   "openapi/_original/oci-database-openapi.yaml",
+   "openapi/_original/oci-database-tools-openapi.yaml",
+   "openapi/_original/oci-database-tools-runtime-openapi.yaml",
+   "openapi/_original/oci-datacc-openapi.yaml",
+   "openapi/_original/oci-datalabeling-dp-openapi.yaml",
+   "openapi/_original/oci-datalabeling-openapi.yaml",
+   "openapi/_original/oci-delegate-access-control-openapi.yaml",
+   "openapi/_original/oci-devops-openapi.yaml",
+   "openapi/_original/oci-digital-assistant-openapi.yaml",
+   "openapi/_original/oci-disaster-recovery-openapi.yaml",
+   "openapi/_original/oci-dms-openapi.yaml",
+   "openapi/_original/oci-dns-openapi.yaml",
+   "openapi/_original/oci-document-understanding-openapi.yaml",
+   "openapi/_original/oci-edsfu-openapi.yaml",
+   "openapi/_original/oci-emaildelivery-openapi.yaml",
+   "openapi/_original/oci-emaildeliverysubmission-openapi.yaml",
+   "openapi/_original/oci-events-openapi.yaml",
+   "openapi/_original/oci-filestorage-openapi.yaml",
+   "openapi/_original/oci-fleet-management-openapi.yaml",
+   "openapi/_original/oci-functions-openapi.yaml",
+   "openapi/_original/oci-functionsdocgenpbf-openapi.yaml",
+   "openapi/_original/oci-fusion-applications-openapi.yaml",
+   "openapi/_original/oci-generative-ai-agents-client-openapi.yaml",
+   "openapi/_original/oci-generative-ai-agents-openapi.yaml",
+   "openapi/_original/oci-generative-ai-inference-openapi.yaml",
+   "openapi/_original/oci-generative-ai-nl2sql-openapi.yaml",
+   "openapi/_original/oci-generative-ai-openapi.yaml",
+   "openapi/_original/oci-generic-openapi.yaml",
+   "openapi/_original/oci-globally-distributed-database-openapi.yaml",
+   "openapi/_original/oci-goldengate-openapi.yaml",
+   "openapi/_original/oci-healthchecks-openapi.yaml",
+   "openapi/_original/oci-iaas-openapi.yaml",
+   "openapi/_original/oci-identity-domains-openapi.yaml",
+   "openapi/_original/oci-identity-dp-openapi.yaml",
+   "openapi/_original/oci-identity-openapi.yaml",
+   "openapi/_original/oci-incidentmanagement-openapi.yaml",
+   "openapi/_original/oci-instanceagent-openapi.yaml",
+   "openapi/_original/oci-integration-openapi.yaml",
+   "openapi/_original/oci-iot-openapi.yaml",
+   "openapi/_original/oci-itas-openapi.yaml",
+   "openapi/_original/oci-jms-java-download-openapi.yaml",
+   "openapi/_original/oci-jms-openapi.yaml",
+   "openapi/_original/oci-jms-utils-openapi.yaml",
+   "openapi/_original/oci-kafka-openapi.yaml",
+   "openapi/_original/oci-key-openapi.yaml",
+   "openapi/_original/oci-language-openapi.yaml",
+   "openapi/_original/oci-licensemanager-openapi.yaml",
+   "openapi/_original/oci-limits-increase-openapi.yaml",
+   "openapi/_original/oci-limits-openapi.yaml",
+   "openapi/_original/oci-loadbalancer-openapi.yaml",
+   "openapi/_original/oci-logan-api-spec-openapi.yaml",
+   "openapi/_original/oci-logging-dataplane-openapi.yaml",
+   "openapi/_original/oci-logging-management-openapi.yaml",
+   "openapi/_original/oci-logging-search-openapi.yaml",
+   "openapi/_original/oci-lustre-openapi.yaml",
+   "openapi/_original/oci-managed-access-openapi.yaml",
+   "openapi/_original/oci-management-agent-openapi.yaml",
+   "openapi/_original/oci-managementdashboard-openapi.yaml",
+   "openapi/_original/oci-marketplace-openapi.yaml",
+   "openapi/_original/oci-mngdmac-openapi.yaml",
+   "openapi/_original/oci-monitoring-openapi.yaml",
+   "openapi/_original/oci-multicloud-omhub-cp-openapi.yaml",
+   "openapi/_original/oci-mysql-openapi.yaml",
+   "openapi/_original/oci-netmonitor-openapi.yaml",
+   "openapi/_original/oci-network-firewall-1-openapi.yaml",
+   "openapi/_original/oci-network-firewall-openapi.yaml",
+   "openapi/_original/oci-networkloadbalancer-openapi.yaml",
+   "openapi/_original/oci-nosql-database-openapi.yaml",
+   "openapi/_original/oci-notification-openapi.yaml",
+   "openapi/_original/oci-objectstorage-openapi.yaml",
+   "openapi/_original/oci-ocb-openapi.yaml",
+   "openapi/_original/oci-occ-openapi.yaml",
+   "openapi/_original/oci-occds-openapi.yaml",
+   "openapi/_original/oci-occm-openapi.yaml",
+   "openapi/_original/oci-oce-openapi.yaml",
+   "openapi/_original/oci-ocicache-openapi.yaml",
+   "openapi/_original/oci-ocm-openapi.yaml",
+   "openapi/_original/oci-opa-openapi.yaml",
+   "openapi/_original/oci-opensearch-openapi.yaml",
+   "openapi/_original/oci-operations-insights-openapi.yaml",
+   "openapi/_original/oci-operatoraccesscontrol-openapi.yaml",
+   "openapi/_original/oci-oracle-api-access-control-openapi.yaml",
+   "openapi/_original/oci-organizations-1-openapi.yaml",
+   "openapi/_original/oci-organizations-openapi.yaml",
+   "openapi/_original/oci-osmh-openapi.yaml",
+   "openapi/_original/oci-postgresql-openapi.yaml",
+   "openapi/_original/oci-psasvc-openapi.yaml",
+   "openapi/_original/oci-publisher-openapi.yaml",
+   "openapi/_original/oci-queue-openapi.yaml",
+   "openapi/_original/oci-recovery-service-openapi.yaml",
+   "openapi/_original/oci-registry-openapi.yaml",
+   "openapi/_original/oci-resource-analytics-openapi.yaml",
+   "openapi/_original/oci-resource-discovery-monitoring-control-api-openapi.yaml",
+   "openapi/_original/oci-resource-scheduler-openapi.yaml",
+   "openapi/_original/oci-resourcemanager-openapi.yaml",
+   "openapi/_original/oci-rover-openapi.yaml",
+   "openapi/_original/oci-s3objectstorage-openapi.yaml",
+   "openapi/_original/oci-scanning-openapi.yaml",
+   "openapi/_original/oci-search-openapi.yaml",
+   "openapi/_original/oci-secretmgmt-openapi.yaml",
+   "openapi/_original/oci-secretretrieval-openapi.yaml",
+   "openapi/_original/oci-secure-desktops-openapi.yaml",
+   "openapi/_original/oci-security-attribute-openapi.yaml",
+   "openapi/_original/oci-self-openapi.yaml",
+   "openapi/_original/oci-service-catalog-openapi.yaml",
+   "openapi/_original/oci-serviceconnectors-openapi.yaml",
+   "openapi/_original/oci-smp-openapi.yaml",
+   "openapi/_original/oci-speech-openapi.yaml",
+   "openapi/_original/oci-stack-monitoring-openapi.yaml",
+   "openapi/_original/oci-streaming-openapi.yaml",
+   "openapi/_original/oci-threat-intel-openapi.yaml",
+   "openapi/_original/oci-usage-openapi.yaml",
+   "openapi/_original/oci-usage-proxy-openapi.yaml",
+   "openapi/_original/oci-vision-openapi.yaml",
+   "openapi/_original/oci-visual-builder-openapi.yaml",
+   "openapi/_original/oci-visual-builder-studio-openapi.yaml",
+   "openapi/_original/oci-vmware-1-openapi.yaml",
+   "openapi/_original/oci-vmware-openapi.yaml",
+   "openapi/_original/oci-waa-openapi.yaml",
+   "openapi/_original/oci-waas-openapi.yaml",
+   "openapi/_original/oci-waf-openapi.yaml",
+   "openapi/_original/oci-wlms-openapi.yaml",
+   "openapi/_original/oci-workrequests-openapi.yaml",
+   "openapi/_original/oci-zero-trust-packet-routing-openapi.yaml",
+   "openapi/_original/oci-zero-trust-packet-routing-tools-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "oracle-apex",
+  "specs": [
+   "openapi/_original/ords-rest-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "oracle-cloud",
+  "specs": [
+   "openapi/_original/oracle-cloud-core-services-openapi.yaml",
+   "openapi/_original/oracle-cloud-database-openapi.yaml",
+   "openapi/_original/oracle-cloud-events-openapi.yaml",
+   "openapi/_original/oracle-cloud-functions-openapi.yaml",
+   "openapi/_original/oracle-cloud-identity-openapi.yaml",
+   "openapi/_original/oracle-cloud-kubernetes-engine-openapi.yaml",
+   "openapi/_original/oracle-cloud-monitoring-openapi.yaml",
+   "openapi/_original/oracle-cloud-notifications-openapi.yaml",
+   "openapi/_original/oracle-cloud-object-storage-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "oracle-database",
+  "specs": [
+   "openapi/_original/oracle-database-oci-openapi.yml",
+   "openapi/_original/oracle-database-ords-openapi.yml",
+   "openapi/_original/oracle-database-soda-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-database-19c",
+  "specs": [
+   "openapi/_original/oracle-database-19c-ords-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-goldengate",
+  "specs": [
+   "openapi/_original/oracle-goldengate-big-data-rest-api-openapi.yml",
+   "openapi/_original/oracle-goldengate-cloud-service-api-openapi.yml",
+   "openapi/_original/oracle-goldengate-data-streams-rest-api-openapi.yml",
+   "openapi/_original/oracle-goldengate-rest-api-openapi.yml",
+   "openapi/_original/oracle-goldengate-stream-analytics-rest-api-openapi.yml",
+   "openapi/_original/oracle-goldengate-veridata-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-partitioning",
+  "specs": [
+   "openapi/_original/oracle-partitioning-ords-database-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "oracle-platforms",
+  "specs": [
+   "openapi/_original/oracle-platforms-analytics-openapi.yml",
+   "openapi/_original/oracle-platforms-content-management-openapi.yml",
+   "openapi/_original/oracle-platforms-core-openapi.yml",
+   "openapi/_original/oracle-platforms-data-science-openapi.yml",
+   "openapi/_original/oracle-platforms-database-openapi.yml",
+   "openapi/_original/oracle-platforms-integration-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paradedb",
+  "specs": [
+   "openapi/_original/paradedb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pinecone",
+  "specs": [
+   "openapi/_original/pinecone-admin-openapi.yaml",
+   "openapi/_original/pinecone-assistant-control-openapi.yaml",
+   "openapi/_original/pinecone-assistant-data-openapi.yaml",
+   "openapi/_original/pinecone-db-control-openapi.yaml",
+   "openapi/_original/pinecone-db-data-openapi.yaml",
+   "openapi/_original/pinecone-inference-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "pingcap",
+  "specs": [
+   "openapi/_original/pingcap-ossinsight-public-api-openapi-original.yaml",
+   "openapi/_original/pingcap-tidb-cloud-billing-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-data-service-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-dedicated-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-iam-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-starter-essential-v1beta1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-v1beta-openapi-original.json",
+   "openapi/_original/pingcap-tidb-cloud-zero-v1alpha1-openapi-original.json",
+   "openapi/_original/pingcap-tidb-dm-openapi-original.yaml",
+   "openapi/_original/tidb-chat2data-api-openapi.yml",
+   "openapi/_original/tidb-cloud-msp-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json",
+   "openapi/_original/tidb-data-summaries-api-openapi.yml",
+   "openapi/_original/tidb-ddl-api-openapi.yml",
+   "openapi/_original/tidb-diagnostics-api-openapi.yml",
+   "openapi/_original/tidb-mvcc-api-openapi.yml",
+   "openapi/_original/tidb-schema-api-openapi.yml",
+   "openapi/_original/tidb-sessions-api-openapi.yml",
+   "openapi/_original/tidb-settings-api-openapi.yml",
+   "openapi/_original/tidb-sql-refinement-api-openapi.yml",
+   "openapi/_original/tidb-statistics-api-openapi.yml",
+   "openapi/_original/tidb-status-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "planetscale",
+  "specs": [
+   "openapi/_original/planetscale-platform-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "plinth-us-grants-data",
+  "specs": [
+   "openapi/_original/plinth-us-grants-data-openapi.json"
+  ]
+ },
+ {
+  "slug": "popsink",
+  "specs": [
+   "openapi/_original/popsink-onprem-api-openapi-original.json",
+   "openapi/_original/popsink-public-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "presto-foundation",
+  "specs": [
+   "openapi/_original/presto-foundation-openapi.yml"
+  ]
+ },
+ {
+  "slug": "prisma",
+  "specs": [
+   "openapi/_original/prisma-accelerate-openapi.yml",
+   "openapi/_original/prisma-client-openapi.yml",
+   "openapi/_original/prisma-data-platform-openapi.yml",
+   "openapi/_original/prisma-optimize-openapi.yml",
+   "openapi/_original/prisma-postgres-management-api-openapi.json",
+   "openapi/_original/prisma-postgres-management-openapi.yml",
+   "openapi/_original/prisma-pulse-openapi.yml"
+  ]
+ },
+ {
+  "slug": "qdrant",
+  "specs": [
+   "openapi/_original/qdrant-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "quasar",
+  "specs": [
+   "openapi/_original/quasar-rest-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "questdb",
+  "specs": [
+   "openapi/_original/questdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "quickbase",
+  "specs": [
+   "openapi/_original/qb-openapi-v3.json",
+   "openapi/_original/quickbase-openapi.yml"
+  ]
+ },
+ {
+  "slug": "quote-garden",
+  "specs": [
+   "openapi/_original/quote-garden-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rawg",
+  "specs": [
+   "openapi/_original/rawg-openapi.json",
+   "openapi/_original/rawg-openapi.yml"
+  ]
+ },
+ {
+  "slug": "redis",
+  "specs": [
+   "openapi/_original/redis-cloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "relational-data-modeling",
+  "specs": [
+   "openapi/_original/relational-data-modeling-openapi.yml"
+  ]
+ },
+ {
+  "slug": "render",
+  "specs": [
+   "openapi/_original/render-openapi.json"
+  ]
+ },
+ {
+  "slug": "riak",
+  "specs": [
+   "openapi/_original/riak-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sap-hana",
+  "specs": [
+   "openapi/_original/sap-hana-cloud-rest-api.yml"
+  ]
+ },
+ {
+  "slug": "scaleway",
+  "specs": [
+   "openapi/_original/scaleway-database-openapi.yml",
+   "openapi/_original/scaleway-iam-openapi.yml",
+   "openapi/_original/scaleway-instance-openapi.yml",
+   "openapi/_original/scaleway-kubernetes-openapi.yml",
+   "openapi/_original/scaleway-load-balancer-openapi.yml",
+   "openapi/_original/scaleway-secret-manager-openapi.yml",
+   "openapi/_original/scaleway-serverless-containers-openapi.yml",
+   "openapi/_original/scaleway-serverless-functions-openapi.yml",
+   "openapi/_original/scaleway-transactional-email-openapi.yml",
+   "openapi/_original/scaleway-vpc-openapi.yml"
+  ]
+ },
+ {
+  "slug": "schema-free",
+  "specs": [
+   "openapi/_original/schema-free-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scylladb",
+  "specs": [
+   "openapi/_original/scylladb-cloud-management-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sequin-io",
+  "specs": [
+   "openapi/_original/sequin-io-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sevalla",
+  "specs": [
+   "openapi/_original/sevalla-openapi.yml"
+  ]
+ },
+ {
+  "slug": "singlestore",
+  "specs": [
+   "openapi/_original/singlestore-data-api-openapi.yml",
+   "openapi/_original/singlestore-management-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "skyvia",
+  "specs": [
+   "openapi/_original/skyvia-public-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "smartmind",
+  "specs": [
+   "openapi/_original/smartmind-thanosql-openapi.json"
+  ]
+ },
+ {
+  "slug": "snowflake",
+  "specs": [
+   "openapi/_original/account.yaml",
+   "openapi/_original/account_2.yaml",
+   "openapi/_original/alert.yaml",
+   "openapi/_original/alert_2.yaml",
+   "openapi/_original/api-integration.yaml",
+   "openapi/_original/api-integration_2.yaml",
+   "openapi/_original/artifact-repository.yaml",
+   "openapi/_original/catalog-integration.yaml",
+   "openapi/_original/catalog-integration_2.yaml",
+   "openapi/_original/compute-pool.yaml",
+   "openapi/_original/compute-pool_2.yaml",
+   "openapi/_original/cortex-analyst.yaml",
+   "openapi/_original/cortex-analyst_2.yaml",
+   "openapi/_original/cortex-embed.yaml",
+   "openapi/_original/cortex-generic-anthropic.yaml",
+   "openapi/_original/cortex-generic-openai.yaml",
+   "openapi/_original/cortex-inference.yaml",
+   "openapi/_original/cortex-inference_2.yaml",
+   "openapi/_original/cortex-search-service.yaml",
+   "openapi/_original/cortex-search-service_2.yaml",
+   "openapi/_original/database-role.yaml",
+   "openapi/_original/database-role_2.yaml",
+   "openapi/_original/database.yaml",
+   "openapi/_original/database_2.yaml",
+   "openapi/_original/dynamic-table.yaml",
+   "openapi/_original/dynamic-table_2.yaml",
+   "openapi/_original/event-table.yaml",
+   "openapi/_original/event-table_2.yaml",
+   "openapi/_original/external-volume.yaml",
+   "openapi/_original/external-volume_2.yaml",
+   "openapi/_original/function.yaml",
+   "openapi/_original/function_2.yaml",
+   "openapi/_original/grant.yaml",
+   "openapi/_original/grant_2.yaml",
+   "openapi/_original/iceberg-table.yaml",
+   "openapi/_original/iceberg-table_2.yaml",
+   "openapi/_original/image-repository.yaml",
+   "openapi/_original/image-repository_2.yaml",
+   "openapi/_original/managed-account.yaml",
+   "openapi/_original/managed-account_2.yaml",
+   "openapi/_original/network-policy.yaml",
+   "openapi/_original/network-policy_2.yaml",
+   "openapi/_original/network-rule.yaml",
+   "openapi/_original/notebook.yaml",
+   "openapi/_original/notebook_2.yaml",
+   "openapi/_original/notification-integration.yaml",
+   "openapi/_original/notification-integration_2.yaml",
+   "openapi/_original/password-policy.yaml",
+   "openapi/_original/pipe.yaml",
+   "openapi/_original/pipe_2.yaml",
+   "openapi/_original/procedure.yaml",
+   "openapi/_original/procedure_2.yaml",
+   "openapi/_original/result.yaml",
+   "openapi/_original/result_2.yaml",
+   "openapi/_original/role.yaml",
+   "openapi/_original/role_2.yaml",
+   "openapi/_original/schema.yaml",
+   "openapi/_original/schema_2.yaml",
+   "openapi/_original/secret.yaml",
+   "openapi/_original/sequence.yaml",
+   "openapi/_original/service.yaml",
+   "openapi/_original/service_2.yaml",
+   "openapi/_original/snowflake-sql-rest-api.yaml",
+   "openapi/_original/spark-connect.yaml",
+   "openapi/_original/sqlapi.yaml",
+   "openapi/_original/sqlapi_2.yaml",
+   "openapi/_original/stage.yaml",
+   "openapi/_original/stage_2.yaml",
+   "openapi/_original/stream.yaml",
+   "openapi/_original/stream_2.yaml",
+   "openapi/_original/streamlit.yaml",
+   "openapi/_original/table.yaml",
+   "openapi/_original/table_2.yaml",
+   "openapi/_original/tag.yaml",
+   "openapi/_original/task.yaml",
+   "openapi/_original/task_2.yaml",
+   "openapi/_original/user-defined-function.yaml",
+   "openapi/_original/user-defined-function_2.yaml",
+   "openapi/_original/user.yaml",
+   "openapi/_original/user_2.yaml",
+   "openapi/_original/view.yaml",
+   "openapi/_original/view_2.yaml",
+   "openapi/_original/warehouse.yaml",
+   "openapi/_original/warehouse_2.yaml"
+  ]
+ },
+ {
+  "slug": "softr",
+  "specs": [
+   "openapi/_original/softr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spring-data",
+  "specs": [
+   "openapi/_original/spring-data-rest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "startree",
+  "specs": [
+   "openapi/_original/startree-query-openapi.json"
+  ]
+ },
+ {
+  "slug": "startree-cortexdata",
+  "specs": [
+   "openapi/_original/startree-cortexdata-query-openapi.json"
+  ]
+ },
+ {
+  "slug": "supabase",
+  "specs": [
+   "openapi/_original/supabase-auth-api-openapi.yml",
+   "openapi/_original/supabase-database-rest-api-openapi.yml",
+   "openapi/_original/supabase-edge-functions-api-openapi.yml",
+   "openapi/_original/supabase-management-api-openapi.yml",
+   "openapi/_original/supabase-storage-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "superblocks",
+  "specs": [
+   "openapi/_original/superblocks-superblocks-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sybase",
+  "specs": [
+   "openapi/_original/sybase-ase-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "teable",
+  "specs": [
+   "openapi/_original/teable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "teradata",
+  "specs": [
+   "openapi/_original/tdqg-manager-api.yml"
+  ]
+ },
+ {
+  "slug": "tessell",
+  "specs": [
+   "openapi/_original/tessell-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "thegamesdb",
+  "specs": [
+   "openapi/_original/thegamesdb-openapi.yaml",
+   "openapi/_original/thegamesdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thenile",
+  "specs": [
+   "openapi/_original/api-openapi.json",
+   "openapi/_original/global-openapi.json",
+   "openapi/_original/global-openapi.yaml",
+   "openapi/_original/thenile-auth-openapi.yml",
+   "openapi/_original/thenile-database-openapi.yml",
+   "openapi/_original/thenile-global-openapi.yml",
+   "openapi/_original/us-west-2-auth-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "thesportsdb",
+  "specs": [
+   "openapi/_original/thesportsdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tidb",
+  "specs": [
+   "openapi/_original/tidb-cloud-api-openapi.yml",
+   "openapi/_original/tidb-cloud-billing-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-chat2query-openapi.yml",
+   "openapi/_original/tidb-cloud-data-service-openapi.yml",
+   "openapi/_original/tidb-cloud-dataservice-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-dedicated-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-iam-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-msp-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-premium-v1beta2-openapi-original.json",
+   "openapi/_original/tidb-cloud-starter-essential-v1beta1-openapi-original.json",
+   "openapi/_original/tidb-cloud-v1beta-openapi-original.json",
+   "openapi/_original/tidb-http-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tikv",
+  "specs": [
+   "openapi/_original/tikv-http-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tiledb",
+  "specs": [
+   "openapi/_original/tiledb-cloud-v1-openapi.yaml",
+   "openapi/_original/tiledb-cloud-v1-openapi_2.yaml",
+   "openapi/_original/tiledb-cloud-v2-openapi.yaml",
+   "openapi/_original/tiledb-cloud-v2-openapi_2.yaml"
+  ]
+ },
+ {
+  "slug": "timescale",
+  "specs": [
+   "openapi/_original/timescale-ghost-openapi-original.yml",
+   "openapi/_original/timescale-tiger-cloud-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "tinybird",
+  "specs": [
+   "openapi/_original/tinybird-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trino",
+  "specs": [
+   "openapi/_original/trino-client-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "triplit",
+  "specs": [
+   "openapi/_original/triplit-http-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "turso",
+  "specs": [
+   "openapi/_original/turso-platform-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ubicloud",
+  "specs": [
+   "openapi/_original/ubicloud-openapi.yml",
+   "openapi/_original/ubicloud-openapi_2.yml"
+  ]
+ },
+ {
+  "slug": "upcloud",
+  "specs": [
+   "openapi/_original/upcloud-openapi.json",
+   "openapi/_original/upcloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "upstash",
+  "specs": [
+   "openapi/_original/upstash-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vastdata",
+  "specs": [
+   "openapi/_original/vastdata-vms-openapi.json"
+  ]
+ },
+ {
+  "slug": "vertica",
+  "specs": [
+   "openapi/_original/vertica-openapi.yml"
+  ]
+ },
+ {
+  "slug": "victoriametrics",
+  "specs": [
+   "openapi/_original/victoriametrics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vultr",
+  "specs": [
+   "openapi/_original/vultr-iam-management-api-openapi.yml",
+   "openapi/_original/vultr-iam-management-api.yml",
+   "openapi/_original/vultr-iam-openapi.yml",
+   "openapi/_original/vultr-openapi.yml",
+   "openapi/_original/vultr-schema-openapi.json",
+   "openapi/_original/vultr-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "weaviate",
+  "specs": [
+   "openapi/_original/weaviate-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xano",
+  "specs": [
+   "openapi/_original/xano-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xata",
+  "specs": [
+   "openapi/_original/xata-management-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yugabyte",
+  "specs": [
+   "openapi/_original/yugabyte-yugabyted-openapi-original.yaml",
+   "openapi/_original/yugabytedb-access-keys-api-openapi.yml",
+   "openapi/_original/yugabytedb-alerts-api-openapi.yml",
+   "openapi/_original/yugabytedb-asynchronous-replication-api-openapi.yml",
+   "openapi/_original/yugabytedb-audit-api-openapi.yml",
+   "openapi/_original/yugabytedb-authentication-api-openapi.yml",
+   "openapi/_original/yugabytedb-availability-zones-api-openapi.yml",
+   "openapi/_original/yugabytedb-backup-and-restore-api-openapi.yml",
+   "openapi/_original/yugabytedb-backups-api-openapi.yml",
+   "openapi/_original/yugabytedb-certificate-info-api-openapi.yml",
+   "openapi/_original/yugabytedb-cloud-providers-api-openapi.yml",
+   "openapi/_original/yugabytedb-continuous-backup-api-openapi.yml",
+   "openapi/_original/yugabytedb-custom-ca-certificates-api-openapi.yml",
+   "openapi/_original/yugabytedb-customer-configuration-api-openapi.yml",
+   "openapi/_original/yugabytedb-customer-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-customer-tasks-api-openapi.yml",
+   "openapi/_original/yugabytedb-disaster-recovery-api-openapi.yml",
+   "openapi/_original/yugabytedb-encryption-at-rest-api-openapi.yml",
+   "openapi/_original/yugabytedb-extract-metadata-from-remote-tarball-api-openapi.yml",
+   "openapi/_original/yugabytedb-gflags-validation-apis-api-openapi.yml",
+   "openapi/_original/yugabytedb-grafana-dashboard-api-openapi.yml",
+   "openapi/_original/yugabytedb-ha-api-openapi.yml",
+   "openapi/_original/yugabytedb-instance-types-api-openapi.yml",
+   "openapi/_original/yugabytedb-internal-ha-api-openapi.yml",
+   "openapi/_original/yugabytedb-isolated-backup-api-openapi.yml",
+   "openapi/_original/yugabytedb-job-scheduler-api-openapi.yml",
+   "openapi/_original/yugabytedb-kubernetesoverridescontroller-api-openapi.yml",
+   "openapi/_original/yugabytedb-ldap-role-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-ldapoidc-role-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-license-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-loggingconfig-api-openapi.yml",
+   "openapi/_original/yugabytedb-maintenance-windows-api-openapi.yml",
+   "openapi/_original/yugabytedb-metrics-api-openapi.yml",
+   "openapi/_original/yugabytedb-new-release-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-node-agents-api-openapi.yml",
+   "openapi/_original/yugabytedb-node-instances-api-openapi.yml",
+   "openapi/_original/yugabytedb-pa-collector-api-openapi.yml",
+   "openapi/_original/yugabytedb-packagescontroller-api-openapi.yml",
+   "openapi/_original/yugabytedb-performance-advisor-api-openapi.yml",
+   "openapi/_original/yugabytedb-pitr-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-platform-instance-api-openapi.yml",
+   "openapi/_original/yugabytedb-platform-replication-api-openapi.yml",
+   "openapi/_original/yugabytedb-preview-api-openapi.yml",
+   "openapi/_original/yugabytedb-rbac-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-region-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-release-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-runtime-configuration-api-openapi.yml",
+   "openapi/_original/yugabytedb-schedule-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-session-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-support-bundle-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-table-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-tablet-server-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-telemetry-provider-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-actions-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-cdc-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-database-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-information-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-node-metadata-metamaster-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-performance-suggestions-api-openapi.yml",
+   "openapi/_original/yugabytedb-universe-upgrades-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-universeclustermutations-api-openapi.yml",
+   "openapi/_original/yugabytedb-upload-release-packages-api-openapi.yml",
+   "openapi/_original/yugabytedb-user-management-api-openapi.yml",
+   "openapi/_original/yugabytedb-yba-instance-api-openapi.yml",
+   "openapi/_original/yugabytedb-ybc-management-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yugabytedb",
+  "specs": [
+   "openapi/_original/openapi.yaml",
+   "openapi/_original/openapi_2.yaml",
+   "openapi/_original/platform.swagger.json",
+   "openapi/_original/yugabytedb-anywhere-v1-alerts-monitoring.yaml",
+   "openapi/_original/yugabytedb-anywhere-v1-backups-restore.yaml",
+   "openapi/_original/yugabytedb-anywhere-v1-full.yaml",
+   "openapi/_original/yugabytedb-anywhere-v1-high-availability.yaml",
+   "openapi/_original/yugabytedb-anywhere-v1-providers-infra.yaml",
+   "openapi/_original/yugabytedb-anywhere-v1-releases-maintenance.yaml",
+   "openapi/_original/yugabytedb-anywhere-v1-universes.yaml",
+   "openapi/_original/yugabytedb-anywhere-v1-users-rbac.yaml",
+   "openapi/_original/yugabytedb-anywhere-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "yunqi",
+  "specs": [
+   "openapi/_original/yunqi-clickzetta-open-platform-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "zoho-creator",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ }
+]

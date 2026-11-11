@@ -1,0 +1,12 @@
+provider: insforge
+apis_io: https://apis.io/providers/insforge/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - database
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/insforge-metadata-openapi.yaml#GET /api/metadata/database

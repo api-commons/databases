@@ -1,0 +1,14 @@
+provider: apache-hive
+apis_io: https://apis.io/providers/apache-hive/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - database
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/apache-hive-webhcat-openapi.yml#GET /ddl/database
+    - openapi/_original/apache-hive-webhcat-openapi.yml#GET /ddl/database/{dbName}

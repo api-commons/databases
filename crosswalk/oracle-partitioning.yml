@@ -1,0 +1,51 @@
+provider: oracle-partitioning
+apis_io: https://apis.io/providers/oracle-partitioning/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - instances
+    properties:
+      status: status
+      engine: database_type
+      version: version
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#DELETE /database/dataguard/databases/{database}/instances/{instance}
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#DELETE /database/txeventq/consumers/{group_name}/instances/{instance}
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/dataguard/databases/{database}/instances/
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#DELETE /database/dataguard/databases/{database}
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/dataguard/databases/
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/dataguard/databases/{database}
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /environment/databases/
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /environment/databases/{databaseName}
+  database_user:
+    path_segment:
+    - users
+    properties:
+      username: username
+      created_at: created
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/security/users/
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/security/users/{username}
+  backup:
+    path_segment:
+    - snapshots
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#DELETE /database/snapshots/{snapshot_name}
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/snapshots/
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#GET /database/snapshots/{snapshot_name}
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#POST /database/snapshots/
+    - openapi/_original/oracle-partitioning-ords-database-api-openapi.json#POST /database/snapshots/{snapshot_name}

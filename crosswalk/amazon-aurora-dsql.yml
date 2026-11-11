@@ -1,0 +1,19 @@
+provider: amazon-aurora-dsql
+apis_io: https://apis.io/providers/amazon-aurora-dsql/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - cluster
+    - clusters
+    properties:
+      status: status
+      created_at: creationTime
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/amazon-aurora-dsql-openapi.yml#DELETE /cluster/{identifier}
+    - openapi/_original/amazon-aurora-dsql-openapi.yml#GET /cluster/{identifier}
+    - openapi/_original/amazon-aurora-dsql-openapi.yml#GET /clusters
+    - openapi/_original/amazon-aurora-dsql-openapi.yml#POST /cluster
+    - openapi/_original/amazon-aurora-dsql-openapi.yml#PUT /cluster/{identifier}

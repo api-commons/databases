@@ -1,0 +1,554 @@
+context: databases
+name: Databases
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Database
+  - Databases
+  - SQL
+  - PostgreSQL
+  - MySQL
+  - NoSQL
+  - Database as a Service
+  - MongoDB
+  - Redis
+  providers_with_harvested_openapi: 184
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  database_cluster:
+    segments_seen:
+      clusters: 17
+      cluster: 10
+      branches: 7
+      instances: 3
+    providers_exposing: 33
+    providers_with_readable_schema: 30
+    operations:
+    - operation: GET collection
+      providers: 30
+      share: 0.909
+      tier: core
+    - operation: GET item
+      providers: 20
+      share: 0.606
+      tier: core
+    - operation: DELETE item
+      providers: 19
+      share: 0.576
+      tier: core
+    - operation: POST collection
+      providers: 19
+      share: 0.576
+      tier: core
+    - operation: UPDATE item
+      providers: 13
+      share: 0.394
+      tier: extended
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.061
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.03
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 19
+      share: 0.633
+      type: string
+      spellings:
+      - id
+      - uuid
+      - clusterId
+      - backup_id
+      - instanceId
+      - instance_id
+      - cluster_id
+      - guid
+    - name: name
+      tier: core
+      providers: 17
+      share: 0.567
+      type: string
+      spellings:
+      - name
+      - displayName
+      - title
+    - name: status
+      tier: core
+      providers: 17
+      share: 0.567
+      type: string
+      spellings:
+      - status
+      - state
+    - name: created_at
+      tier: extended
+      providers: 12
+      share: 0.4
+      type: string
+      spellings:
+      - created_at
+      - createTime
+      - createdAt
+      - creation_time
+      - creationTime
+    - name: engine
+      tier: extended
+      providers: 9
+      share: 0.3
+      type: string
+      spellings:
+      - type
+      - provider
+      - engine
+      - database_type
+    - name: region
+      tier: extended
+      providers: 8
+      share: 0.267
+      type: string
+      spellings:
+      - region
+      - regionId
+    - name: updated_at
+      tier: extended
+      providers: 6
+      share: 0.2
+      type: string
+      spellings:
+      - updated_at
+      - updateTime
+      - updatedAt
+    - name: version
+      tier: extended
+      providers: 6
+      share: 0.2
+      type: string
+      spellings:
+      - version
+    long_tail_count: 696
+    long_tail_sample:
+    - cloud_provider
+    - cluster_type
+    - endpoints
+    - labels
+    - expires_at
+    - hostname
+    - metadata
+    - num_nodes
+    - port
+    - project_id
+    - spec
+    - tags
+    - account_id
+    - additional_services_state_data
+    - allow_geo_partitioning
+    - allow_insecure
+    - annotations
+    - arch
+    - auto_rollback_performed
+    - auto_scaling
+    - automated_backup_policy
+    - available_kubernetes_upgrades
+    - capability
+    - client_root_ca
+    - cluster_operation
+    - cluster_pod_network_options
+    - cmk_arn
+    - communication_ports
+    - compartment_id
+    - connection_strings
+    - created_by
+    - creating_user
+    - current_cluster_type
+    - defined_tags
+    - deleted_at
+    - device_info
+    - edition
+    - enable_ybc
+    - encryption_at_rest_config
+    - encryption_config
+  database:
+    segments_seen:
+      databases: 34
+      database: 13
+      db: 4
+      dbs: 1
+    providers_exposing: 48
+    providers_with_readable_schema: 47
+    operations:
+    - operation: GET collection
+      providers: 42
+      share: 0.875
+      tier: core
+    - operation: POST collection
+      providers: 40
+      share: 0.833
+      tier: core
+    - operation: GET item
+      providers: 36
+      share: 0.75
+      tier: core
+    - operation: DELETE item
+      providers: 33
+      share: 0.688
+      tier: core
+    - operation: UPDATE item
+      providers: 21
+      share: 0.438
+      tier: extended
+    - operation: POST item
+      providers: 3
+      share: 0.062
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.021
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 32
+      share: 0.681
+      type: string
+      spellings:
+      - name
+      - title
+      - display_name
+      - Name
+    - name: id
+      tier: core
+      providers: 24
+      share: 0.511
+      type: string
+      spellings:
+      - id
+      - database_id
+      - databaseId
+      - uuid
+      - $id
+    - name: status
+      tier: extended
+      providers: 20
+      share: 0.426
+      type: string
+      spellings:
+      - status
+      - state
+    - name: created_at
+      tier: extended
+      providers: 15
+      share: 0.319
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - create_time
+      - createTime
+      - created
+      - $createdAt
+      - creationTime
+      - created_on
+    long_tail_count: 428
+    long_tail_sample:
+    - type
+    - region
+    - database_name
+    - owner
+    - port
+    - updated_at
+    - description
+    - lifecycle_state
+    - character_set
+    - compartment_id
+    - db_backup_config
+    - db_home_id
+    - db_name
+    - db_system_id
+    - db_unique_name
+    - error
+    - freeform_tags
+    - metadata
+    - ncharacter_set
+    - password
+    - pdb_name
+    - source
+    - time_created
+    - comment
+    - connection_strings
+    - data_guard_group
+    - database_management_config
+    - database_software_image_id
+    - db_version
+    - db_workload
+    - defined_tags
+    - enabled
+    - encryption_key_location_details
+    - home_type
+    - host
+    - is_cdb
+    - kms_key_id
+    - kms_key_version_id
+    - last_backup_duration_in_seconds
+    - last_backup_timestamp
+  database_user:
+    segments_seen:
+      users: 8
+      roles: 3
+    providers_exposing: 11
+    providers_with_readable_schema: 11
+    operations:
+    - operation: GET collection
+      providers: 10
+      share: 0.909
+      tier: core
+    - operation: POST collection
+      providers: 8
+      share: 0.727
+      tier: core
+    - operation: DELETE item
+      providers: 5
+      share: 0.455
+      tier: extended
+    - operation: GET item
+      providers: 5
+      share: 0.455
+      tier: extended
+    - operation: UPDATE item
+      providers: 4
+      share: 0.364
+      tier: extended
+    properties:
+    - name: username
+      tier: core
+      providers: 11
+      share: 1.0
+      type: string
+      spellings:
+      - name
+      - username
+    - name: password
+      tier: core
+      providers: 8
+      share: 0.727
+      type: string
+      spellings:
+      - password
+    - name: created_at
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - created
+      - created_at
+      - created_on
+    - name: id
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - id
+    long_tail_count: 66
+    long_tail_sample:
+    - account_status
+    - default_tablespace
+    - role
+    - status
+    - type
+    - updated_at
+    - access
+    - access_control
+    - action
+    - all_shard
+    - audit
+    - authentication
+    - authentication_type
+    - branch_id
+    - comment
+    - common
+    - days_left
+    - default_collation
+    - editions_enabled
+    - email
+    - email_verified
+    - encryption
+    - end_time
+    - endpoint_id
+    - expired_account
+    - expiry_date
+    - external_name
+    - failures_count
+    - family_name
+    - given_name
+    - host
+    - hostname
+    - implicit
+    - inherited
+    - initial_rsrc_consumer_group
+    - insert_time
+    - instance
+    - is_admin
+    - kind
+    - last_login
+  backup:
+    segments_seen:
+      backups: 24
+      backup: 7
+      snapshots: 6
+    providers_exposing: 32
+    providers_with_readable_schema: 31
+    operations:
+    - operation: GET collection
+      providers: 30
+      share: 0.938
+      tier: core
+    - operation: POST collection
+      providers: 23
+      share: 0.719
+      tier: core
+    - operation: GET item
+      providers: 21
+      share: 0.656
+      tier: core
+    - operation: DELETE item
+      providers: 13
+      share: 0.406
+      tier: extended
+    - operation: UPDATE item
+      providers: 7
+      share: 0.219
+      tier: extended
+    - operation: DELETE collection
+      providers: 3
+      share: 0.094
+      tier: long-tail
+    - operation: POST item
+      providers: 3
+      share: 0.094
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 3
+      share: 0.094
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 24
+      share: 0.774
+      type: string
+      spellings:
+      - id
+      - databaseId
+      - instance_id
+      - backupId
+      - $id
+      - clusterId
+      - backup_id
+      - uuid
+    - name: status
+      tier: core
+      providers: 20
+      share: 0.645
+      type: string
+      spellings:
+      - status
+      - state
+    - name: created_at
+      tier: extended
+      providers: 14
+      share: 0.452
+      type: string
+      spellings:
+      - created_at
+      - createTime
+      - created
+      - createdAt
+      - $createdAt
+      - creation_time
+    - name: type
+      tier: extended
+      providers: 14
+      share: 0.452
+      type: string
+      spellings:
+      - type
+    - name: name
+      tier: extended
+      providers: 13
+      share: 0.419
+      type: string
+      spellings:
+      - name
+      - displayName
+      - title
+    - name: size
+      tier: extended
+      providers: 12
+      share: 0.387
+      type: integer
+      spellings:
+      - size
+      - sizeBytes
+      - size_bytes
+    - name: description
+      tier: extended
+      providers: 8
+      share: 0.258
+      type: string
+      spellings:
+      - description
+    long_tail_count: 322
+    long_tail_sample:
+    - updated_at
+    - version
+    - backup_type
+    - completed_at
+    - database_size_in_g_bs
+    - expires_at
+    - lifecycle_state
+    - retention_period_in_days
+    - time_ended
+    - time_started
+    - availability_domain
+    - backup_destination_type
+    - backup_info
+    - compartment_id
+    - database_edition
+    - encryption_key_location_details
+    - is_using_oracle_managed_keys
+    - kms_key_id
+    - kms_key_version_id
+    - lifecycle_details
+    - retention_period_in_years
+    - secondary_kms_key_ids
+    - shape
+    - started_at
+    - time_expiry_scheduled
+    - vault_id
+    - alter_load_balancer
+    - backup_category
+    - backup_stats
+    - backup_ts
+    - backup_uuid
+    - base_backup_uuid
+    - bucket
+    - category
+    - cmk_arn
+    - communication_ports
+    - completion_time
+    - create_timestamp
+    - creating_user
+    - cron_expression

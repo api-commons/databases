@@ -1,0 +1,18 @@
+provider: google-cloud-spanner
+apis_io: https://apis.io/providers/google-cloud-spanner/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+      status: state
+      created_at: createTime
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cloud-spanner-openapi.yml#DELETE /projects/{project}/instances/{instance}/databases/{database}
+    - openapi/_original/cloud-spanner-openapi.yml#GET /projects/{project}/instances/{instance}/databases
+    - openapi/_original/cloud-spanner-openapi.yml#GET /projects/{project}/instances/{instance}/databases/{database}
+    - openapi/_original/cloud-spanner-openapi.yml#POST /projects/{project}/instances/{instance}/databases

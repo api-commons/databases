@@ -1,0 +1,19 @@
+provider: abloatai
+apis_io: https://apis.io/providers/abloatai/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database_cluster:
+    path_segment:
+    - branches
+    properties:
+      id: id
+      name: name
+      status: state
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/abloatai-openapi-2026-08-19.json#DELETE /v1/branches/{id}
+    - openapi/_original/abloatai-openapi-2026-08-19.json#GET /v1/branches
+    - openapi/_original/abloatai-openapi-2026-08-19.json#GET /v1/branches/{id}
+    - openapi/_original/abloatai-openapi-2026-08-19.json#POST /v1/branches

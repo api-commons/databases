@@ -1,0 +1,16 @@
+provider: apache-shardingsphere
+apis_io: https://apis.io/providers/apache-shardingsphere/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/apache-shardingsphere-rest-api.yaml#DELETE /databases/{databaseName}
+    - openapi/_original/apache-shardingsphere-rest-api.yaml#GET /databases
+    - openapi/_original/apache-shardingsphere-rest-api.yaml#GET /databases/{databaseName}
+    - openapi/_original/apache-shardingsphere-rest-api.yaml#POST /databases

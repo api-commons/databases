@@ -1,0 +1,34 @@
+provider: sevalla
+apis_io: https://apis.io/providers/sevalla/
+context: databases
+generated: '2026-11-11'
+concepts:
+  database:
+    path_segment:
+    - databases
+    properties:
+      name:
+      - name
+      - display_name
+      id: id
+      status: status
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sevalla-openapi.yml#DELETE /databases/{id}
+    - openapi/_original/sevalla-openapi.yml#GET /databases
+    - openapi/_original/sevalla-openapi.yml#GET /databases/{id}
+    - openapi/_original/sevalla-openapi.yml#POST /databases
+  backup:
+    path_segment:
+    - backups
+    properties:
+      id: id
+      status: status
+      created_at: created_at
+      type: type
+      size: size_bytes
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sevalla-openapi.yml#GET /databases/{id}/backups
+    - openapi/_original/sevalla-openapi.yml#POST /databases/{id}/backups
